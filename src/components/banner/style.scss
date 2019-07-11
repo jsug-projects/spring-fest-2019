@@ -6,15 +6,20 @@
   background-color: #444;
   color: #fff;
   min-height: 100vh;
-  background-image: linear-gradient(30deg,rgba(0, 0, 0, .6),rgba(250, 170, 160, .4)), url(/images/cover.jpg);
+  background-image: linear-gradient(
+      30deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(250, 170, 160, 0.4)
+    ),
+    url(/images/cover.jpg);
   background-size: cover;
   background-position: center;
   .opening-period {
     margin-top: -30px;
   }
   .link {
-    color: #FFF;
-    border-bottom:1px dotted #FFF;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
     .map-link {
       width: 25px;
       height: 25px;

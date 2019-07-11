@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import { Banner } from './components'
+import { Banner } from "./components";
 
 function App() {
-  return <Banner />
+  return <Banner />;
 }
 
-export default App
+export default App;
