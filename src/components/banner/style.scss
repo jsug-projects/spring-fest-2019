@@ -30,7 +30,7 @@
   }
   .title {
     font-size: 3.6rem;
-    padding-top: 1.5rem;
+    padding-top: 3rem;
     color: #fff;
     margin: 2rem 2rem 2rem 1rem;
   }
@@ -43,7 +43,7 @@
   }
   .logo {
     background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNzY3LjggNzY4IiB3aWR0aD0iMjQ5OSIgaGVpZ2h0PSIyNTAwIj4KICAgIDxzdHlsZT4uc3Qwe2ZpbGw6I2ZmZn08L3N0eWxlPgogICAgPHBhdGggY2xhc3M9InN0MCIKICAgICAgICAgIGQ9Ik02OTguMyA0MGMtMTAuOCAyNS44LTI0LjUgNTAuMy00MSA3Mi44QzU4NS4xIDQwLjYgNDg3LjEgMCAzODUgMCAxNzMuOCAwIDAgMTc0IDAgMzg1LjUgMCA0OTEgNDMuMiA1OTIKICAgICAgICAgIDExOS42IDY2NC44bDE0LjIgMTIuNmM2OS40IDU4LjUgMTU3LjMgOTAuNyAyNDggOTAuNyAyMDAuOCAwIDM2OS42LTE1Ny40IDM4My45LTM1OAogICAgICAgICAgMTAuNS05OC4yLTE4LjMtMjIyLjQtNjcuNC0zNzAuMXptLTUyNCA2MjdjLTYuMiA3LjctMTUuNyAxMi4yLTI1LjYgMTIuMi0xOC4xIDAtMzIuOS0xNC45LTMyLjktMzNzMTQuOS0zMwogICAgICAgICAgMzIuOS0zM2M3LjUgMCAxNC45IDIuNiAyMC43IDcuNCAxNC4xIDExLjQgMTYuMyAzMi4zIDQuOSA0Ni40em01MjIuNC0xMTUuNGMtOTUgMTI2LjctMjk3LjkgODQtNDI4IDkwLjEgMAogICAgICAgICAgMC0yMy4xIDEuNC00Ni4zIDUuMiAwIDAgOC43LTMuNyAyMC04IDkxLjMtMzEuOCAxMzQuNS0zOCAxOTAtNjYuNSAxMDQuNS01My4yIDIwNy44LTE2OS42IDIyOS4zLTI5MC43QzYyMS45CiAgICAgICAgICAzOTguMiA1MDEuMyA0OTguMyAzOTEuNCA1MzljLTc1LjMgMjcuOC0yMTEuMyA1NC44LTIxMS4zIDU0LjhsLTUuNS0yLjlDODIgNTQ1LjggNzkuMiAzNDUuMSAyNDcuNQogICAgICAgICAgMjgwLjNjNzMuNy0yOC40IDE0NC4yLTEyLjggMjIzLjgtMzEuOCA4NS0yMC4yIDE4My4zLTg0IDIyMy4zLTE2Ny4yIDQ0LjggMTMzLjEgOTguNyAzNDEuNSAyLjEgNDcwLjN6Ii8+Cjwvc3ZnPgo=);
-    margin: 2rem 2rem 2rem 0.5rem;
+    margin: 3rem 2rem 2rem 0.5rem;
     width: 7rem;
     height: 7rem;
     background-size: cover;
@@ -54,7 +54,7 @@
     border: 0;
   }
   .informations {
-    margin: 5rem 0 5rem 0;
+    margin: 10vh 0 5rem 0;
     .info {
       .label {
         color: #fff;
