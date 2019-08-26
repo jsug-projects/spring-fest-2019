@@ -2,108 +2,108 @@
   "sponsors": [
     {
       "name": "NTT DATA",
-      "link": "",
-      "image": ""
+      "url": "http://www.nttdata.com/jp",
+      "slug": "nttdata"
     },
     {
       "name": "NRI",
-      "link": "",
-      "image": ""
+      "url": "https://www.nri.com/jp",
+      "slug": "nri"
     },
     {
       "name": "Pivotal",
-      "link": "",
-      "image": ""
+      "url": "https://pivotal.io/jp",
+      "slug": "pivotal"
     },
     {
       "name": "UL Systems, Inc.",
-      "link": "",
-      "image": ""
+      "url": "https://www.ulsystems.co.jp/",
+      "slug": "ulsystems"
     },
     {
       "name": "Rakuten",
-      "link": "",
-      "image": ""
+      "url": "https://corp.rakuten.co.jp/",
+      "slug": "rakuten"
     },
     {
       "name": "Recruit Tech",
-      "link": "",
-      "image": ""
+      "url": "https://recruit-tech.co.jp/",
+      "slug": "recruite-tech"
     },
     {
       "name": "CASAREAL",
-      "link": "",
-      "image": ""
+      "url": "https://www.casareal.co.jp/",
+      "slug": "casareal"
     },
     {
       "name": "Google Cloud",
-      "link": "",
-      "image": ""
+      "url": "https://cloud.google.com/",
+      "slug": "google-cloud"
     },
     {
       "name": "LINE",
-      "link": "",
-      "image": ""
+      "url": "https://engineering.linecorp.com/",
+      "slug": "line"
     },
     {
-      "name": "Yahoo! JAPAN",
-      "link": "",
-      "image": ""
+      "name": "Yahhoo! JAPAN",
+      "url": "https://about.yahoo.co.jp/",
+      "slug": "yahoo"
     },
     {
       "name": "TiO Corporation",
-      "link": "",
-      "image": ""
+      "url": "http://www.t-i-o.co.jp/",
+      "slug": "tio"
     },
     {
       "name": "Root 42",
-      "link": "",
-      "image": ""
+      "url": "http://root42.jp/",
+      "slug": "root42"
     },
     {
       "name": "redhat",
-      "link": "",
-      "image": ""
+      "url": "https://www.redhat.com/ja/global/japan",
+      "slug": "redhat"
     },
     {
       "name": "豆蔵",
-      "link": "",
-      "image": ""
+      "url": "https://www.mamezou.com/",
+      "slug": "mamezou"
     },
     {
       "name": "Fullness",
-      "link": "",
-      "image": ""
+      "url": "https://www.fullness.co.jp/",
+      "slug": "fullness"
     },
     {
       "name": "JasmineSoft",
-      "link": "",
-      "image": ""
+      "url": "https://www.jasminesoft.co.jp/",
+      "slug": "jasminesoft"
     },
     {
       "name": "Stylez",
-      "link": "",
-      "image": ""
+      "url": "https://www.stylez.co.jp/",
+      "slug": "stylez"
     },
     {
       "name": "BIZREACH",
-      "link": "",
-      "image": ""
+      "url": "https://www.bizreach.co.jp/",
+      "slug": "bizreach"
     },
     {
       "name": "BTC",
-      "link": "",
-      "image": ""
+      "url": "https://www.bigtreetc.com/",
+      "slug": "btc"
     },
     {
       "name": "Samuraism",
-      "link": "",
-      "image": ""
+      "url": "https://samuraism.com/",
+      "slug": "samuraism"
     },
     {
       "name": "Tagbangers",
-      "link": "",
-      "image": ""
+      "url": "https://tagbangers.co.jp",
+      "slug": "tagbangers"
     }
   ]
 }

@@ -24,7 +24,17 @@ This app retriebe two dynamic data.
 - Sessions (speakers & session info)
 - Sponsors
 
-These data is managed by JSON in `src/data`, not in source. So, you can add / remove these information by edit JSON, app automatically reflect data.
+These data is managed by Excel on project's root directory.
+
+- data.xlsx
+
+You can convert Excel data to JSON by npm script below.
+
+```
+npm run convert-data
+```
+
+Represented data (JSON) is automatically converted and place on `src/data` by above script, so you do not directly write in source or existing JSON data.
 
 ### Sessions
 
@@ -40,10 +50,12 @@ Session entity is consisted by below.
     meta: string[],
     speakers: [
       {
+        id: number,
         name: string,
         affiliation: string,
         profile: string,
-        image: string, // path to `src/data/images/speakers/${profile-image}.png`
+        // speaker's picture is refer as
+        // path to `src/data/images/speakers/${id}.png`
       },
       ...
     ],
@@ -62,8 +74,10 @@ Sponsor entity is consisted by below.
 [
   {
     name: string,
-    link: string,
-    image: string,  // path to `src/data/images/sponsors/${company-logo}.png`
+    url: string,
+    slug: string,
+    // company logo will refer as
+    // path to `src/data/images/sponsors/${slug}.png`
   },
   ...
 ]
