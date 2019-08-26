@@ -13,7 +13,7 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    "gatsby-transformer-json",
+    'gatsby-transformer-json',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -26,6 +26,12 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/data/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'spring-fest-2019',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

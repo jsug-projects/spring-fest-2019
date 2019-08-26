@@ -2,6 +2,8 @@ const convert = require('convert-excel-to-json')
 const chalk = require('chalk')
 const fs = require('fs')
 
+const { findById, normalizeSessions } = require('./fns')
+
 const saveToFile = (name, json) => {
   fs.writeFile(
     `./src/data/${name}/data.json`,
@@ -58,27 +60,4 @@ const result = convert({
 const { sponsors, sessions, speakers } = result
 
 saveToFile('sponsors', sponsors)
-
-const findById = xs => id => xs.find(x => String(x.id) === String(id))
-
-const findSpeakersById = findById(speakers)
-
-const normalizedSessions = sessions
-  .filter(session => session.timetable !== '選択')
-  .reduce((acc, session) => {
-    console.log(session)
-    const speakers =
-      typeof session.speakers === 'string'
-        ? session.speakers.split(',')
-        : [session.speakers.toString()]
-    acc.push({
-      ...session,
-      speakers: session.speakers
-        .toString()
-        .split(',')
-        .map(findSpeakersById),
-    })
-    return acc
-  }, [])
-
-saveToFile('sessions', normalizedSessions)
+saveToFile('sessions', normalizeSessions(sessions, speakers))

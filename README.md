@@ -31,7 +31,7 @@ These data is managed by Excel on project's root directory.
 You can convert Excel data to JSON by npm script below.
 
 ```
-npm run convert-data
+npm run convert:data
 ```
 
 Represented data (JSON) is automatically converted and place on `src/data` by above script, so you do not directly write in source or existing JSON data.

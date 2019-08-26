@@ -5,13 +5,16 @@
   "version": "0.1.0",
   "author": "Tagbangers, Inc.",
   "scripts": {
-    "prebuild": "npm run format",
+    "convert:data": "node ./tools/convert",
+    "prebuild": "npm run format && npm run convert:data",
     "build": "gatsby build",
     "develop": "gatsby develop -p 4000",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "jest --silent=false --verbose=true",
+    "predeploy": "npm run build",
+    "deploy": "gatsby-plugin-s3 deploy"
   },
   "dependencies": {
     "gatsby": "^2.13.73",
@@ -19,6 +22,7 @@
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-react-helmet": "^3.1.4",
+    "gatsby-plugin-s3": "^0.3.2",
     "gatsby-plugin-sharp": "^2.2.13",
     "gatsby-source-filesystem": "^2.1.11",
     "gatsby-transformer-json": "^2.2.6",
@@ -31,6 +35,7 @@
   "devDependencies": {
     "chalk": "^2.4.2",
     "convert-excel-to-json": "^1.6.1",
+    "jest": "^24.9.0",
     "prettier": "^1.18.2"
   }
 }
