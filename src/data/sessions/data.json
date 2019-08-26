@@ -1,0 +1,21 @@
+{
+  "sessions": [
+    {
+      "place": "string",
+      "timetable": "number",
+      "title": "string",
+      "abstract": "string",
+      "meta": [],
+      "speakers": [
+        {
+          "name": "string",
+          "affiliation": "string",
+          "profile": "string",
+          "image": "string"
+        }
+      ],
+      "hashtag": "string",
+      "enquete": "string"
+    }
+  ]
+}
