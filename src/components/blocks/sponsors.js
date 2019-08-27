@@ -10,13 +10,12 @@ const Container = styled.div`
 `
 
 const Item = styled.a`
-  display: inline-block;
+  display: block;
   margin: ${props => props.theme.spacing(1)};
-  max-width: 25vw;
 `
 
 const Sponsors = () => {
-  const { allSponsorsJson } = useStaticQuery(
+  const { allSponsorsJson, allImageSharp } = useStaticQuery(
     graphql`
       query {
         allSponsorsJson {
@@ -26,17 +25,45 @@ const Sponsors = () => {
             url
           }
         }
+        allImageSharp {
+          nodes {
+            id
+            fixed(base64Width: 323, height: 200) {
+              base64
+              width
+              height
+            }
+            parent {
+              ... on File {
+                name
+              }
+            }
+          }
+        }
       }
     `
   )
 
-  console.log(allSponsorsJson)
+  const findLogo = slug => {
+    const logo = allImageSharp.nodes.find(img => img.parent.name === slug)
+    if (!logo) {
+      return null
+    }
+
+    const { base64, width, height } = logo.fixed
+    return {
+      src: base64,
+      width,
+      height,
+    }
+  }
 
   return (
     <Container>
+      <h2>Sponsors</h2>
       {allSponsorsJson.nodes.map(sponsor => (
         <Item key={sponsor.slug} href={sponsor.url} target="_blank">
-          <span>{sponsor.name}</span>
+          <img {...findLogo(sponsor.slug)} alt={sponsor.name} />
         </Item>
       ))}
     </Container>
