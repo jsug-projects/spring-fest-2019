@@ -360,7 +360,7 @@ export default createGlobalStyle`
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 0;
   }
   dd {
     margin-left: 0;
@@ -371,6 +371,10 @@ export default createGlobalStyle`
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.45rem;
+
+    &:last-child {
+      margin-bottom: 0; 
+    }
   }
   p {
     margin-left: 0;

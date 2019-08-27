@@ -4,4 +4,19 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+module.exports = {
+  onInitialClientRender: () => {
+    navigator.userAgent.toLowerCase().indexOf('chrome') > -1
+      ? window.console.log.apply(console, [
+          '\n %c Made by Tagbangers %c %c %c https://tagbangers.co.jp/ %c %c \n',
+          'color: #fff; background: #ff0000; padding:5px 0;',
+          'background: #131419; padding:5px 0;',
+          'background: #131419; padding:5px 0;',
+          'color: #fff; background: #131419; padding:5px 0;',
+          'background: #131419; padding:5px 0;',
+          'color: #ff0000; background: #131419; padding:5px 0;',
+        ])
+      : window.console &&
+        window.console.log('Made by Tagbangers - https://tagbangers.co.jp/')
+  },
+}

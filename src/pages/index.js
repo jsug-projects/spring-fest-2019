@@ -2,8 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { BaseLayout } from '../components/layouts'
-import { SEO, Section } from '../components/blocks'
-import { Image } from '../components/elements'
+import { Access, SEO, Section, Sponsors } from '../components/blocks'
 
 const IndexPage = () => (
   <BaseLayout>
@@ -11,12 +10,12 @@ const IndexPage = () => (
     <Section>
       <>
         <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>
       </>
     </Section>
+    <Access />
     <Section>
-      <Link to="/page-2/">Go to page 2</Link>
+      <Sponsors />
     </Section>
   </BaseLayout>
 )

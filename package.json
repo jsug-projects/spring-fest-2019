@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "spring-fest-2019",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
+  "description": "Spring fest 2019",
+  "version": "0.5.0",
   "author": "Tagbangers, Inc.",
   "scripts": {
     "convert:data": "node ./tools/convert",
@@ -17,6 +17,9 @@
     "deploy": "gatsby-plugin-s3 deploy"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
@@ -33,7 +36,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.1",
+    "recompose": "^0.30.0",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {

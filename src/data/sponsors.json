@@ -1,0 +1,107 @@
+[
+  {
+    "name": "NTT DATA",
+    "url": "http://www.nttdata.com/jp",
+    "slug": "nttdata"
+  },
+  {
+    "name": "NRI",
+    "url": "https://www.nri.com/jp",
+    "slug": "nri"
+  },
+  {
+    "name": "Pivotal",
+    "url": "https://pivotal.io/jp",
+    "slug": "pivotal"
+  },
+  {
+    "name": "UL Systems, Inc.",
+    "url": "https://www.ulsystems.co.jp/",
+    "slug": "ulsystems"
+  },
+  {
+    "name": "Rakuten",
+    "url": "https://corp.rakuten.co.jp/",
+    "slug": "rakuten"
+  },
+  {
+    "name": "Recruit Tech",
+    "url": "https://recruit-tech.co.jp/",
+    "slug": "recruite-tech"
+  },
+  {
+    "name": "CASAREAL",
+    "url": "https://www.casareal.co.jp/",
+    "slug": "casareal"
+  },
+  {
+    "name": "Google Cloud",
+    "url": "https://cloud.google.com/",
+    "slug": "google-cloud"
+  },
+  {
+    "name": "LINE",
+    "url": "https://engineering.linecorp.com/",
+    "slug": "line"
+  },
+  {
+    "name": "Yahhoo! JAPAN",
+    "url": "https://about.yahoo.co.jp/",
+    "slug": "yahoo"
+  },
+  {
+    "name": "TiO Corporation",
+    "url": "http://www.t-i-o.co.jp/",
+    "slug": "tio"
+  },
+  {
+    "name": "Root 42",
+    "url": "http://root42.jp/",
+    "slug": "root42"
+  },
+  {
+    "name": "redhat",
+    "url": "https://www.redhat.com/ja/global/japan",
+    "slug": "redhat"
+  },
+  {
+    "name": "豆蔵",
+    "url": "https://www.mamezou.com/",
+    "slug": "mamezou"
+  },
+  {
+    "name": "Fullness",
+    "url": "https://www.fullness.co.jp/",
+    "slug": "fullness"
+  },
+  {
+    "name": "JasmineSoft",
+    "url": "https://www.jasminesoft.co.jp/",
+    "slug": "jasminesoft"
+  },
+  {
+    "name": "Stylez",
+    "url": "https://www.stylez.co.jp/",
+    "slug": "stylez"
+  },
+  {
+    "name": "BIZREACH",
+    "url": "https://www.bizreach.co.jp/",
+    "slug": "bizreach"
+  },
+  {
+    "name": "BTC",
+    "url": "https://www.bigtreetc.com/",
+    "slug": "btc"
+  },
+  {
+    "name": "Samuraism",
+    "url": "https://samuraism.com/",
+    "slug": "samuraism"
+  },
+  {
+    "name": "Tagbangers",
+    "url": "https://tagbangers.co.jp",
+    "slug": "tagbangers"
+  }
+]

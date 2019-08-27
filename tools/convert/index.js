@@ -6,8 +6,8 @@ const { findById, normalizeSessions } = require('./fns')
 
 const saveToFile = (name, json) => {
   fs.writeFile(
-    `./src/data/${name}/data.json`,
-    JSON.stringify({ [name]: json }, '', '  '),
+    `./src/data/${name}.json`,
+    JSON.stringify(json, '', '  '),
     err => {
       if (err) {
         console.log(chalk.red(err.message))

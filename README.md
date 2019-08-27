@@ -34,11 +34,18 @@ You can convert Excel data to JSON by npm script below.
 npm run convert:data
 ```
 
-Represented data (JSON) is automatically converted and place on `src/data` by above script, so you do not directly write in source or existing JSON data.
+Represented data (JSON) is automatically converted and place on `src/data` by above script, so you do not directly edit in source or existing JSON data.
 
 ### Sessions
 
 Session entity is consisted by below.
+
+    Session data is composed from `sessions` and `speakers` sheet.
+    `sessions.speaker` column should include `id`s of `speakers` sheet's `id`.
+
+    ex)
+    session.speakers is multiple -> '1, 2, 3'
+    session.speakers is single -> 1
 
 ```javascript
 [
