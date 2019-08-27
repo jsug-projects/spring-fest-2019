@@ -1,20 +1,19 @@
 const findById = xs => id => xs.find(x => String(x.id) === String(id))
+const split = v => {
+  return typeof v === 'string' ? v.split(',').map(s => s.trim()) : [v]
+}
 
 const normalizeSessions = (sessions, speakers) => {
   const findSpeakersById = findById(speakers)
   return sessions
-    .filter(session => session.timetable !== '選択')
+    .filter(session => session.timetable !== '')
     .reduce((acc, session) => {
-      const speakers =
-        typeof session.speakers === 'string'
-          ? session.speakers.split(',')
-          : [session.speakers.toString()]
+      const slides = split(session.slides)
       acc.push({
         ...session,
-        speakers: session.speakers
-          .toString()
-          .split(',')
-          .map(findSpeakersById),
+        slides,
+        meta: split(session.meta),
+        speakers: split(session.speakers).map(findSpeakersById),
       })
       return acc
     }, [])

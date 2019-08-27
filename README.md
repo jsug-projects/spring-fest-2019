@@ -15,7 +15,9 @@ npm start
 
 Your site is now running at `http://localhost:4000`!
 
-    _Note: You'll also see a second link: _`http://localhost:4000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    _Note: You'll also see a second link: _`http://localhost:4000/___graphql`_.
+    This is a tool you can use to experiment with querying your data.
+    Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
 ## 🗣 How to manage data?
 
@@ -40,12 +42,12 @@ Represented data (JSON) is automatically converted and place on `src/data` by ab
 
 Session entity is consisted by below.
 
-    Session data is composed from `sessions` and `speakers` sheet.
+    Session data is composed by `sessions` and `speakers` sheet.
     `sessions.speaker` column should include `id`s of `speakers` sheet's `id`.
 
     ex)
-    session.speakers is multiple -> '1, 2, 3'
-    session.speakers is single -> 1
+    if session.speakers is multiple then speakers column will be '1, 2, 3'
+    session.speakers is single then speakers column will be 1
 
 ```javascript
 [

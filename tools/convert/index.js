@@ -41,8 +41,9 @@ const result = convert({
         D: 'abstract',
         E: 'meta',
         F: 'speakers',
-        G: 'hashtag',
-        H: 'enquete',
+        G: 'slides',
+        H: 'hashtag',
+        I: 'enquete',
       },
     },
     {

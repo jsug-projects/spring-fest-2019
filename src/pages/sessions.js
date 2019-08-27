@@ -2,19 +2,14 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import { BaseLayout } from '../components/layouts'
-import { SEO, Section } from '../components/blocks'
+import { SEO, Section, Session } from '../components/blocks'
 
 const SessionsPage = ({ data }) => {
   const { allSessionsJson } = data
 
   const renderHallName = value => <h2>{value}</h2>
   const renderSessions = sessions =>
-    sessions.map(session => (
-      <div key={session.id}>
-        <h3>{session.title}</h3>
-        <p>{session.abstract}</p>
-      </div>
-    ))
+    sessions.map(session => <Session key={session.id} {...session} />)
 
   return (
     <BaseLayout>
@@ -24,7 +19,7 @@ const SessionsPage = ({ data }) => {
           {allSessionsJson.group.map(group => {
             return (
               <div key={group.fieldValue}>
-                {renderHallName(group.fieldValue)}
+                <h2>{group.fieldValue}</h2>
                 {renderSessions(group.nodes)}
               </div>
             )
@@ -53,6 +48,7 @@ export const query = graphql`
           }
           timetable
           title
+          slides
         }
       }
     }
