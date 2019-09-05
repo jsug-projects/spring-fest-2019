@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import { Map, Section } from './'
@@ -15,6 +16,27 @@ const PanelInner = styled.div`
 `
 
 const Access = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            event {
+              place
+              address
+              traffic {
+                description
+                name
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const { place, address, traffic } = site.siteMetadata.event
+
   return (
     <Container>
       <Section>
@@ -22,23 +44,17 @@ const Access = () => {
           <h2>Access</h2>
           <Panel>
             <PanelInner>
-              <h3>
-                御茶ノ水ソラシティ
-                <br />
-                カンファレンスセンター
-              </h3>
-              <small>〒101-0062 東京都千代田区神田駿河台 4-6</small>
+              <h3>{place}</h3>
+              <small>{address}</small>
             </PanelInner>
             <PanelInner>
               <dl>
-                <dt>JR 中央線・総武線</dt>
-                <dd>御茶ノ水駅 聖橋口から徒歩1分</dd>
-                <dt>東京メトロ 千代田線</dt>
-                <dd>新御茶ノ水駅 B2出口直結</dd>
-                <dt>東京メトロ 丸ノ内線</dt>
-                <dd>御茶ノ水駅 出口1から徒歩4分</dd>
-                <dt>都営地下鉄 新宿線</dt>
-                <dd>小川町駅 B3出口から徒歩6分</dd>
+                {traffic.map(t => (
+                  <>
+                    <dt>{t.name}</dt>
+                    <dd>{t.description}</dd>
+                  </>
+                ))}
               </dl>
             </PanelInner>
           </Panel>

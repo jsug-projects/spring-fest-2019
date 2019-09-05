@@ -52,12 +52,14 @@
   {
     "name": "TiO Corporation",
     "url": "http://www.t-i-o.co.jp/",
-    "slug": "tio"
+    "slug": "tio",
+    "profile": "株式会社ティ・アイ・オー＜TIO＞は、刻々と進化しているIT技術を駆使し、各産業分野における基幹業務、金融および製造流通分野における業務アプリケーションに構築からソフトウェア・画面デザイン・メンテナンスにいたる工程をトータル的にサポートしていく企業です。"
   },
   {
     "name": "Root 42",
     "url": "http://root42.jp/",
-    "slug": "root42"
+    "slug": "root42",
+    "profile": "ルート42株式会社は、 業務システムに特化した超高速開発ツール「MOD99」による受託開発を行い、独立系開発ベンダーとして平成21年設立よりおよそ10年間活動してきました。 昨年、これまで蓄積してきた帳票開発のノウハウをオリジナル製品「Docurain」として製品化し、販売推進に注力しています。"
   },
   {
     "name": "redhat",
@@ -72,7 +74,8 @@
   {
     "name": "Fullness",
     "url": "https://www.fullness.co.jp/",
-    "slug": "fullness"
+    "slug": "fullness",
+    "profile": "IT研修に特化して、Python,Java,C#,Spring4を中心としたIT教育、未経験IT技術者を育成するために、IT研修・オープン講座・講師派遣などを行っています。"
   },
   {
     "name": "JasmineSoft",

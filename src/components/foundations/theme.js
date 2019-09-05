@@ -9,6 +9,7 @@ const buildColorPalette = main => ({
   100: lighten(0.25, main),
   75: lighten(0.3, main),
   50: lighten(0.35, main),
+  25: lighten(0.4, main),
 })
 
 // colors
@@ -19,6 +20,8 @@ const colors = {
   blue: buildColorPalette('#0065FF'),
   purple: buildColorPalette('#6554C0'),
   neutral: buildColorPalette('#5E6C84'),
+  white: '#fff',
+  black: '#333',
 }
 
 const typography = {
@@ -28,10 +31,11 @@ const typography = {
     mono:
       '"SFMono-Medium", "SF Mono", "Segoe UI Mono", "Roboto Mono", "Ubuntu Mono", Menlo, Consolas, Courier, monospace',
   },
-  sizes: {
+  size: {
     xs: '0.78405rem',
     sm: '0.8rem',
     md: '0.85028rem',
+    rg: '1rem',
     lg: '1.38316rem',
     xl: '1.62671rem',
     xxl: '2.25rem',

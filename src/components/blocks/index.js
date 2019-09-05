@@ -10,3 +10,6 @@ export { default as Map } from './map'
 
 export { default as Speaker } from './speaker'
 export { default as Session } from './session'
+export { default as Timetable } from './timetable'
+
+export { default as Banner } from './banner'

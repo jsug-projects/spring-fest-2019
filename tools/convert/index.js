@@ -30,20 +30,36 @@ const result = convert({
         A: 'name',
         B: 'url',
         C: 'slug',
+        D: 'profile',
       },
     },
     {
       name: 'sessions',
       columnToKey: {
-        A: 'place',
-        B: 'timetable',
-        C: 'title',
-        D: 'abstract',
-        E: 'meta',
-        F: 'speakers',
-        G: 'slides',
-        H: 'hashtag',
-        I: 'enquete',
+        A: 'timetable',
+        B: 'title',
+        C: 'abstract',
+        D: 'meta',
+        E: 'speakers',
+        F: 'slides',
+        G: 'hashtag',
+        H: 'enquete',
+      },
+    },
+    {
+      name: 'booth',
+      columnToKey: {
+        A: 'company',
+        B: 'title',
+        C: 'description',
+      },
+    },
+    {
+      name: 'timetable',
+      columnToKey: {
+        A: 'id',
+        B: 'time',
+        C: 'place',
       },
     },
     {
@@ -58,7 +74,9 @@ const result = convert({
   ],
 })
 
-const { sponsors, sessions, speakers } = result
+const { sponsors, sessions, booth, timetable, speakers } = result
 
 saveToFile('sponsors', sponsors)
-saveToFile('sessions', normalizeSessions(sessions, speakers))
+saveToFile('booth', booth)
+saveToFile('timetable', timetable)
+saveToFile('sessions', normalizeSessions(sessions, timetable, speakers))

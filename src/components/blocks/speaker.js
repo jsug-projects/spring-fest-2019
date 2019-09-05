@@ -1,26 +1,45 @@
 import React from 'react'
 import styled from 'styled-components'
+import Linkify from 'linkifyjs/react'
 
-const Container = styled.div``
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+`
 
 const Name = styled.p`
   margin-bottom: 0;
+  font-weight: bold;
 `
 
 const Affiliation = styled.small`
   margin-bottom: 0;
+  opacity: 0.8;
 `
 
 const Profile = styled.p`
   margin-bottom: 0;
 `
 
-const Speaker = ({ id, name, affiliation, profile }) => {
+const ProfilePicture = styled.div`
+  background-image: url(${props => props.src});
+  background-size: 44px 44px;
+  background-position: center center;
+  border-radius: 44px;
+  width: 44px;
+  height: 44px;
+  padding: ${props => props.theme.spacing(1)};
+`
+
+const Speaker = ({ id, name, affiliation, profile, src }) => {
   return (
     <Container>
-      <Name>{name}</Name>
-      <Affiliation>{affiliation}</Affiliation>
-      <Profile>{profile}</Profile>
+      <ProfilePicture src={src} />
+      <div>
+        <Affiliation>{affiliation}</Affiliation>
+        <Name>{name}</Name>
+        <Linkify tagname="p">{profile}</Linkify>
+      </div>
     </Container>
   )
 }

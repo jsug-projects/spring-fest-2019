@@ -1,31 +1,36 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import { BaseLayout } from '../components/layouts'
-import { SEO, Section, Session } from '../components/blocks'
+import { SEO, Section, Timetable } from '../components/blocks'
 
 const SessionsPage = ({ data }) => {
-  const { allSessionsJson } = data
+  const { allSessionsJson, allFile } = data
 
-  const renderHallName = value => <h2>{value}</h2>
-  const renderSessions = sessions =>
-    sessions.map(session => <Session key={session.id} {...session} />)
+  const findSrcById = id => {
+    const s = allFile.nodes.find(f => f.name === id.toString())
+    return s ? s.childImageSharp.resize.src : null
+  }
+
+  const sessions = allSessionsJson.nodes.map(session => {
+    return {
+      ...session,
+      speakers: session.speakers.map(s => {
+        return {
+          ...s,
+          src: findSrcById(s.id),
+        }
+      }),
+    }
+  })
 
   return (
     <BaseLayout>
-      <SEO title="Page two" />
+      <SEO title="Sessions" />
       <Section>
-        <>
-          {allSessionsJson.group.map(group => {
-            return (
-              <div key={group.fieldValue}>
-                <h2>{group.fieldValue}</h2>
-                {renderSessions(group.nodes)}
-              </div>
-            )
-          })}
-        </>
+        <h1>Sessions</h1>
       </Section>
+      <Timetable sessions={sessions} />
     </BaseLayout>
   )
 }
@@ -33,22 +38,33 @@ const SessionsPage = ({ data }) => {
 export const query = graphql`
   query {
     allSessionsJson {
-      group(field: place) {
-        fieldValue
-        nodes {
+      nodes {
+        id
+        title
+        abstract
+        hashtag
+        enquete
+        meta
+        slides
+        speakers {
+          affiliation
           id
-          abstract
-          meta
+          name
+          profile
+        }
+        timetable {
           place
-          speakers {
-            id
-            name
-            profile
-            affiliation
+          time
+        }
+      }
+    }
+    allFile(filter: { relativeDirectory: { eq: "images/speakers" } }) {
+      nodes {
+        name
+        childImageSharp {
+          resize(width: 144, height: 144) {
+            src
           }
-          timetable
-          title
-          slides
         }
       }
     }

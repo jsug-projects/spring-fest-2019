@@ -235,7 +235,7 @@ export default createGlobalStyle`
     font-family: ${theme.typography.types.default};
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: ${theme.typography.sizes.xxl};
+    font-size: ${theme.typography.size.xxl};
     line-height: 1.1;
   }
   h2 {
@@ -251,7 +251,7 @@ export default createGlobalStyle`
     font-family: ${theme.typography.types.default};
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: ${theme.typography.sizes.xl};
+    font-size: ${theme.typography.size.xl};
     line-height: 1.1;
   }
   h3 {
@@ -267,7 +267,7 @@ export default createGlobalStyle`
     font-family: ${theme.typography.types.default};
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: ${theme.typography.sizes.lg};
+    font-size: ${theme.typography.size.lg};
     line-height: 1.1;
   }
   h4 {
@@ -283,7 +283,7 @@ export default createGlobalStyle`
     font-family: ${theme.typography.types.default};
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: ${theme.typography.sizes.md};
+    font-size: ${theme.typography.size.md};
     line-height: 1.1;
   }
   h5 {
@@ -299,7 +299,7 @@ export default createGlobalStyle`
     font-family: ${theme.typography.types.default};
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: ${theme.typography.sizes.sm};
+    font-size: ${theme.typography.size.sm};
     line-height: 1.1;
   }
   h6 {
@@ -315,7 +315,7 @@ export default createGlobalStyle`
     font-family: ${theme.typography.types.default};
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: ${theme.typography.sizes.xs};
+    font-size: ${theme.typography.size.xs};
     line-height: 1.1;
   }
   hgroup {

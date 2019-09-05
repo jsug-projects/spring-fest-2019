@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStaticQuery } from 'gatsby'
 import { compose, withProps } from 'recompose'
 import {
   withScriptjs,
@@ -17,15 +18,33 @@ const Map = compose(
   }),
   withScriptjs,
   withGoogleMap
-)(props => (
-  <>
-    <GoogleMap
-      defaultZoom={18}
-      defaultCenter={{ lat: 35.698672, lng: 139.766433 }}
-    >
-      <Marker position={{ lat: 35.698672, lng: 139.766433 }} />
-    </GoogleMap>
-  </>
-))
+)(props => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            event {
+              latlng {
+                lat
+                lng
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const { lat, lng } = site.siteMetadata.event.latlng
+
+  return (
+    <>
+      <GoogleMap defaultZoom={18} defaultCenter={{ lat, lng }}>
+        <Marker position={{ lat, lng }} />
+      </GoogleMap>
+    </>
+  )
+})
 
 export default Map

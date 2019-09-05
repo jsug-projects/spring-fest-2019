@@ -1,8 +1,21 @@
 [
   {
-    "place": "sola city Hall WEST",
-    "timetable": "10:00 - 10:45",
-    "title": "基調講演",
+    "timetable": {
+      "id": 0,
+      "time": "9:45 - 10:00",
+      "place": "sola city Hall WEST"
+    },
+    "title": "ご挨拶",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 1,
+      "time": "10:00 - 10:45",
+      "place": "sola city Hall WEST"
+    },
+    "title": "KEYNOTE",
     "abstract": " ",
     "meta": [
       "meta 1",
@@ -17,14 +30,39 @@
         "profile": "基調講演をしにきた。"
       }
     ],
-    "slides": [
-      "https://speakerdeck.com/danielanewman/im-feeling-lucky-building-great-search-experiences-for-todays-users-number-iac19"
+    "slides": "https://speakerdeck.com/danielanewman/im-feeling-lucky-building-great-search-experiences-for-todays-users-number-iac19",
+    "hashtag": "sf_opening",
+    "enquete": 12345
+  },
+  {
+    "timetable": {
+      "id": 2,
+      "time": "11:00 - 11:45",
+      "place": "sola city Hall WEST"
+    },
+    "title": "決済システムの内製化への旅 ‒ Spring と PCF で作るクラウドネイティブなシステム開発",
+    "abstract": " ",
+    "meta": [
+      "meta 1",
+      "meta 2",
+      "meta 3"
+    ],
+    "speakers": [
+      {
+        "id": 1,
+        "name": "基調太郎",
+        "affiliation": "株式会社 基調",
+        "profile": "基調講演をしにきた。"
+      }
     ]
   },
   {
-    "place": "sola city Hall EAST",
-    "timetable": "11:00 - 11:45",
-    "title": "登壇者一人",
+    "timetable": {
+      "id": 3,
+      "time": "11:00 - 11:45",
+      "place": "sola city Hall EAST"
+    },
+    "title": "エンタープライズ・マイク ロ サービスの格⾔",
     "abstract": "一人でしゃべる",
     "meta": [
       "For Beginner"
@@ -37,14 +75,15 @@
         "profile": "リンクを張りたい。 \r\nhttps://tagbangers.co.jp はりました。"
       }
     ],
-    "slides": [
-      "https://speakerdeck.com/revolveconf/creatively-recalculating-your-daily-design-routine"
-    ]
+    "slides": "https://speakerdeck.com/revolveconf/creatively-recalculating-your-daily-design-routine"
   },
   {
-    "place": "Room B",
-    "timetable": "13:15 - 14:00",
-    "title": "登壇者二人",
+    "timetable": {
+      "id": 4,
+      "time": "11:00 - 11:45",
+      "place": "Room B"
+    },
+    "title": "SpringDataforApache Geode で RDB いらずのアプリ開発をしよう！",
     "abstract": "２人でしゃべります",
     "meta": [
       "For Beginner"
@@ -62,9 +101,263 @@
         "affiliation": "株式会社すぴ",
         "profile": "リンクを張りたい。 \r\nhttps://tagbangers.co.jp はりました。"
       }
-    ],
-    "slides": [
-      null
     ]
+  },
+  {
+    "timetable": {
+      "id": 5,
+      "time": "11:00 - 11:45",
+      "place": "Room C"
+    },
+    "title": "これから Spring を使う開発者が知っておくべきこと",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 6,
+      "time": "11:45 - 13:15",
+      "place": "sola city Hall WEST"
+    },
+    "title": "ランチ",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 7,
+      "time": "11:45 - 13:15",
+      "place": "sola city Hall EAST"
+    },
+    "title": "ランチセッション  JasmineSoft (12:00 - 12:45)",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 8,
+      "time": "11:45 - 13:15",
+      "place": "Room B"
+    },
+    "title": "ランチセッション  Root42 (12:00 - 12:45)",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 9,
+      "time": "11:45 - 13:15",
+      "place": "Room C"
+    },
+    "title": "ランチ",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 10,
+      "time": "13:15 - 14:00",
+      "place": "sola city Hall WEST"
+    },
+    "title": "Rakuten Travel and Spring",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 11,
+      "time": "13:15 - 14:00",
+      "place": "sola city Hall EAST"
+    },
+    "title": "Spring♥ GCP - Springと GCPの素敵な関係",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 12,
+      "time": "13:15 - 14:00",
+      "place": "Room B"
+    },
+    "title": "実際のプロジェクトでSpring アプリを Kotlin で開発して得た気づき集",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 13,
+      "time": "13:15 - 14:00",
+      "place": "Room C"
+    },
+    "title": "Thymeleafさいしょの⼀歩",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 14,
+      "time": "14:15 - 15:00",
+      "place": "sola city Hall WEST"
+    },
+    "title": "Knative:Serving yourServerless Java Service on Kubernetes the 12-Factor way",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 15,
+      "time": "14:15 - 15:00",
+      "place": "sola city Hall EAST"
+    },
+    "title": "Observability with Spring-Based Distributed Systems",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 16,
+      "time": "14:15 - 15:00",
+      "place": "Room B"
+    },
+    "title": "AmazonCognito使って認証したい？それならSpring Security 使いましょう！",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 17,
+      "time": "14:15 - 15:00",
+      "place": "Room C"
+    },
+    "title": "SpringBootで作る RESTfulWebService",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 18,
+      "time": "15:30 - 16:15",
+      "place": "sola city Hall WEST"
+    },
+    "title": "Pivotal 認定講師が解説！基 礎 からのOAuth 2.0とSpring Security5.1 による実装",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 19,
+      "time": "15:30 - 16:15",
+      "place": "sola city Hall EAST"
+    },
+    "title": "500+ のサーバーで動く LINE AdsPlatformをささえるSpring",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 20,
+      "time": "15:30 - 16:15",
+      "place": "Room B"
+    },
+    "title": "SpringTools4の機能とその実装",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 21,
+      "time": "15:30 - 16:15",
+      "place": "Room C"
+    },
+    "title": "Spring 5でSpring Testのここが変わる",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 22,
+      "time": "16:30 - 17:15",
+      "place": "sola city Hall WEST"
+    },
+    "title": "SpringBoot with Kotlin, functional configuration and GraalVM",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 23,
+      "time": "16:30 - 17:15",
+      "place": "sola city Hall EAST"
+    },
+    "title": "⼤規模⾦融系 SaaS を⽀えるSpring 〜活⽤の変遷と新時代のアーキテクチャ〜",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 24,
+      "time": "16:30 - 17:15",
+      "place": "Room B"
+    },
+    "title": "Spring Data RESTと Spring Cloud Contract",
+    "speakers": [
+      {
+        "id": 3,
+        "name": "SY",
+        "affiliation": "株式会社 タグバンガーズ",
+        "profile": "意訳間違えてたらツッコミが欲しい春"
+      }
+    ],
+    "slides": "https://www.slideshare.net/OgawaTakeshi/spring-datarestandspringcloudcontract?ref=http://springfest2018.springframework.jp/",
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 25,
+      "time": "16:30 - 17:15",
+      "place": "Room C"
+    },
+    "title": "Spring Boot で Hello World のその先へ〜ウェブDBプレスのSpringBoot 特集で・・・",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 26,
+      "time": "17:30 - 18:15",
+      "place": "sola city Hall WEST"
+    },
+    "title": "業務で使いたい WebFlux によるReactive プログラミ ング",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 27,
+      "time": "17:30 - 18:15",
+      "place": "sola city Hall EAST"
+    },
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 28,
+      "time": "17:30 - 18:15",
+      "place": "Room B"
+    },
+    "title": "Micrometer/Prometheusによる⼤規模システムモニタ\r\nリング〜ヤフーインターネット広告システムで・・・",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 29,
+      "time": "17:30 - 18:15",
+      "place": "Room C"
+    },
+    "title": "Angular を⽤いたデザインスプリント開発と設計⼿法",
+    "meta": [],
+    "speakers": []
   }
 ]
