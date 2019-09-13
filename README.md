@@ -10,6 +10,7 @@
 
 ```sh
 cd spring-fest-2019/
+npm install
 npm start
 ```
 
