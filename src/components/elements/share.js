@@ -5,26 +5,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
 
 const Container = styled.button`
-  display: inline-block;
+  display: flex;
+  align-items: center;
   border: none;
   outline: none;
   margin: ${props => props.theme.spacing(0, 2)};
   cursor: pointer;
-  border-radius: 1rem;
   padding: ${props => props.theme.spacing(1)};
   transition: all 0.2s ease-in;
+  background-color: transparent;
+  color: ${props => props.theme.colors.white};
 
   &:hover {
-    color: ${props => props.theme.colors.white};
-    background-color: ${props => props.theme.colors.neutral[50]};
+    .circle {
+      transform: scale(1.2);
+    }
   }
 `
 
-const HiddenButton = styled.div`
-  display: none;
+const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  background-color: ${props => props.theme.colors.white};
+  padding: 0.5rem;
+  margin-right: ${props => props.theme.spacing(2)};
+  color: ${props =>
+    props.colored ? props.theme.colors.primary[300] : props.theme.colors.black};
+  transition: all 0.1s ease-in-out;
 `
 
-const ShareIcon = ({ name }) => {
+const Share = ({ name, colored }) => {
   const shareTwitterRef = useRef(null)
   const shareFBRef = useRef(null)
 
@@ -70,11 +82,18 @@ const ShareIcon = ({ name }) => {
     }
   }
 
-  return <Container onClick={share(name)}>{renderIcon(name)}</Container>
+  return (
+    <Container onClick={share(name)}>
+      <IconWrapper className="circle" colored={colored}>
+        {renderIcon(name)}
+      </IconWrapper>{' '}
+      <strong>{name === 'twitter' ? 'TWEET' : 'SHARE'}</strong>
+    </Container>
+  )
 }
 
-ShareIcon.propTypes = {
+Share.propTypes = {
   name: oneOf(['twitter', 'facebook']).isRequired,
 }
 
-export default ShareIcon
+export default Share

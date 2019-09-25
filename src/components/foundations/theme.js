@@ -14,6 +14,7 @@ const buildColorPalette = main => ({
 
 // colors
 const colors = {
+  primary: buildColorPalette('#0E7373'),
   red: buildColorPalette('#FF5630'),
   yellow: buildColorPalette('#FFAB00'),
   green: buildColorPalette('#36B37E'),
@@ -28,6 +29,7 @@ const typography = {
   types: {
     default:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+    display: '"Montserrat", sans-serif',
     mono:
       '"SFMono-Medium", "SF Mono", "Segoe UI Mono", "Roboto Mono", "Ubuntu Mono", Menlo, Consolas, Courier, monospace',
   },
@@ -39,6 +41,7 @@ const typography = {
     lg: '1.38316rem',
     xl: '1.62671rem',
     xxl: '2.25rem',
+    display: '3.8rem',
   },
 }
 

@@ -45,11 +45,6 @@
     "slug": "line"
   },
   {
-    "name": "Yahoo! JAPAN",
-    "url": "https://about.yahoo.co.jp/",
-    "slug": "yahoojapan"
-  },
-  {
     "name": "TiO Corporation",
     "url": "http://www.t-i-o.co.jp/",
     "slug": "tio",
@@ -81,11 +76,6 @@
     "name": "JasmineSoft",
     "url": "https://www.jasminesoft.co.jp/",
     "slug": "jasminesoft"
-  },
-  {
-    "name": "Stylez",
-    "url": "https://www.stylez.co.jp/",
-    "slug": "stylez"
   },
   {
     "name": "BIZREACH",

@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -15,20 +8,14 @@ import { Header, Footer } from '../blocks'
 import { theme, GlobalStyles } from '../foundations'
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <ThemeProvider theme={theme}>
       <>
         <Helmet>
+          <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap"
+            rel="stylesheet"
+          />
           <script
             async
             defer
@@ -42,7 +29,7 @@ const Layout = ({ children }) => {
           ></script>
         </Helmet>
         <GlobalStyles />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header transparent />
         <div id="fb-root"></div>
         <main>{children}</main>
         <Footer />

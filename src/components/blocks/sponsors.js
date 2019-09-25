@@ -5,13 +5,20 @@ import { useStaticQuery, graphql } from 'gatsby'
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `
 
 const Item = styled.a`
   display: block;
-  margin: ${props => props.theme.spacing(1)};
+  margin: ${props => props.theme.spacing(4, 4)};
+  border-radius: ${props => props.theme.shape.radius}px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`
+
+const Img = styled.img`
+  margin-bottom: 0;
 `
 
 const Sponsors = () => {
@@ -28,7 +35,7 @@ const Sponsors = () => {
         allImageSharp {
           nodes {
             id
-            fixed(base64Width: 323, height: 200) {
+            fixed(base64Width: 240, height: 120) {
               base64
               width
               height
@@ -60,10 +67,9 @@ const Sponsors = () => {
 
   return (
     <Container>
-      <h2>Sponsors</h2>
       {allSponsorsJson.nodes.map(sponsor => (
         <Item key={sponsor.slug} href={sponsor.url} target="_blank">
-          <img {...findLogo(sponsor.slug)} alt={sponsor.name} />
+          <Img {...findLogo(sponsor.slug)} alt={sponsor.name} />
         </Item>
       ))}
     </Container>

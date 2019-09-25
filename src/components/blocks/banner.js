@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
+import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
 
 const Container = styled.div`
   display: flex;
@@ -8,6 +9,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 5rem;
+  padding-top: 64px;
   min-height: 100vh;
   color: #fff;
   background-attachment: fixed;
@@ -23,8 +25,36 @@ const Col = styled.div`
   margin: 0 1rem;
 `
 
+const Title = styled.h1`
+  font-family: ${props => props.theme.typography.types.display};
+  font-size: 7rem;
+  font-weight: 900;
+`
+
+const Center = styled.div`
+  text-align: center;
+`
+
+const PlaceText = styled.p`
+  font-family: ${props => props.theme.typography.types.display};
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  letter-spacing: 0.3rem;
+`
+
+const DateText = styled.p`
+  font-family: ${props => props.theme.typography.types.display};
+  font-size: 2rem;
+`
+
+const DescriptionText = styled.p`
+  width: 60%;
+  margin: 3rem auto;
+`
+
 const Banner = () => {
-  const { site, bannerImage } = useStaticQuery(
+  const { site, bannerImage, springLogoImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -38,7 +68,7 @@ const Banner = () => {
             }
           }
         }
-        bannerImage: file(relativePath: { eq: "images/banner.jpg" }) {
+        bannerImage: file(relativePath: { eq: "images/banner.png" }) {
           id
           childImageSharp {
             original {
@@ -53,8 +83,6 @@ const Banner = () => {
   )
 
   const { title, description, author, event } = site.siteMetadata
-  const d = new Date(event.date)
-  const day = idx => ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][idx]
 
   return (
     <Container
@@ -62,15 +90,12 @@ const Banner = () => {
         backgroundImage: `url(${bannerImage.childImageSharp.original.src})`,
       }}
     >
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <Row>
-        <Col>{author}</Col>
-        <Col>{event.place}</Col>
-        <Col>{`${d.getFullYear()}.${d.getMonth()}.${d.getDate()} (${day(
-          d.getDay()
-        )})`}</Col>
-      </Row>
+      <Title>{title.toUpperCase()}</Title>
+      <Center>
+        <PlaceText>{event.place}</PlaceText>
+        <DateText>{event.date}</DateText>
+      </Center>
+      <DescriptionText>{description}</DescriptionText>
     </Container>
   )
 }

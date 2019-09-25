@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Spring Fest 2019`,
+    title: `Spring Fest 19`,
     description: `Spring FrameworkはJavaの代表的なアプリケーションフレームワークであり、登場した2002年より現在に至るまで世界中の多くのJavaアプリケーションで利用されています。 国内でも広く利用されておりますが、ユーザ間での情報交換・交流の場を提供し、さらなるSpring Frameworkの認知度の向上、普及促進を図るため、本カンファレンスを開催いたします。`,
     author: `JSUG`,
     event: {
-      place: '御茶ノ水ソラシティ カンファレンスセンター',
+      place: '御茶ノ水ソラシティ',
       address: '〒101-0062 東京都千代田区神田駿河台 4-6',
       traffic: [
         {
@@ -25,7 +25,7 @@ module.exports = {
         lat: 35.698672,
         lng: 139.766433,
       },
-      date: '2019-11-11',
+      date: 'December 18th, Wed',
     },
   },
   plugins: [
