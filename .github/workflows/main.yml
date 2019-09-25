@@ -1,4 +1,4 @@
-name: deploy
+name: Deploy
 on:
   push:
     branches:
@@ -8,6 +8,11 @@ jobs:
   build:
     name: Build Gatsby
     runs-on: ubuntu-latest
-  steps:
-    - name: Echo
-      run: echo 'hello'
+    steps:
+      - name: Echo
+        run: echo 'hello'
+  deploy:
+    needs: build
+    steps:
+      - name: Echo
+        run: echo 'hello'

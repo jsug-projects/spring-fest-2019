@@ -1,5 +1,7 @@
 # Spring Fest 2019
 
+![](https://github.com/jsug-projects/spring-fest-2019/workflows/Deploy/badge.svg)
+
 ## 🚀 Development
 
 ### 🗃 Requirements
