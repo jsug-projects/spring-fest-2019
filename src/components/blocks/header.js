@@ -1,28 +1,43 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { Link as GatsbyLink } from 'gatsby'
-import PropTypes from 'prop-types'
+import { graphql, Link as GatsbyLink, useStaticQuery } from 'gatsby'
 
 import { Share } from '../elements'
+import { Icon } from 'semantic-ui-react'
+import { Menu } from './index'
 
 const Container = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: ${props => props.theme.spacing(1, 5)};
-  background-color: ${props =>
-    props.transparent ? 'transparent' : props.theme.colors.primary[300]};
+  display: block;
+  background: ${props => props.headerColor};
   width: 100%;
   color: ${props => props.theme.colors.white};
-  position: ${props => {
-    if (props.fixed) {
-      return 'fixed'
-    } else if (props.transparent) {
-      return 'absolute'
-    }
-    return 'relative'
-  }};
+  position: fixed;
+  z-index: 1000;
   top: 0;
+
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+`
+
+const PseudoBackground = styled.header`
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: ${props => props.opacity};
+  background: ${props => props.theme.colors.primaryGradient};
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  z-index: -100;
+`
+
+const Logo = styled.img`
+  max-height: 2rem;
+  margin-bottom: 0;
+  margin-right: ${props => props.theme.spacing(1.5)};
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    max-height: 1.5rem;
+  }
 `
 
 const Title = styled.h1`
@@ -38,6 +53,10 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: flex-end;
   padding-right: ${props => props.theme.spacing(4)};
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    padding-right: ${props => props.theme.spacing(2)};
+  }
 `
 
 const NavItem = styled.div`
@@ -48,60 +67,181 @@ const Shares = styled.div`
   display: flex;
 `
 
-const Link = styled(GatsbyLink)`
+const Pdf = styled.a`
   color: ${props => props.theme.colors.white};
   text-decoration: none;
   font-family: ${props => props.theme.typography.types.display};
-  font-weight: bold;
+  font-weight: 700;
+
+  // &:hover {
+  //   color: ${props => props.theme.colors.neutral['25']};
+  // }
+  
+  opacity: 0.5;
+  pointer-events: none;
+`
+
+const Link = styled(GatsbyLink)`
+  display: flex;
+  color: ${props => props.theme.colors.white};
+  text-decoration: none;
+  font-family: ${props => props.theme.typography.types.display};
+  font-weight: 700;
 
   &:hover {
-    opacity: 0.8;
+    color: ${props => props.theme.colors.neutral['25']};
   }
 `
 
-const Header = ({ siteTitle, transparent, handleOnFixed, handleOnUnFixed }) => {
-  const [isFixedHeader, setFixedHeader] = useState(false)
-  const containerRef = useRef(null)
+const TitleHolder = styled.div`
+  display: flex;
+  align-items: center;
+  z-index: 100;
+`
+
+const NormalHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: ${props => props.theme.spacing(1, 5)};
+
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    display: none;
+  }
+`
+
+const MobileHeader = styled.div`
+  display: none;
+  padding: ${props => props.theme.spacing(1.5, 3)};
+
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+`
+
+const IconHolder = styled.div`
+  display: none;
+  z-index: 100;
+  cursor: pointer;
+
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    display: block;
+  }
+`
+
+const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
+  const { pdf, springLogoImage } = useStaticQuery(
+    graphql`
+      query {
+        pdf: file(
+          relativePath: { eq: "timetable/spring-fest-2019-timetable.pdf" }
+        ) {
+          publicURL
+        }
+        springLogoImage: file(relativePath: { eq: "images/spring-logo.svg" }) {
+          id
+          publicURL
+        }
+      }
+    `
+  )
+
+  const neutralColor = () => props => props.theme.colors.neutral['500']
+  const primaryColor = () => props => props.theme.colors.primary['300']
+
+  const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [opacity, setOpacity] = useState(0)
+  const [iconColor, setIconColor] = useState(
+    dynamic ? neutralColor : primaryColor
+  )
+
+  const scrolled = () => {
+    const { innerHeight } = window
+    const { scrollTop } = document.body
+    const containerHeight = headerRef.current.getBoundingClientRect().height
+    return scrollTop >= innerHeight - containerHeight
+  }
 
   useEffect(() => {
-    if (!transparent) {
-      window.addEventListener('scroll', handleOnScroll)
+    if (dynamic) {
+      handleOnScroll()
+      window.addEventListener('scroll', handleOnScroll, true)
       return () => {
-        window.removeEventListener('scroll', handleOnScroll)
+        window.removeEventListener('scroll', handleOnScroll, true)
       }
     }
   }, [])
 
   const handleOnScroll = () => {
-    const { scrollY, innerHeight } = window
-    const containerHeight = containerRef.current.getBoundingClientRect().height
-    if (scrollY >= innerHeight) {
-      setFixedHeader(true)
-      handleOnFixed(containerHeight)
+    if (scrolled()) {
+      setIsScrolled(true)
+      setIconColor(primaryColor)
+      setOpacity(1)
     } else {
-      setFixedHeader(false)
-      handleOnUnFixed()
+      setIsScrolled(false)
+      setIconColor(neutralColor)
+      setOpacity(0)
     }
   }
+
   return (
-    <Container
-      ref={containerRef}
-      transparent={transparent}
-      fixed={isFixedHeader}
-    >
-      {siteTitle && <Title>{siteTitle.toUpperCase()}</Title>}
-      <Nav>
-        <NavItem>
-          <Link to="/#timetable">TIMETABLE</Link>
-        </NavItem>
-        <NavItem>
-          <Link to="/#access">ACCESS</Link>
-        </NavItem>
-      </Nav>
-      <Shares>
-        <Share name="facebook" colored={!transparent} />
-        <Share name="twitter" colored={!transparent} />
-      </Shares>
+    <Container ref={headerRef} headerColor={headerColor} scrolled={isScrolled}>
+      <PseudoBackground opacity={opacity} />
+      <NormalHeader>
+        {siteTitle && (
+          <Link to="/#index">
+            <TitleHolder>
+              <Logo src={springLogoImage.publicURL} />
+              <Title>{siteTitle.toUpperCase()}</Title>
+            </TitleHolder>
+          </Link>
+        )}
+        <Nav>
+          <NavItem>
+            <Pdf href={pdf.publicURL} target="_blank">
+              TIMETABLE
+            </Pdf>
+          </NavItem>
+          <NavItem>
+            <Link to="/access">ACCESS</Link>
+          </NavItem>
+        </Nav>
+        <Shares>
+          <Share name="facebook" iconColor={iconColor} />
+          <Share name="twitter" iconColor={iconColor} />
+        </Shares>
+      </NormalHeader>
+      <MobileHeader>
+        <Menu open={isOpen} pdf={pdf.publicURL} />
+        {siteTitle && (
+          <Link to="/#index">
+            <TitleHolder>
+              <Logo src={springLogoImage.publicURL} />
+              <Title>{siteTitle.toUpperCase()}</Title>
+            </TitleHolder>
+          </Link>
+        )}
+        <IconHolder>
+          {isOpen ? (
+            <Icon
+              name={'times'}
+              fitted
+              circular
+              onClick={() => setIsOpen(false)}
+            />
+          ) : (
+            <Icon
+              name={'bars'}
+              fitted
+              circular
+              onClick={() => setIsOpen(true)}
+            />
+          )}
+        </IconHolder>
+      </MobileHeader>
     </Container>
   )
 }

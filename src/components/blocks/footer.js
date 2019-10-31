@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const Container = styled.footer`
   text-align: center;
-  padding: ${props => props.theme.spacing(2)};
+  padding: ${props => props.theme.spacing(1)};
 `
 
 const Copyright = styled.span`

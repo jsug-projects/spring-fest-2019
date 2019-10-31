@@ -1,19 +1,145 @@
 [
   {
-    "company": "fullness"
+    "sponsor": {
+      "name": "フルネス",
+      "url": "https://www.fullness.co.jp/",
+      "slug": "fullness",
+      "profile": "IT研修に特化して、Python,Java,C#,Spring4を中心としたIT教育、未経験IT技術者を育成するために、IT研修・オープン講座・講師派遣などを行っています。",
+      "image": "images/companies/fullness.png"
+    },
+    "title": "IT TRAINING SUPPLIER ～技術を育て、企業を育てる～",
+    "description": "フルネスは、独自のノウハウと高い技術力を駆使し、『IT研修事業』と『システム開発支援事業』の2つの領域で成長を続けている会社です。『IT研修事業』では豊富な経験を持った講師陣が、実践的なハンズオン教育で現場力をしっかり身に着けた人材を育成します。『システム開発支援事業』は高品質な企業情報システムの開発や実践的な技術のコーチングを行っています。今回のブースでは、『IT研修事業』でも人気の高い、1名様からでもご参加いただける公開講座のご案内資料をお持ちさせていただきました。Spring関連の研修はもちろん、ご希望に合わせてラインナップ豊富な研修の中からご紹介させていただきますので、ご興味をお持ちの方、人材教育に関してお困りの方は、是非ブースにお立ち寄り下さい！"
   },
   {
-    "company": "tio",
-    "title": "For Your Happiness, Pleasure and Satisfaction",
-    "description": "ティ・アイ・オーはIT技術を駆使し、常に「ユーザー目線」で提案をしている会社です。各産業分野における基幹業務、製造流通および金融分野における業務アプリケーションの『コンサルティング』から『画面デザイン』『システム設計』『システム構築』『運用・保守のサポート』まで、トータルサポート致します。Springを導入した物流システムの開発や、現場で使えるシステム運用・保守の『見える化』など各実績をご紹介致しますので、ご興味をお持ちの方、システムに関してお困りの方は、是非ブースにお立ち寄り下さい！"
+    "sponsor": {
+      "name": "TiO Corporation",
+      "url": "http://www.t-i-o.co.jp/",
+      "slug": "tio",
+      "profile": "株式会社ティ・アイ・オー＜TIO＞は、刻々と進化しているIT技術を駆使し、各産業分野における基幹業務、金融および製造流通分野における業務アプリケーションに構築からソフトウェア・画面デザイン・メンテナンスにいたる工程をトータル的にサポートしていく企業です。",
+      "image": "images/companies/tio.png"
+    },
+    "title": "",
+    "description": ""
   },
   {
-    "company": "samuraism"
+    "sponsor": {
+      "name": "サムライズム",
+      "url": "https://samuraism.com/",
+      "slug": "samuraism",
+      "profile": "",
+      "image": "images/companies/samuraism.png"
+    },
+    "title": "",
+    "description": ""
   },
   {
-    "company": "nri"
+    "sponsor": {
+      "name": "NRI",
+      "url": "https://www.nri.com/jp",
+      "slug": "nri",
+      "profile": "",
+      "image": "images/companies/nri.png"
+    },
+    "title": "",
+    "description": ""
   },
   {
-    "company": "casareal"
+    "sponsor": {
+      "name": "カサレアル",
+      "url": "https://www.casareal.co.jp/",
+      "slug": "casareal",
+      "profile": "",
+      "image": "images/companies/casareal.png"
+    },
+    "title": "",
+    "description": ""
+  },
+  {
+    "sponsor": {
+      "name": "Google Cloud",
+      "url": "https://cloud.google.com/",
+      "slug": "google-cloud",
+      "profile": "",
+      "image": "images/companies/google-cloud.png"
+    },
+    "title": "",
+    "description": ""
+  },
+  {
+    "sponsor": {
+      "name": "テクマトリクス",
+      "url": "https://www.techmatrix.co.jp",
+      "slug": "techmatrix",
+      "profile": "",
+      "image": "images/companies/techmatrix.png"
+    },
+    "title": "",
+    "description": ""
+  },
+  {
+    "sponsor": {
+      "name": "日産自動車",
+      "url": "https://www.nissan.co.jp",
+      "slug": "nissan",
+      "profile": "",
+      "image": "images/companies/nissan.png"
+    },
+    "title": "",
+    "description": ""
+  },
+  {
+    "sponsor": {
+      "name": "ビズリーチ",
+      "url": "https://www.bizreach.co.jp/",
+      "slug": "bizreach",
+      "profile": "",
+      "image": "images/companies/bizreach.png"
+    },
+    "title": "",
+    "description": ""
+  },
+  {
+    "sponsor": {
+      "name": "豆蔵",
+      "url": "https://www.mamezou.com/",
+      "slug": "mamezou",
+      "profile": "",
+      "image": "images/companies/mamezou.png"
+    },
+    "title": "",
+    "description": ""
+  },
+  {
+    "sponsor": {
+      "name": "楽天",
+      "url": "https://corp.rakuten.co.jp/",
+      "slug": "rakuten",
+      "profile": "",
+      "image": "images/companies/rakuten.png"
+    },
+    "title": "",
+    "description": ""
+  },
+  {
+    "sponsor": {
+      "name": "マイクロソフト",
+      "url": "https://www.microsoft.com/ja-jp",
+      "slug": "microsoft",
+      "profile": "",
+      "image": "images/companies/microsoft.png"
+    },
+    "title": "",
+    "description": ""
+  },
+  {
+    "sponsor": {
+      "name": "アシラス",
+      "url": "http://ashiras.xyz/",
+      "slug": "ashiras",
+      "profile": "",
+      "image": "images/companies/ashiras.png"
+    },
+    "title": "",
+    "description": "Angular を使ったアプリケーション開発のデモを致します。Angularは、モバイルおよびデスクトップWebアプリケーションを構築するためのプラットフォームです。"
   }
 ]

@@ -1,93 +1,164 @@
-import React, { useState } from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import React, { useEffect, useRef, useState } from 'react'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
+import 'semantic-ui-css/semantic.min.css'
 
 import { BaseLayout } from '../components/layouts'
 import {
-  Access,
   Banner,
-  Header,
+  Booths,
   SEO,
   Section,
+  Sessions,
   Sponsors,
 } from '../components/blocks'
 
 const SectionWrap = styled.div`
-  padding-top: ${props => props.headerHeight}px;
+  padding-top: ${props => props.pseudoMargin}px;
+  margin: 0 auto;
 `
 
-const IndexPage = () => {
-  const [isFixedHeader, setIsFixedHeader] = useState(false)
-  const [headerHeight, setHeaderHeight] = useState(0)
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-      allSessionsJson {
-        nodes {
-          id
-          title
-          abstract
-          hashtag
-          enquete
-          meta
-          slides
-          speakers {
-            affiliation
-            id
-            name
-            profile
-          }
-          timetable {
-            place
-            time
-          }
-        }
-      }
-      allFile(filter: { relativeDirectory: { eq: "images/speakers" } }) {
-        nodes {
-          name
-          childImageSharp {
-            resize(width: 144, height: 144) {
-              src
-            }
-          }
-        }
-      }
-    }
-  `)
+export default ({ data }) => {
+  const { site, allBoothJson, allSessionsJson, allCompaniesJson } = data
+  const [pseudoMargin, setPseudoMargin] = useState(0)
+  const time = ['timetable', 'time']
+  const sectionRef = useRef(null)
+  const headerRef = useRef(null)
 
-  console.log(data)
+  const scrollToSection = () => {
+    sectionRef.current.scrollIntoView({
+      behavior: 'smooth',
+      inline: 'start',
+    })
+  }
+
+  useEffect(() => {
+    updateMargin()
+    window.addEventListener('resize', updateMargin, true)
+    return () => {
+      window.removeEventListener('resize', updateMargin, true)
+    }
+  }, [])
+
+  const updateMargin = () => {
+    setPseudoMargin(headerRef.current.getBoundingClientRect().height)
+  }
+
+  const sponsor = []
+  allCompaniesJson.nodes.map(s => {
+    if (s.sponsoring) sponsor.push(s)
+  })
 
   return (
-    <BaseLayout>
+    <BaseLayout
+      headerColor={props => props.theme.colors.neutral['500']}
+      siteTitle={site.siteMetadata.title}
+      dynamic
+      headerRef={headerRef}
+    >
       <SEO title="Home" />
-      <Banner />
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        handleOnFixed={headerHeight => {
-          setHeaderHeight(headerHeight)
-        }}
-        handleOnUnFixed={() => {
-          setHeaderHeight(0)
-        }}
+      <Banner
+        scrollToSection={() => scrollToSection()}
+        pseudoMargin={pseudoMargin}
       />
-      <SectionWrap headerHeight={headerHeight}>
-        <Section title="sessions">
-          <div />
+      <SectionWrap ref={sectionRef} pseudoMargin={pseudoMargin}>
+        <Section
+          title="sessions"
+          fontColor={props => props.theme.colors.primary['300']}
+        >
+          <Sessions items={allSessionsJson.nodes} time={time} />
         </Section>
-        <Section title="booth">
-          <div />
+        <Section
+          title="booth"
+          backgroundColor={props => props.theme.colors.primaryGradient}
+          fontColor={props => props.theme.colors.white}
+        >
+          <Booths items={allBoothJson.nodes} />
         </Section>
-        <Section title="sponsors">
-          <Sponsors />
+        <Section
+          title="sponsors"
+          fontColor={props => props.theme.colors.primary['300']}
+        >
+          <Sponsors items={sponsor} />
         </Section>
       </SectionWrap>
     </BaseLayout>
   )
 }
 
-export default IndexPage
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+
+    allSessionsJson {
+      nodes {
+        id
+        slides
+        title
+        abstract
+        meta
+        enquete
+        hashtag
+        timetable {
+          id
+          place
+          time
+        }
+        speakers {
+          affiliation
+          id
+          name
+          profile
+          image {
+            childImageSharp {
+              resize(width: 144) {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+    allBoothJson {
+      nodes {
+        id
+        description
+        title
+        sponsor {
+          name
+          slug
+          profile
+          url
+          image {
+            childImageSharp {
+              resize(width: 120) {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+    allCompaniesJson {
+      nodes {
+        id
+        name
+        slug
+        url
+        profile
+        sponsoring
+        image {
+          childImageSharp {
+            resize(width: 240, height: 150) {
+              src
+            }
+          }
+        }
+      }
+    }
+  }
+`

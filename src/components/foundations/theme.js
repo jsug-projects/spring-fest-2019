@@ -15,6 +15,7 @@ const buildColorPalette = main => ({
 // colors
 const colors = {
   primary: buildColorPalette('#0E7373'),
+  primaryGradient: 'linear-gradient(90deg, #0e7373, #0e6973)',
   red: buildColorPalette('#FF5630'),
   yellow: buildColorPalette('#FFAB00'),
   green: buildColorPalette('#36B37E'),
@@ -23,6 +24,17 @@ const colors = {
   neutral: buildColorPalette('#5E6C84'),
   white: '#fff',
   black: '#333',
+}
+
+const media = {
+  /*
+  Semantic UI Breakpoints
+   @mobileBreakpoint            : 320px;
+   @tabletBreakpoint            : 768px;
+   @computerBreakpoint          : 992px;
+  */
+  tablet: '991px',
+  mobile: '767px',
 }
 
 const typography = {
@@ -68,6 +80,7 @@ const spacing = (...args) => {
 
 const theme = {
   colors,
+  media,
   typography,
   shape,
   spacing,

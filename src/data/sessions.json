@@ -1,363 +1,463 @@
 [
   {
     "timetable": {
-      "id": 0,
+      "id": 100,
       "time": "9:45 - 10:00",
-      "place": "sola city Hall WEST"
+      "place": "sola city Hall (WEST)"
     },
-    "title": "ご挨拶",
-    "meta": [],
+    "meta": [
+      "ご挨拶"
+    ],
     "speakers": []
   },
   {
     "timetable": {
-      "id": 1,
+      "id": 0,
       "time": "10:00 - 10:45",
-      "place": "sola city Hall WEST"
+      "place": "sola city Hall"
     },
-    "title": "KEYNOTE",
-    "abstract": " ",
     "meta": [
-      "meta 1",
-      "meta 2",
-      "meta 3"
+      "基調講演"
     ],
     "speakers": [
       {
         "id": 1,
-        "name": "基調太郎",
-        "affiliation": "株式会社 基調",
-        "profile": "基調講演をしにきた。"
+        "name": "Josh",
+        "affiliation": "Pivotal",
+        "image": "images/speakers/1.png"
       }
     ],
+    "hashtag": "test",
+    "enquete": "test"
+  },
+  {
+    "timetable": {
+      "id": 1,
+      "time": "11:00 - 11:45",
+      "place": "sola city Hall (WEST)"
+    },
+    "meta": [
+      "NTT Data"
+    ],
     "slides": "https://speakerdeck.com/danielanewman/im-feeling-lucky-building-great-search-experiences-for-todays-users-number-iac19",
-    "hashtag": "sf_opening",
-    "enquete": 12345
+    "speakers": []
   },
   {
     "timetable": {
       "id": 2,
       "time": "11:00 - 11:45",
-      "place": "sola city Hall WEST"
+      "place": "sola city Hall (EAST)"
     },
-    "title": "決済システムの内製化への旅 ‒ Spring と PCF で作るクラウドネイティブなシステム開発",
-    "abstract": " ",
     "meta": [
-      "meta 1",
-      "meta 2",
-      "meta 3"
+      "NRI"
     ],
-    "speakers": [
-      {
-        "id": 1,
-        "name": "基調太郎",
-        "affiliation": "株式会社 基調",
-        "profile": "基調講演をしにきた。"
-      }
-    ]
+    "speakers": []
   },
   {
     "timetable": {
       "id": 3,
       "time": "11:00 - 11:45",
-      "place": "sola city Hall EAST"
+      "place": "Room B"
     },
-    "title": "エンタープライズ・マイク ロ サービスの格⾔",
-    "abstract": "一人でしゃべる",
     "meta": [
-      "For Beginner"
+      "ウルシステムズ"
     ],
-    "speakers": [
-      {
-        "id": 2,
-        "name": "すぴ 次郎",
-        "affiliation": "株式会社すぴ",
-        "profile": "リンクを張りたい。 \r\nhttps://tagbangers.co.jp はりました。"
-      }
-    ],
-    "slides": "https://speakerdeck.com/revolveconf/creatively-recalculating-your-daily-design-routine"
+    "slides": "https://speakerdeck.com/revolveconf/creatively-recalculating-your-daily-design-routine",
+    "speakers": []
   },
   {
     "timetable": {
       "id": 4,
       "time": "11:00 - 11:45",
-      "place": "Room B"
+      "place": "Room C"
     },
-    "title": "SpringDataforApache Geode で RDB いらずのアプリ開発をしよう！",
-    "abstract": "２人でしゃべります",
     "meta": [
-      "For Beginner"
+      "楽天"
+    ],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 5,
+      "time": "13:00 - 13:45",
+      "place": "sola city Hall (WEST)"
+    },
+    "title": "徹底解剖Spring MVCアーキテクチャー\r\n-DispatcherServletの中身を覗いてきました-",
+    "abstract": "様々なWebアプリケーション開発で採用実績のあるSpring MVCですが、「アーキテクチャーがどの様に実現されているのか」と疑問に思ったことはありませんか？\r\n\r\n・どうしてアノテーションを付けるだけで、リクエストURLとコントローラーメソッドの対応付けができるのか？\r\n・コントローラーメソッドに指定した引数のインスタンスは、どこで作られるのか？\r\n・コントローラーメソッドの戻り値に指定できる型がたくさんあるが、なぜ動くのか？\r\n・コントローラーメソッドの戻り値にビューの論理名を指定しただけで、なぜビューに処理が移るのか？\r\n・なぜControllerとRestControllerを使い分けるだけで、レスポンスをHTMLとJSONで切り替えられるのか？\r\n等\r\n\r\n本セッションでは、そのような謎を「ソースコードリーディング」により解き明かしていきます。\r\n\r\nすでに業務でSpring MVCを使っているが、より詳しくアーキテクチャーを理解したいという方に、ぴったりのセッションとなっています。",
+    "speakers": [
+      {
+        "id": 12,
+        "name": "菊池真登",
+        "affiliation": "カサレアル",
+        "image": "images/speakers/12.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 6,
+      "time": "13:00 - 13:45",
+      "place": "sola city Hall (EAST)"
+    },
+    "meta": [
+      "Google"
+    ],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 101,
+      "time": "Lunch Session (11:45 - 12:30)",
+      "place": "sola city Hall (WEST)"
+    },
+    "meta": [
+      "JasmineSoft"
+    ],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 102,
+      "time": "Lunch Session (11:45 - 12:30)",
+      "place": "sola city Hall (EAST)"
+    },
+    "title": "ランチセッション Root42",
+    "abstract": "パート1(由利): DocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、\r\nかつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩): 実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。\r\n\r\n以上です。よろしくお願い致します。",
+    "meta": [
+      "Root42"
     ],
     "speakers": [
       {
-        "id": 1,
-        "name": "基調太郎",
-        "affiliation": "株式会社 基調",
-        "profile": "基調講演をしにきた。"
+        "id": 15,
+        "name": "由利 誠",
+        "affiliation": "ルート42",
+        "profile": "Docurain開発担当なんでも屋。趣味はバイクとキャンプと酒。\r\nイラスト作成も得意で、漫画家デビューしないかと大手出版社から勧誘されたことあり。ホントはKotlinじゃなくてScalaを書きたい。",
+        "image": "images/speakers/15.png"
       },
       {
-        "id": 2,
-        "name": "すぴ 次郎",
-        "affiliation": "株式会社すぴ",
-        "profile": "リンクを張りたい。 \r\nhttps://tagbangers.co.jp はりました。"
+        "id": 16,
+        "name": "ござ先輩 \r\n(湯本 堅隆)",
+        "affiliation": "ルート42",
+        "profile": "株式会社クオリティスタート代表。ITプランナー。ネット上では「ござ先輩」として著名で、コラム等の執筆活動も行う。ちなヤク。",
+        "image": "images/speakers/16.png"
       }
     ]
   },
   {
     "timetable": {
-      "id": 5,
-      "time": "11:00 - 11:45",
-      "place": "Room C"
-    },
-    "title": "これから Spring を使う開発者が知っておくべきこと",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 6,
-      "time": "11:45 - 13:15",
-      "place": "sola city Hall WEST"
-    },
-    "title": "ランチ",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
       "id": 7,
-      "time": "11:45 - 13:15",
-      "place": "sola city Hall EAST"
+      "time": "13:00 - 13:45",
+      "place": "Room B"
     },
-    "title": "ランチセッション  JasmineSoft (12:00 - 12:45)",
-    "meta": [],
+    "meta": [
+      "タグバンガーズ"
+    ],
     "speakers": []
   },
   {
     "timetable": {
       "id": 8,
-      "time": "11:45 - 13:15",
-      "place": "Room B"
+      "time": "13:00 - 13:45",
+      "place": "Room C"
     },
-    "title": "ランチセッション  Root42 (12:00 - 12:45)",
-    "meta": [],
-    "speakers": []
+    "title": "Enterprise Angular Development (仮)",
+    "abstract": "エンタープライズでも近年、Webアプリケーション開発ではReactやAngularが利用されるようになってきました。大規模な何百億円プロジェクトでもAngularを採用し開発を進める事例も出始めています。ここでは、そういったプロジェクトを上手く回すためのコツを簡単にご紹介致します。\r\n講師プロフィール：エンタープライズ業界にWebを広めるべく日々奮闘。COBOLでの生産管理/会計システムから始まり、Oracle Databaseでの物流系DB設計&実装、Javaフレームワーク/品質管理システム開発など経験。現在はWebの魅力に取り憑かれ、html5jやAngular Japan User Group などコミュニティ活動を積極的に行っている。",
+    "speakers": [
+      {
+        "id": 2,
+        "name": "佐川 夫美雄",
+        "affiliation": "アシラス",
+        "profile": "http://ashiras.xyz",
+        "image": "images/speakers/2.png"
+      }
+    ],
+    "meta": []
   },
   {
     "timetable": {
       "id": 9,
-      "time": "11:45 - 13:15",
-      "place": "Room C"
+      "time": "14:00 - 14:45",
+      "place": "sola city Hall (WEST)"
     },
-    "title": "ランチ",
-    "meta": [],
+    "meta": [
+      "ビッグツリーコンサルティング"
+    ],
     "speakers": []
   },
   {
     "timetable": {
       "id": 10,
-      "time": "13:15 - 14:00",
-      "place": "sola city Hall WEST"
+      "time": "14:00 - 14:45",
+      "place": "sola city Hall (EAST)"
     },
-    "title": "Rakuten Travel and Spring",
-    "meta": [],
-    "speakers": []
+    "meta": [
+      "Spring Boot爆速開発超絶"
+    ],
+    "speakers": [
+      {
+        "id": 3,
+        "name": "山本",
+        "affiliation": "サムライズム",
+        "image": "images/speakers/3.png"
+      }
+    ]
   },
   {
     "timetable": {
       "id": 11,
-      "time": "13:15 - 14:00",
-      "place": "sola city Hall EAST"
+      "time": "14:00 - 14:45",
+      "place": "Room B"
     },
-    "title": "Spring♥ GCP - Springと GCPの素敵な関係",
-    "meta": [],
-    "speakers": []
+    "meta": [
+      "Pivotal"
+    ],
+    "speakers": [
+      {
+        "id": 1,
+        "name": "Josh",
+        "affiliation": "Pivotal",
+        "image": "images/speakers/1.png"
+      }
+    ]
   },
   {
     "timetable": {
       "id": 12,
-      "time": "13:15 - 14:00",
-      "place": "Room B"
+      "time": "14:00 - 14:45",
+      "place": "Room C"
     },
-    "title": "実際のプロジェクトでSpring アプリを Kotlin で開発して得た気づき集",
-    "meta": [],
-    "speakers": []
+    "meta": [
+      "Pivotal"
+    ],
+    "speakers": [
+      {
+        "id": 4,
+        "name": "Stéphane",
+        "affiliation": "Pivotal",
+        "image": "images/speakers/4.png"
+      }
+    ]
   },
   {
     "timetable": {
       "id": 13,
-      "time": "13:15 - 14:00",
-      "place": "Room C"
+      "time": "15:00 - 15:45",
+      "place": "sola city Hall (WEST)"
     },
-    "title": "Thymeleafさいしょの⼀歩",
-    "meta": [],
-    "speakers": []
+    "title": "Spring初心者必見、フレームワーク別の便利なテスト機能紹介",
+    "abstract": "Springが提供する機能（フレームワーク）で良く使用される Spring Framework、Spring MVC、Spring Securityと Springとシームレスに連携できるO/R Mappingツールである MyBatisに対するユニットテストに関して ・自動テストのメリットについて ・どのようなテストが出来るか をデモを交えて紹介させて頂きます。\r\n\r\n\r\n■：テストはJUnit5を使用\r\n\r\n■：Spring Frameworkのテスト\r\n〇：@Mockを使用して、まだ作成されていない実装クラスをスタブとして利用するテストを紹介します。\r\n\r\n・whenメソッドの使い方\r\n・verifyメソッドの使い方\r\n\r\n■：MyBatisのテスト\r\n〇：mybatis-spring-boot-starter-testを使用して\r\nMyBatisのMapperインターフェースを利用したデータアクセス機能のCRUD処理のテストを紹介します。\r\n\r\n・@MybatisTestアノテーションの説明\r\n・@AutoConfigureTestDatabaseアノテーションの説明\r\n\r\n■：Spring MVCのテスト\r\n〇：MockMvcを利用した、リクエストハンドラメソッドの呼び出し結果を取得し、評価するテストを紹介します。\r\n\r\n・メソッドチェーンの説明\r\n・HTTPレスポンスステータスの評価方法の説明\r\n・（View）遷移先の評価方法の説明\r\n・Modelの評価方法の説明\r\n\r\n■：Spring Securityのテスト\r\n〇：spring-security-testを使用してフォーム認証のテスト及びログアウトのテストを紹介します。",
+    "meta": [
+      "テスト関係",
+      "For Beginner"
+    ],
+    "speakers": [
+      {
+        "id": 5,
+        "name": "樹下 雅章",
+        "affiliation": "フルネス",
+        "profile": "JavaやPythonのIT講師をしています。相手に興味を引かせるように講義する至難の業を追求し、日々精進中です。",
+        "image": "images/speakers/5.png"
+      }
+    ]
   },
   {
     "timetable": {
       "id": 14,
-      "time": "14:15 - 15:00",
-      "place": "sola city Hall WEST"
+      "time": "15:00 - 15:45",
+      "place": "sola city Hall (EAST)"
     },
-    "title": "Knative:Serving yourServerless Java Service on Kubernetes the 12-Factor way",
-    "meta": [],
+    "meta": [
+      "マイクロソフト"
+    ],
     "speakers": []
   },
   {
     "timetable": {
       "id": 15,
-      "time": "14:15 - 15:00",
-      "place": "sola city Hall EAST"
+      "time": "15:00 - 15:45",
+      "place": "Room B"
     },
-    "title": "Observability with Spring-Based Distributed Systems",
-    "meta": [],
+    "meta": [
+      "テクマトリクス"
+    ],
     "speakers": []
   },
   {
     "timetable": {
       "id": 16,
-      "time": "14:15 - 15:00",
-      "place": "Room B"
+      "time": "15:00 - 15:45",
+      "place": "Room C"
     },
-    "title": "AmazonCognito使って認証したい？それならSpring Security 使いましょう！",
-    "meta": [],
-    "speakers": []
+    "title": "LINE公式アカウントのチャットシステムにおけるSpringおよびWebFluxの活用事例",
+    "abstract": "LINEでは、企業･個店向けに公式アカウントというもの提供しています。公式アカウントでは多種多様な機能を提供しているのですが、その中の一つにチャット機能があります。そのチャットシステムにおける、Springの活用事例やアーキテクチャなどをご紹介致します。",
+    "speakers": [
+      {
+        "id": 14,
+        "name": "長谷部良輔",
+        "affiliation": "LINE",
+        "profile": "2013年 LINE入社。LINEの公式アカウントに関するサーバーサイドの開発を担当しています。以前はLINE Login, LINE Notify, LINE GAME Platformなどのサーバーサイド開発を担当していました",
+        "image": "images/speakers/14.png"
+      }
+    ],
+    "meta": []
   },
   {
     "timetable": {
       "id": 17,
-      "time": "14:15 - 15:00",
-      "place": "Room C"
+      "time": "16:15 - 17:00",
+      "place": "sola city Hall (WEST)"
     },
-    "title": "SpringBootで作る RESTfulWebService",
-    "meta": [],
-    "speakers": []
+    "title": "NissanConnectの舞台裏で動くSpring Boot／Spring Cloud 〜Microserviceの実運用の事例〜",
+    "abstract": "自動車産業における変革を表すキーワード\"CASE\"におけるC(Connected)を、日産ではNissanConnectというサービスとして提供しています。\r\n特に、新型スカイライン及びリーフで提供しているサービスでは、スマホアプリを通してクルマと連携できる機能を提供しており、\r\nそのバックエンドはSpring BootやSpring Cloudを使ったMicroservice群として開発され、稼働しています。\r\n\r\n自動車メーカーとSpringという組み合わせが生み出したMicroservice群を実際に運用する中で見えてきたポイントなどを事例としてご紹介したいと思います。",
+    "speakers": [
+      {
+        "id": 13,
+        "name": "森下大介",
+        "affiliation": "日産自動車",
+        "profile": "2019年に日産自動車に転職。コネクティッドカーサービスに携わっているクルマ好きbackendエンジニア。\r\n前職はヤフーで広告サービスに携わりつつJava黒帯なんてこともしてました。",
+        "image": "images/speakers/13.png"
+      }
+    ],
+    "meta": []
   },
   {
     "timetable": {
       "id": 18,
-      "time": "15:30 - 16:15",
-      "place": "sola city Hall WEST"
+      "time": "16:15 - 17:00",
+      "place": "sola city Hall (EAST)"
     },
-    "title": "Pivotal 認定講師が解説！基 礎 からのOAuth 2.0とSpring Security5.1 による実装",
-    "meta": [],
+    "meta": [
+      "レッドハット"
+    ],
     "speakers": []
   },
   {
     "timetable": {
       "id": 19,
-      "time": "15:30 - 16:15",
-      "place": "sola city Hall EAST"
-    },
-    "title": "500+ のサーバーで動く LINE AdsPlatformをささえるSpring",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 20,
-      "time": "15:30 - 16:15",
+      "time": "16:15 - 17:00",
       "place": "Room B"
     },
-    "title": "SpringTools4の機能とその実装",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 21,
-      "time": "15:30 - 16:15",
-      "place": "Room C"
-    },
-    "title": "Spring 5でSpring Testのここが変わる",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 22,
-      "time": "16:30 - 17:15",
-      "place": "sola city Hall WEST"
-    },
-    "title": "SpringBoot with Kotlin, functional configuration and GraalVM",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 23,
-      "time": "16:30 - 17:15",
-      "place": "sola city Hall EAST"
-    },
-    "title": "⼤規模⾦融系 SaaS を⽀えるSpring 〜活⽤の変遷と新時代のアーキテクチャ〜",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 24,
-      "time": "16:30 - 17:15",
-      "place": "Room B"
-    },
-    "title": "Spring Data RESTと Spring Cloud Contract",
     "speakers": [
       {
-        "id": 3,
-        "name": "SY",
-        "affiliation": "株式会社 タグバンガーズ",
-        "profile": "意訳間違えてたらツッコミが欲しい春"
+        "id": 6,
+        "name": "槙",
+        "image": "images/speakers/6.png"
       }
     ],
-    "slides": "https://www.slideshare.net/OgawaTakeshi/spring-datarestandspringcloudcontract?ref=http://springfest2018.springframework.jp/",
     "meta": []
   },
   {
     "timetable": {
-      "id": 25,
-      "time": "16:30 - 17:15",
+      "id": 20,
+      "time": "16:15 - 17:00",
       "place": "Room C"
     },
-    "title": "Spring Boot で Hello World のその先へ〜ウェブDBプレスのSpringBoot 特集で・・・",
+    "meta": [
+      "GraalVM Native Image関連"
+    ],
+    "speakers": [
+      {
+        "id": 7,
+        "name": "岩塚",
+        "image": "images/speakers/7.png"
+      }
+    ]
+  },
+  {
+    "timetable": {
+      "id": 21,
+      "time": "17:15 - 18:00",
+      "place": "sola city Hall (EAST)"
+    },
+    "meta": [
+      "For Beginner"
+    ],
+    "speakers": [
+      {
+        "id": 8,
+        "name": "進藤",
+        "image": "images/speakers/8.png"
+      }
+    ]
+  },
+  {
+    "timetable": {
+      "id": 22,
+      "time": "17:15 - 18:00",
+      "place": "Room B"
+    },
+    "meta": [
+      "For Beginner"
+    ],
+    "speakers": [
+      {
+        "id": 9,
+        "name": "土岐",
+        "image": "images/speakers/9.png"
+      }
+    ]
+  },
+  {
+    "timetable": {
+      "id": 23,
+      "time": "17:15 - 18:00",
+      "place": "Room C"
+    },
+    "speakers": [
+      {
+        "id": 10,
+        "name": "いろふ",
+        "image": "images/speakers/10.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 24,
+      "time": "18:15 - 19:00",
+      "place": "sola city Hall (EAST)"
+    },
+    "meta": [
+      "For Beginner"
+    ],
+    "speakers": [
+      {
+        "id": 11,
+        "name": "伊賀",
+        "image": "images/speakers/11.png"
+      }
+    ],
+    "slides": "https://www.slideshare.net/OgawaTakeshi/spring-datarestandspringcloudcontract?ref=http://springfest2018.springframework.jp/"
+  },
+  {
+    "timetable": {
+      "id": 25,
+      "time": "18:15 - 19:00",
+      "place": "Room B"
+    },
     "meta": [],
     "speakers": []
   },
   {
     "timetable": {
       "id": 26,
-      "time": "17:30 - 18:15",
-      "place": "sola city Hall WEST"
-    },
-    "title": "業務で使いたい WebFlux によるReactive プログラミ ング",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 27,
-      "time": "17:30 - 18:15",
-      "place": "sola city Hall EAST"
-    },
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 28,
-      "time": "17:30 - 18:15",
-      "place": "Room B"
-    },
-    "title": "Micrometer/Prometheusによる⼤規模システムモニタ\r\nリング〜ヤフーインターネット広告システムで・・・",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 29,
-      "time": "17:30 - 18:15",
+      "time": "18:15 - 19:00",
       "place": "Room C"
     },
-    "title": "Angular を⽤いたデザインスプリント開発と設計⼿法",
     "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 104,
+      "time": "19:15 - 20:45",
+      "place": "sola city Hall (WEST)"
+    },
+    "meta": [
+      "懇親会"
+    ],
     "speakers": []
   }
 ]
