@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { oneOf } from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,6 +21,15 @@ const Container = styled.button`
       transform: scale(1.2);
     }
   }
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    margin: ${props => props.theme.spacing(0, 1)};
+    &:hover {
+      .circle {
+        transform: scale(1);
+      }
+    }
+  }
 `
 
 const IconWrapper = styled.div`
@@ -31,15 +40,23 @@ const IconWrapper = styled.div`
   background-color: ${props => props.theme.colors.white};
   padding: 0.5rem;
   margin-right: ${props => props.theme.spacing(2)};
-  color: ${props =>
-    props.colored ? props.theme.colors.primary[300] : props.theme.colors.black};
+  color: ${props => props.iconColor};
   transition: all 0.1s ease-in-out;
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    margin-right: ${props => props.theme.spacing(1)};
+  }
 `
 
-const Share = ({ name, colored }) => {
-  const shareTwitterRef = useRef(null)
-  const shareFBRef = useRef(null)
+const IconName = styled.strong`
+  font-family: ${props => props.theme.typography.types.display};
+  font-weight: 700;
 
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+  }
+`
+
+const Share = ({ name, iconColor }) => {
   const shareInfo = {
     url: 'https://springfest2019.springframework.jp/',
     text: 'Spring Fest 2019',
@@ -84,10 +101,10 @@ const Share = ({ name, colored }) => {
 
   return (
     <Container onClick={share(name)}>
-      <IconWrapper className="circle" colored={colored}>
+      <IconWrapper className="circle" iconColor={iconColor}>
         {renderIcon(name)}
       </IconWrapper>{' '}
-      <strong>{name === 'twitter' ? 'TWEET' : 'SHARE'}</strong>
+      <IconName>{name === 'twitter' ? 'TWEET' : 'SHARE'}</IconName>
     </Container>
   )
 }

@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
 import { ThemeProvider } from 'styled-components'
 
 import { Header, Footer } from '../blocks'
 import { theme, GlobalStyles } from '../foundations'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, siteTitle, headerColor, dynamic, headerRef }) => {
   return (
     <ThemeProvider theme={theme}>
       <>
@@ -21,16 +20,21 @@ const Layout = ({ children }) => {
             defer
             crossOrigin="anonymous"
             src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"
-          ></script>
+          />
           <script
             async
             src="https://platform.twitter.com/widgets.js"
             charSet="utf-8"
-          ></script>
+          />
         </Helmet>
         <GlobalStyles />
-        <Header transparent />
-        <div id="fb-root"></div>
+        <Header
+          headerRef={headerRef}
+          siteTitle={siteTitle}
+          headerColor={headerColor}
+          dynamic={dynamic}
+        />
+        <div id="fb-root" />
         <main>{children}</main>
         <Footer />
       </>

@@ -1,18 +1,62 @@
 import React from 'react'
-import { useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
-import { Map, Section } from './'
-
-const Container = styled.div``
+import { Map } from './'
+import { Grid } from 'semantic-ui-react'
 
 const Panel = styled.div`
-  display: flex;
-  align-items: flex-start;
+  padding-left: ${props => props.theme.spacing(2)};
+    white-space: nowrap;
+
+ @media only screen and (max-width : ${props => props.theme.media.tablet}) {
+    text-align: center;
+      white-space: normal;
+  }
+}
 `
 
-const PanelInner = styled.div`
-  padding: ${props => props.theme.spacing(0, 4)};
+const DirectionHeader = styled.div`
+  padding-bottom: ${props => props.theme.spacing(2)};
+`
+
+const Venue = styled.h3`
+  margin-bottom: 0;
+  color: ${props => props.theme.colors.primary['300']};
+  font-size: ${props => props.theme.typography.size.xxl};
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    font-size: 1.8rem;
+  }
+`
+
+const Address = styled.small`
+  color: ${props => props.theme.colors.neutral['300']};
+  font-size: ${props => props.theme.typography.size.rg};
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    font-size: 0.85rem;
+  }
+`
+
+const VenueHolder = styled.div`
+  padding-bottom: ${props => props.theme.spacing(2)};
+`
+
+const StationName = styled.p`
+  color: ${props => props.theme.colors.primary['300']};
+  margin-bottom: 0;
+  display: inline-block;
+`
+
+const StationLine = styled.p`
+  padding-left: ${props => props.theme.spacing(1)};
+  color: ${props => props.theme.colors.neutral['400']};
+  display: inline-block;
+`
+
+const StationDescription = styled.dd`
+  color: ${props => props.theme.colors.neutral['400']};
 `
 
 const Access = () => {
@@ -22,11 +66,12 @@ const Access = () => {
         site {
           siteMetadata {
             event {
-              place
+              venue
               address
               traffic {
+                station
+                line
                 description
-                name
               }
             }
           }
@@ -35,33 +80,31 @@ const Access = () => {
     `
   )
 
-  const { place, address, traffic } = site.siteMetadata.event
+  const { venue, address, traffic } = site.siteMetadata.event
 
   return (
-    <Container>
-      <Section>
-        <>
-          <h2>Access</h2>
-          <Panel>
-            <PanelInner>
-              <h3>{place}</h3>
-              <small>{address}</small>
-            </PanelInner>
-            <PanelInner>
-              <dl>
-                {traffic.map(t => (
-                  <>
-                    <dt>{t.name}</dt>
-                    <dd>{t.description}</dd>
-                  </>
-                ))}
-              </dl>
-            </PanelInner>
-          </Panel>
-        </>
-      </Section>
-      <Map />
-    </Container>
+    <Grid>
+      <Grid.Column mobile={16} tablet={16} computer={10}>
+        <Map />
+      </Grid.Column>
+      <Grid.Column mobile={16} tablet={16} computer={5}>
+        <Panel>
+          <VenueHolder>
+            <Venue>{venue}</Venue>
+            <Address>{address}</Address>
+          </VenueHolder>
+          {traffic.map((t, idx) => (
+            <DirectionHeader key={idx}>
+              <dt>
+                <StationName>{t.station}</StationName>
+                <StationLine>{t.line}</StationLine>
+              </dt>
+              <StationDescription>{t.description}</StationDescription>
+            </DirectionHeader>
+          ))}
+        </Panel>
+      </Grid.Column>
+    </Grid>
   )
 }
 

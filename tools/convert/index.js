@@ -2,7 +2,12 @@ const convert = require('convert-excel-to-json')
 const chalk = require('chalk')
 const fs = require('fs')
 
-const { findById, normalizeSessions } = require('./fns')
+const {
+  findById,
+  normalizeSessions,
+  normalizeBooth,
+  normalizeCompanies,
+} = require('./fns')
 
 const saveToFile = (name, json) => {
   fs.writeFile(
@@ -25,12 +30,13 @@ const result = convert({
   },
   sheets: [
     {
-      name: 'sponsors',
+      name: 'companies',
       columnToKey: {
         A: 'name',
         B: 'url',
         C: 'slug',
         D: 'profile',
+        E: 'sponsoring',
       },
     },
     {
@@ -49,7 +55,7 @@ const result = convert({
     {
       name: 'booth',
       columnToKey: {
-        A: 'company',
+        A: 'sponsor',
         B: 'title',
         C: 'description',
       },
@@ -74,9 +80,9 @@ const result = convert({
   ],
 })
 
-const { sponsors, sessions, booth, timetable, speakers } = result
+const { companies, sessions, booth, timetable, speakers } = result
 
-saveToFile('sponsors', sponsors)
-saveToFile('booth', booth)
+saveToFile('companies', normalizeCompanies(companies))
+saveToFile('booth', normalizeBooth(booth, companies))
 saveToFile('timetable', timetable)
 saveToFile('sessions', normalizeSessions(sessions, timetable, speakers))

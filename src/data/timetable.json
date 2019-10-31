@@ -1,152 +1,162 @@
 [
   {
-    "id": 0,
+    "id": 100,
     "time": "9:45 - 10:00",
-    "place": "sola city Hall WEST"
+    "place": "sola city Hall (WEST)"
+  },
+  {
+    "id": 0,
+    "time": "10:00 - 10:45",
+    "place": "sola city Hall"
   },
   {
     "id": 1,
-    "time": "10:00 - 10:45",
-    "place": "sola city Hall WEST"
+    "time": "11:00 - 11:45",
+    "place": "sola city Hall (WEST)"
   },
   {
     "id": 2,
     "time": "11:00 - 11:45",
-    "place": "sola city Hall WEST"
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 3,
     "time": "11:00 - 11:45",
-    "place": "sola city Hall EAST"
+    "place": "Room B"
   },
   {
     "id": 4,
     "time": "11:00 - 11:45",
-    "place": "Room B"
+    "place": "Room C"
+  },
+  {
+    "id": 101,
+    "time": "Lunch Session (11:45 - 12:30)",
+    "place": "sola city Hall (WEST)"
+  },
+  {
+    "id": 102,
+    "time": "Lunch Session (11:45 - 12:30)",
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 5,
-    "time": "11:00 - 11:45",
-    "place": "Room C"
+    "time": "13:00 - 13:45",
+    "place": "sola city Hall (WEST)"
   },
   {
     "id": 6,
-    "time": "11:45 - 13:15",
-    "place": "sola city Hall WEST"
+    "time": "13:00 - 13:45",
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 7,
-    "time": "11:45 - 13:15",
-    "place": "sola city Hall EAST"
+    "time": "13:00 - 13:45",
+    "place": "Room B"
   },
   {
     "id": 8,
-    "time": "11:45 - 13:15",
-    "place": "Room B"
+    "time": "13:00 - 13:45",
+    "place": "Room C"
   },
   {
     "id": 9,
-    "time": "11:45 - 13:15",
-    "place": "Room C"
+    "time": "14:00 - 14:45",
+    "place": "sola city Hall (WEST)"
   },
   {
     "id": 10,
-    "time": "13:15 - 14:00",
-    "place": "sola city Hall WEST"
+    "time": "14:00 - 14:45",
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 11,
-    "time": "13:15 - 14:00",
-    "place": "sola city Hall EAST"
+    "time": "14:00 - 14:45",
+    "place": "Room B"
   },
   {
     "id": 12,
-    "time": "13:15 - 14:00",
-    "place": "Room B"
+    "time": "14:00 - 14:45",
+    "place": "Room C"
   },
   {
     "id": 13,
-    "time": "13:15 - 14:00",
-    "place": "Room C"
+    "time": "15:00 - 15:45",
+    "place": "sola city Hall (WEST)"
   },
   {
     "id": 14,
-    "time": "14:15 - 15:00",
-    "place": "sola city Hall WEST"
+    "time": "15:00 - 15:45",
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 15,
-    "time": "14:15 - 15:00",
-    "place": "sola city Hall EAST"
+    "time": "15:00 - 15:45",
+    "place": "Room B"
   },
   {
     "id": 16,
-    "time": "14:15 - 15:00",
-    "place": "Room B"
+    "time": "15:00 - 15:45",
+    "place": "Room C"
   },
   {
     "id": 17,
-    "time": "14:15 - 15:00",
-    "place": "Room C"
+    "time": "16:15 - 17:00",
+    "place": "sola city Hall (WEST)"
   },
   {
     "id": 18,
-    "time": "15:30 - 16:15",
-    "place": "sola city Hall WEST"
+    "time": "16:15 - 17:00",
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 19,
-    "time": "15:30 - 16:15",
-    "place": "sola city Hall EAST"
+    "time": "16:15 - 17:00",
+    "place": "Room B"
   },
   {
     "id": 20,
-    "time": "15:30 - 16:15",
-    "place": "Room B"
+    "time": "16:15 - 17:00",
+    "place": "Room C"
   },
   {
     "id": 21,
-    "time": "15:30 - 16:15",
-    "place": "Room C"
+    "time": "17:15 - 18:00",
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 22,
-    "time": "16:30 - 17:15",
-    "place": "sola city Hall WEST"
+    "time": "17:15 - 18:00",
+    "place": "Room B"
   },
   {
     "id": 23,
-    "time": "16:30 - 17:15",
-    "place": "sola city Hall EAST"
+    "time": "17:15 - 18:00",
+    "place": "Room C"
+  },
+  {
+    "id": 103,
+    "time": "18:15 - 19:00",
+    "place": "sola city Hall (WEST)"
   },
   {
     "id": 24,
-    "time": "16:30 - 17:15",
-    "place": "Room B"
+    "time": "18:15 - 19:00",
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 25,
-    "time": "16:30 - 17:15",
-    "place": "Room C"
-  },
-  {
-    "id": 26,
-    "time": "17:30 - 18:15",
-    "place": "sola city Hall WEST"
-  },
-  {
-    "id": 27,
-    "time": "17:30 - 18:15",
-    "place": "sola city Hall EAST"
-  },
-  {
-    "id": 28,
-    "time": "17:30 - 18:15",
+    "time": "18:15 - 19:00",
     "place": "Room B"
   },
   {
-    "id": 29,
-    "time": "17:30 - 18:15",
+    "id": 26,
+    "time": "18:15 - 19:00",
     "place": "Room C"
+  },
+  {
+    "id": 104,
+    "time": "19:15 - 20:45",
+    "place": "sola city Hall (WEST)"
   }
 ]

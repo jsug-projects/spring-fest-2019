@@ -4,21 +4,58 @@ module.exports = {
     description: `Spring FrameworkはJavaの代表的なアプリケーションフレームワークであり、登場した2002年より現在に至るまで世界中の多くのJavaアプリケーションで利用されています。 国内でも広く利用されておりますが、ユーザ間での情報交換・交流の場を提供し、さらなるSpring Frameworkの認知度の向上、普及促進を図るため、本カンファレンスを開催いたします。`,
     author: `JSUG`,
     event: {
-      place: '御茶ノ水ソラシティ',
+      venue: '御茶ノ水ソラシティ',
       address: '〒101-0062 東京都千代田区神田駿河台 4-6',
       traffic: [
         {
-          name: 'JR 中央線・総武線',
-          description: '御茶ノ水駅 聖橋口から徒歩1分',
-        },
-        { name: '東京メトロ 千代田線', description: '新御茶ノ水駅 B2出口直結' },
-        {
-          name: '東京メトロ 丸ノ内線',
-          description: '御茶ノ水駅 出口1から徒歩4分',
+          station: '御茶ノ水駅',
+          line: 'JR 中央線・総武線',
+          description: '聖橋口から徒歩1分',
         },
         {
-          name: '都営地下鉄 新宿線',
-          description: '小川町駅 B3出口から徒歩6分',
+          station: '新御茶ノ水駅',
+          line: '東京メトロ 千代田線',
+          description: 'B2出口直結',
+        },
+        {
+          station: '御茶ノ水駅',
+          line: '東京メトロ 丸ノ内線',
+          description: '出口1から徒歩4分',
+        },
+        {
+          station: '小川町駅',
+          line: '都営地下鉄 新宿線',
+          description: 'B3出口から徒歩6分',
+        },
+      ],
+      hall: [
+        {
+          floor: '1F',
+          room: [
+            {
+              name: 'Room B',
+            },
+            {
+              name: 'Room C',
+            },
+          ],
+        },
+        {
+          floor: '2F',
+          room: [
+            {
+              name: 'Booth',
+            },
+            {
+              name: 'sola City Hall East',
+            },
+            {
+              name: 'sola City Hall West',
+            },
+            {
+              name: 'Terrace Room',
+            },
+          ],
         },
       ],
       latlng: {

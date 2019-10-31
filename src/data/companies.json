@@ -1,0 +1,162 @@
+[
+  {
+    "name": "NTT DATA",
+    "url": "http://www.nttdata.com/jp",
+    "slug": "nttdata",
+    "sponsoring": "yes",
+    "image": "images/companies/nttdata.png"
+  },
+  {
+    "name": "NRI",
+    "url": "https://www.nri.com/jp",
+    "slug": "nri",
+    "sponsoring": "yes",
+    "image": "images/companies/nri.png"
+  },
+  {
+    "name": "Pivotal",
+    "url": "https://pivotal.io/jp",
+    "slug": "pivotal",
+    "sponsoring": "yes",
+    "image": "images/companies/pivotal.png"
+  },
+  {
+    "name": "ウルシステムズ",
+    "url": "https://www.ulsystems.co.jp/",
+    "slug": "ulsystems",
+    "sponsoring": "yes",
+    "image": "images/companies/ulsystems.png"
+  },
+  {
+    "name": "楽天",
+    "url": "https://corp.rakuten.co.jp/",
+    "slug": "rakuten",
+    "sponsoring": "yes",
+    "image": "images/companies/rakuten.png"
+  },
+  {
+    "name": "リクルートテクノロジーズ",
+    "url": "https://recruit-tech.co.jp/",
+    "slug": "r-tech",
+    "image": "images/companies/r-tech.png"
+  },
+  {
+    "name": "カサレアル",
+    "url": "https://www.casareal.co.jp/",
+    "slug": "casareal",
+    "sponsoring": "yes",
+    "image": "images/companies/casareal.png"
+  },
+  {
+    "name": "Google Cloud",
+    "url": "https://cloud.google.com/",
+    "slug": "google-cloud",
+    "sponsoring": "yes",
+    "image": "images/companies/google-cloud.png"
+  },
+  {
+    "name": "LINE",
+    "url": "https://engineering.linecorp.com/",
+    "slug": "line",
+    "sponsoring": "yes",
+    "image": "images/companies/line.png"
+  },
+  {
+    "name": "TiO Corporation",
+    "url": "http://www.t-i-o.co.jp/",
+    "slug": "tio",
+    "profile": "株式会社ティ・アイ・オー＜TIO＞は、刻々と進化しているIT技術を駆使し、各産業分野における基幹業務、金融および製造流通分野における業務アプリケーションに構築からソフトウェア・画面デザイン・メンテナンスにいたる工程をトータル的にサポートしていく企業です。",
+    "image": "images/companies/tio.png"
+  },
+  {
+    "name": "ルート42",
+    "url": "http://root42.jp/",
+    "slug": "root42",
+    "profile": "ルート42株式会社は、 業務システムに特化した超高速開発ツール「MOD99」による受託開発を行い、独立系開発ベンダーとして平成21年設立よりおよそ10年間活動してきました。 昨年、これまで蓄積してきた帳票開発のノウハウをオリジナル製品「Docurain」として製品化し、販売推進に注力しています。",
+    "sponsoring": "yes",
+    "image": "images/companies/root42.png"
+  },
+  {
+    "name": "レッドハット",
+    "url": "https://www.redhat.com/ja/global/japan",
+    "slug": "redhat",
+    "sponsoring": "yes",
+    "image": "images/companies/redhat.png"
+  },
+  {
+    "name": "豆蔵",
+    "url": "https://www.mamezou.com/",
+    "slug": "mamezou",
+    "image": "images/companies/mamezou.png"
+  },
+  {
+    "name": "フルネス",
+    "url": "https://www.fullness.co.jp/",
+    "slug": "fullness",
+    "profile": "IT研修に特化して、Python,Java,C#,Spring4を中心としたIT教育、未経験IT技術者を育成するために、IT研修・オープン講座・講師派遣などを行っています。",
+    "sponsoring": "yes",
+    "image": "images/companies/fullness.png"
+  },
+  {
+    "name": "ジャスミンソフト",
+    "url": "https://www.jasminesoft.co.jp/",
+    "slug": "jasminesoft",
+    "sponsoring": "yes",
+    "image": "images/companies/jasminesoft.png"
+  },
+  {
+    "name": "ビズリーチ",
+    "url": "https://www.bizreach.co.jp/",
+    "slug": "bizreach",
+    "image": "images/companies/bizreach.png"
+  },
+  {
+    "name": "ビッグツリーコンサルティング",
+    "url": "https://www.bigtreetc.com/",
+    "slug": "btc",
+    "sponsoring": "yes",
+    "image": "images/companies/btc.png"
+  },
+  {
+    "name": "サムライズム",
+    "url": "https://samuraism.com/",
+    "slug": "samuraism",
+    "sponsoring": "yes",
+    "image": "images/companies/samuraism.png"
+  },
+  {
+    "name": "タグバンガーズ",
+    "url": "https://www.tagbangers.co.jp",
+    "slug": "tagbangers",
+    "sponsoring": "yes",
+    "image": "images/companies/tagbangers.png"
+  },
+  {
+    "name": "マイクロソフト",
+    "url": "https://www.microsoft.com/ja-jp",
+    "slug": "microsoft",
+    "sponsoring": "yes",
+    "image": "images/companies/microsoft.png"
+  },
+  {
+    "name": "テクマトリクス",
+    "url": "https://www.techmatrix.co.jp",
+    "slug": "techmatrix",
+    "sponsoring": "yes",
+    "image": "images/companies/techmatrix.png"
+  },
+  {
+    "name": "アシラス",
+    "url": "http://ashiras.xyz/",
+    "slug": "ashiras",
+    "sponsoring": "yes",
+    "image": "images/companies/ashiras.png"
+  },
+  {
+    "name": "日産自動車",
+    "url": "https://www.nissan.co.jp",
+    "slug": "nissan",
+    "sponsoring": "yes",
+    "image": "images/companies/nissan.png"
+  }
+]
