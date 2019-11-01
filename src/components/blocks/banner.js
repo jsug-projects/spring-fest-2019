@@ -18,10 +18,6 @@ const Container = styled.div`
   margin-bottom: -${props => props.pseudoMargin}px;
   position: relative;
 
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    min-height: ${props => props.viewHeight}px;
-  }
-
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     padding: 0 2rem;
   }
@@ -104,7 +100,7 @@ const DescriptionText = styled.p`
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     width: 80%;
     margin: 1rem auto;
-    font-size: ${props => props.theme.typography.size.md};
+    font-size: ${props => props.theme.typography.size.sm};
   }
 `
 
@@ -161,16 +157,10 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
 
   const { title, description, event } = site.siteMetadata
   const [visible, setVisible] = useState(false)
-  const [viewHeight, setViewHeight] = useState(0)
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 300)
-    updateViewHeight()
   }, [])
-
-  const updateViewHeight = () => {
-    setViewHeight(parseInt(window.innerHeight))
-  }
 
   return (
     <Container
@@ -178,7 +168,6 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
       style={{
         backgroundImage: `url(${bannerImage.childImageSharp.original.src})`,
       }}
-      viewHeight={viewHeight}
     >
       <Logo src={springLogoImage.publicURL} />
       <Title>{title.toUpperCase()}</Title>
