@@ -18,10 +18,6 @@ const Container = styled.div`
   margin-bottom: -${props => props.pseudoMargin}px;
   position: relative;
 
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    min-height: calc(var(--vh, 1vh) * 100);
-  }
-
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     padding: 0 2rem;
   }
@@ -160,12 +156,9 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
       }
     `
   )
-  let vh = window.innerHeight * 0.01
-  document.documentElement.style.setProperty('--vh', `${vh}px`)
 
   const { title, description, event } = site.siteMetadata
   const [visible, setVisible] = useState(false)
-
   useEffect(() => {
     setTimeout(() => setVisible(true), 300)
   }, [])
@@ -176,7 +169,6 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
       style={{
         backgroundImage: `url(${bannerImage.childImageSharp.original.src})`,
       }}
-      viewHeight={vh}
     >
       <Logo src={springLogoImage.publicURL} />
       <Title>{title.toUpperCase()}</Title>

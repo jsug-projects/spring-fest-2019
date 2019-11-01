@@ -55,16 +55,12 @@ const Nav = styled.nav`
   padding-right: ${props => props.theme.spacing(4)};
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    padding-right: ${props => props.theme.spacing(3)};
+    padding-right: ${props => props.theme.spacing(2)};
   }
 `
 
 const NavItem = styled.div`
   margin: ${props => props.theme.spacing(1, 2)};
-
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    margin: ${props => props.theme.spacing(1)};
-  }
 `
 
 const Shares = styled.div`
@@ -108,10 +104,6 @@ const NormalHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: ${props => props.theme.spacing(1, 5)};
-
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    padding: ${props => props.theme.spacing(1, 3)};
-  }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     display: none;
@@ -209,13 +201,10 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
         )}
         <Nav>
           <NavItem>
-            <Link to="/#index">SESSIONS</Link>
+            <Pdf href={pdf.publicURL} target="_blank">
+              TIMETABLE
+            </Pdf>
           </NavItem>
-          {/*<NavItem>*/}
-          {/*  <Pdf href={pdf.publicURL} target="_blank">*/}
-          {/*    TIMETABLE*/}
-          {/*  </Pdf>*/}
-          {/*</NavItem>*/}
           <NavItem>
             <Link to="/access">ACCESS</Link>
           </NavItem>
