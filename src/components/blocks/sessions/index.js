@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Session from './item'
-import { Time } from '../../elements'
 
 import { groupBy, path, sort } from 'ramda'
 import styled from 'styled-components'

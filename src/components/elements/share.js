@@ -61,7 +61,7 @@ const Share = ({ name, iconColor }) => {
   const shareInfo = {
     url: 'https://springfest2019.springframework.jp/',
     text: 'Spring Fest 2019',
-    hashtag: 'spring-fest-2019',
+    hashtag: 'jsug',
   }
 
   const share = name => () => {
