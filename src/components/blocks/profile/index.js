@@ -38,7 +38,9 @@ const MobileSpeakerHolder = styled.div`
 `
 
 const MobileHolder = styled.div`
-  flex: 1;
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    width: 100%;
+  }
 `
 
 const NormalHolder = styled.div`
@@ -88,12 +90,16 @@ const MobileBioHolder = styled.div`
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     margin: 0;
-    display: block;
+    display: flex;
   }
 `
 
 const HolderHelper = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    display: none;
+  }
 `
 
 const Bio = styled.p`
@@ -101,6 +107,7 @@ const Bio = styled.p`
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.md};
+    flex: 1;
   }
 `
 
@@ -108,20 +115,18 @@ const Profile = ({ speaker, isOpen, onClose }) => {
   return (
     <Modal open={isOpen} onClose={onClose}>
       <Card key={speaker.id}>
-        <div>
-          <MobileHolder>
-            <PhotoHolder>
-              <Photo src={speaker.image.childImageSharp.resize.src} />
-              <MobileSpeakerHolder>
-                <Name>{speaker.name}</Name>
-                <Company>{speaker.affiliation}</Company>
-              </MobileSpeakerHolder>
-            </PhotoHolder>
-            <MobileBioHolder>
-              <Bio>{speaker.profile || '未定'}</Bio>
-            </MobileBioHolder>
-          </MobileHolder>
-        </div>
+        <MobileHolder>
+          <PhotoHolder>
+            <Photo src={speaker.image.childImageSharp.resize.src} />
+            <MobileSpeakerHolder>
+              <Name>{speaker.name}</Name>
+              <Company>{speaker.affiliation}</Company>
+            </MobileSpeakerHolder>
+          </PhotoHolder>
+          <MobileBioHolder>
+            <Bio>{speaker.profile || '未定'}</Bio>
+          </MobileBioHolder>
+        </MobileHolder>
         <HolderHelper>
           <NormalHolder>
             <Name>{speaker.name}</Name>
