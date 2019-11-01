@@ -46,7 +46,7 @@ export default ({ data }) => {
 
   const sponsor = []
   allCompaniesJson.nodes.map(s => {
-     if (s.sponsoring) sponsor.push(s)
+    if (s.sponsoring) sponsor.push(s)
   })
 
   return (

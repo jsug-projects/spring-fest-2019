@@ -21,6 +21,7 @@ const Container = styled.div`
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     min-height: ${props => props.viewHeight}px;
   }
+
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     padding: 0 2rem;
   }
