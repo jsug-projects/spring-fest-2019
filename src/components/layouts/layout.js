@@ -1,22 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import styled, { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 
 import { Header, Footer } from '../blocks'
 import { theme, GlobalStyles } from '../foundations'
 
-const Container = styled.div`
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-`
-
 const Layout = ({ children, siteTitle, headerColor, dynamic, headerRef }) => {
   return (
     <ThemeProvider theme={theme}>
-      <Container>
+      <>
         <Helmet>
           <link
             href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap"
@@ -44,7 +37,7 @@ const Layout = ({ children, siteTitle, headerColor, dynamic, headerRef }) => {
         <div id="fb-root" />
         <main>{children}</main>
         <Footer />
-      </Container>
+      </>
     </ThemeProvider>
   )
 }
