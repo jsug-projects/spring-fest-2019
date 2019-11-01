@@ -115,10 +115,8 @@ const ActionButton = styled.div`
   position: absolute;
   bottom: 2.5vh;
 
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    margin-bottom: ${props => props.theme.spacing(2)};
-    font-size: ${props => props.theme.typography.size.md};
-    bottom: 0;
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    display: none;
   }
 `
 
@@ -189,12 +187,14 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
         <DateText>{event.date}</DateText>
       </Center>
       <DescriptionText>{description}</DescriptionText>
-      <Transition visible={visible} animation={'fade up'} duration={500}>
-        <ActionButton onClick={scrollToSection}>
-          <ButtonText>SESSION</ButtonText>
-          <Icon name="caret down" />
-        </ActionButton>
-      </Transition>
+      <ActionButton onClick={scrollToSection}>
+        <Transition visible={visible} animation={'fade up'} duration={500}>
+          <>
+            <ButtonText>SESSION</ButtonText>
+            <Icon name="caret down" />
+          </>
+        </Transition>
+      </ActionButton>
     </Container>
   )
 }
