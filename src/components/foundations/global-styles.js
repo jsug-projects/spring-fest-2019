@@ -11,6 +11,8 @@ export default createGlobalStyle`
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   article,
   aside,
