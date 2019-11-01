@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Spring Fest 19`,
-    description: `Spring FrameworkはJavaの代表的なアプリケーションフレームワークであり、登場した2002年より現在に至るまで世界中の多くのJavaアプリケーションで利用されています。 国内でも広く利用されておりますが、ユーザ間での情報交換・交流の場を提供し、さらなるSpring Frameworkの認知度の向上、普及促進を図るため、本カンファレンスを開催いたします。`,
+    description: `Spring FrameworkはJavaの代表的なアプリケーションフレームワークであり、世界中の多くのJavaアプリケーションで利用されています。ユーザ間での情報交換・交流の場を提供し、さらなるSpring Frameworkの認知度の向上、普及促進を図るため、本カンファレンスを開催いたします。`,
     author: `JSUG`,
     image: `https://imgur.com/a/UB9WBQ1`,
     url: `https://springfest2019.springframework.jp/`,
