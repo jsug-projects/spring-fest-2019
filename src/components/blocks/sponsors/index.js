@@ -22,15 +22,6 @@ const Item = styled.a`
   &:hover {
     transform: scale(1.1);
   }
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    margin: ${props => props.theme.spacing(2, 1.5)};
-    top: 0px;
-    transform: scale(0.9);
-
-    &:hover {
-      transform: scale(0.9);
-    }
-  }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     margin: ${props => props.theme.spacing(1, 1)};
@@ -38,7 +29,7 @@ const Item = styled.a`
     transform: scale(0.8);
 
     &:hover {
-      transform: scale(0.8);
+      transform: scale(0.9);
     }
   }
 `

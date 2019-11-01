@@ -23,8 +23,7 @@ const Container = styled.button`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    margin: 0;
-    margin-right: ${props => props.theme.spacing(0.5)};
+    margin: ${props => props.theme.spacing(0, 1)};
     &:hover {
       .circle {
         transform: scale(1);
