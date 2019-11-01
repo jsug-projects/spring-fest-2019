@@ -125,13 +125,6 @@
     "image": "images/companies/samuraism.png"
   },
   {
-    "name": "タグバンガーズ",
-    "url": "https://www.tagbangers.co.jp",
-    "slug": "tagbangers",
-    "sponsoring": "yes",
-    "image": "images/companies/tagbangers.png"
-  },
-  {
     "name": "マイクロソフト",
     "url": "https://www.microsoft.com/ja-jp",
     "slug": "microsoft",
@@ -158,5 +151,12 @@
     "slug": "nissan",
     "sponsoring": "yes",
     "image": "images/companies/nissan.png"
+  },
+  {
+    "name": "タグバンガーズ",
+    "url": "https://www.tagbangers.co.jp",
+    "slug": "tagbangers",
+    "sponsoring": "yes",
+    "image": "images/companies/tagbangers.png"
   }
 ]
