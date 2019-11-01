@@ -19,7 +19,7 @@ const Container = styled.div`
   position: relative;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    min-height: calc(var(--vh, 1vh) * 100);
+    min-height: ${props => props.viewHeight}px;
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
@@ -160,15 +160,19 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
       }
     `
   )
-  let vh = window.innerHeight * 0.01
-  document.documentElement.style.setProperty('--vh', `${vh}px`)
 
   const { title, description, event } = site.siteMetadata
   const [visible, setVisible] = useState(false)
+  const [viewHeight, setViewHeight] = useState(0)
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 300)
+    updateViewHeight()
   }, [])
+
+  const updateViewHeight = () => {
+    setViewHeight(parseInt(window.innerHeight))
+  }
 
   return (
     <Container
@@ -176,7 +180,7 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
       style={{
         backgroundImage: `url(${bannerImage.childImageSharp.original.src})`,
       }}
-      viewHeight={vh}
+      viewHeight={viewHeight}
     >
       <Logo src={springLogoImage.publicURL} />
       <Title>{title.toUpperCase()}</Title>
