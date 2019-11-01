@@ -61,7 +61,6 @@ const Share = ({ name, iconColor }) => {
   const shareInfo = {
     url: 'https://springfest2019.springframework.jp/',
     text: 'Spring Fest 2019',
-    hashtag: 'spring-fest-2019',
   }
 
   const share = name => () => {
@@ -74,7 +73,7 @@ const Share = ({ name, iconColor }) => {
     const windowParams = `scrollbars=yes,width=${WIN_WIDTH},height=${WIN_HEIGHT},top=${center.top},left=${center.left}`
     if (name === 'twitter') {
       window.open(
-        `https://twitter.com/intent/tweet?url=${shareInfo.url}&text=${shareInfo.text}&hashtags=${shareInfo.hashtag}`,
+        `https://twitter.com/intent/tweet?url=${shareInfo.url}&text=${shareInfo.text}`,
         'share',
         windowParams
       )
