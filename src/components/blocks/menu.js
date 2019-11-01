@@ -59,9 +59,9 @@ const Menu = ({ open, pdf }) => {
                   <NavItem>Session</NavItem>
                 </Link>
               </NavItem>
-              <Pdf href={pdf} target="_blank">
-                <NavItem style={{ opacity: 0.5 }}>Timetable</NavItem>
-              </Pdf>
+              {/*<Pdf href={pdf} target="_blank">*/}
+              {/*  <NavItem style={{ opacity: 0.5 }}>Timetable</NavItem>*/}
+              {/*</Pdf>*/}
               <Link to="/access">
                 <NavItem>Access</NavItem>
               </Link>
