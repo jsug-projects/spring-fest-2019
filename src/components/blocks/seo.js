@@ -11,6 +11,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            ogDescription
             author
             image
             url
@@ -48,7 +49,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: site.siteMetadata.ogDescription,
         },
         {
           property: `og:type`,
@@ -68,7 +69,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: site.siteMetadata.ogDescription,
         },
         {
           name: `twitter:image`,

@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Spring Fest 19`,
-    description: `2019-12-18(水) 日本最大 Spring Framework カンファレンス @御茶ノ水ソラシティ`,
+    description: `Spring FrameworkはJavaの代表的なアプリケーションフレームワークであり、世界中の多くのJavaアプリケーションで利用されています。ユーザ間での情報交換・交流の場を提供し、さらなるSpring Frameworkの認知度の向上、普及促進を図るため、本カンファレンスを開催いたします。`,
+    ogDescription: `2019-12-18(水) 日本最大 Spring Framework カンファレンス @御茶ノ水ソラシティ`,
     author: `JSUG`,
-    image: `https://s3-ap-northeast-1.amazonaws.com/springfest2019.springframework.jp/images/springfest2019.jpg`,
+    image: `https://springfest2019.springframework.jp/UB9WBQ1`,
     url: `https://springfest2019.springframework.jp/`,
     event: {
       venue: '御茶ノ水ソラシティ',
