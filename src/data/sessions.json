@@ -418,7 +418,8 @@
         "name": "進藤",
         "image": "images/speakers/8.png"
       }
-    ]
+    ],
+    "slides": "進藤さん"
   },
   {
     "timetable": {
@@ -435,7 +436,8 @@
         "name": "土岐",
         "image": "images/speakers/9.png"
       }
-    ]
+    ],
+    "slides": "土岐さん"
   },
   {
     "timetable": {
@@ -467,7 +469,8 @@
         "name": "伊賀",
         "image": "images/speakers/11.png"
       }
-    ]
+    ],
+    "slides": "伊賀さん"
   },
   {
     "timetable": {
@@ -475,8 +478,17 @@
       "time": "18:15 - 19:00",
       "place": "Room B"
     },
-    "meta": [],
-    "speakers": []
+    "meta": [
+      "For Beginner"
+    ],
+    "speakers": [
+      {
+        "id": 23,
+        "name": "大野",
+        "image": "images/speakers/23.png"
+      }
+    ],
+    "slides": "大野さん"
   },
   {
     "timetable": {
@@ -484,8 +496,17 @@
       "time": "18:15 - 19:00",
       "place": "Room C"
     },
-    "meta": [],
-    "speakers": []
+    "meta": [
+      "For Beginner"
+    ],
+    "speakers": [
+      {
+        "id": 24,
+        "name": "長谷川",
+        "image": "images/speakers/24.png"
+      }
+    ],
+    "slides": "長谷川さん"
   },
   {
     "timetable": {
