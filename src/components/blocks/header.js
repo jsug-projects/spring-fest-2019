@@ -182,39 +182,23 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
   )
 
   const scrolled = () => {
-    const { innerHeight } = window
+    const { innerHeight, pageYOffset } = window
     const { scrollTop } = document.body
     const containerHeight = headerRef.current.getBoundingClientRect().height
-    return scrollTop >= innerHeight - containerHeight
+    return pageYOffset >= innerHeight - containerHeight
   }
 
   useEffect(() => {
     if (dynamic) {
       handleOnScroll()
       window.addEventListener('scroll', handleOnScroll, true)
-      window.addEventListener('touchmove', mobileScroll, true)
       return () => {
         window.removeEventListener('scroll', handleOnScroll, true)
-        window.removeEventListener('touchmove', mobileScroll, true)
       }
     }
   }, [])
 
   const handleOnScroll = () => {
-    if (scrolled()) {
-      setIsScrolled(true)
-      setIconColor(primaryColor)
-      setOpacity(1)
-    } else {
-      setIsScrolled(false)
-      setIconColor(neutralColor)
-      setOpacity(0)
-    }
-  }
-
-  const mobileScroll = () => {
-    event.preventDefault()
-
     if (scrolled()) {
       setIsScrolled(true)
       setIconColor(primaryColor)
