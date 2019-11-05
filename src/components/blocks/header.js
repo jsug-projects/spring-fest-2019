@@ -11,7 +11,7 @@ const Container = styled.header`
   background: ${props => props.headerColor};
   width: 100%;
   color: ${props => props.theme.colors.white};
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   top: 0;
 
@@ -36,8 +36,7 @@ const Logo = styled.img`
   margin-right: ${props => props.theme.spacing(1.5)};
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    max-height: 1.2rem;
-    margin-right: ${props => props.theme.spacing(1)};
+    max-height: 1.4rem;
   }
 `
 
@@ -52,7 +51,7 @@ const Title = styled.h1`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: ${props => props.theme.typography.size.rg};
+    font-size: 1.2rem;
   }
 `
 
@@ -129,7 +128,7 @@ const NormalHeader = styled.div`
 
 const MobileHeader = styled.div`
   display: none;
-  padding: ${props => props.theme.spacing(1, 3)};
+  padding: ${props => props.theme.spacing(1.5, 3)};
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     display: flex;
@@ -258,7 +257,6 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
               fitted
               circular
               onClick={() => setIsOpen(true)}
-              size={'small'}
             />
           )}
         </IconHolder>

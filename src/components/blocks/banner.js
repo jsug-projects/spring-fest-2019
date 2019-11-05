@@ -14,13 +14,13 @@ const Container = styled.div`
   color: #fff;
   background-attachment: fixed;
   background-size: cover;
-  transform: translate3d(0,0,0);  
   text-align: center;
   margin-bottom: -${props => props.pseudoMargin}px;
   position: relative;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     min-height: ${props => props.viewHeight}px;
+    background-attachment: scroll;
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
@@ -35,11 +35,13 @@ const Logo = styled.img`
   width: 18vh;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-  margin-bottom: ${props => props.theme.spacing(4)};
+    margin-top: ${props => props.theme.spacing(5)};
+    margin-bottom: ${props => props.theme.spacing(4)};
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     width: 13vh;
+    margin-bottom: ${props => props.theme.spacing(1)};
   }
 `
 
@@ -57,8 +59,9 @@ const Title = styled.h1`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 2.7rem;
+    margin-bottom: ${props => props.theme.spacing(0)};
   }
 `
 
@@ -75,11 +78,11 @@ const PlaceText = styled.p`
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     font-size: 1.7rem;
-        margin-bottom: ${props => props.theme.spacing(0.3)};
+    margin-bottom: ${props => props.theme.spacing(0.3)};
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: ${props => props.theme.spacing(-0.5)};
   }
 `
@@ -95,7 +98,7 @@ const DateText = styled.p`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     margin-top: 0;
   }
 `
@@ -113,7 +116,7 @@ const DescriptionText = styled.p`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    width: 80%;
+    width: 85%;
     margin: 1rem auto;
     font-size: ${props => props.theme.typography.size.sm};
   }
