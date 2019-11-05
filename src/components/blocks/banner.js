@@ -59,8 +59,8 @@ const Title = styled.h1`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 1.9rem;
-    line-height: 2.7rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
     margin-bottom: ${props => props.theme.spacing(-0.5)};
   }
 `
