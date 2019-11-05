@@ -10,7 +10,8 @@ const Title = styled.h2`
   font-weight: 900;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: ${props => props.theme.spacing(3, 0)};
   }
 `
 

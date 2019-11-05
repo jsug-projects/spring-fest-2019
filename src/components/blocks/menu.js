@@ -21,7 +21,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: ${props => props.theme.spacing(7)};
-  display: ${props => (props.displayMenu ? 'flex' : 'flex')};
+  display: flex;
+  overflow-y: ${props => (props.displayMenu ? 'scroll' : 'hidden')};
 `
 
 const Nav = styled.nav`
