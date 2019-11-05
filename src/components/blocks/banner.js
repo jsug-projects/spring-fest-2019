@@ -14,9 +14,14 @@ const Container = styled.div`
   color: #fff;
   background-attachment: fixed;
   background-size: cover;
+  transform: translate3d(0,0,0);  
   text-align: center;
   margin-bottom: -${props => props.pseudoMargin}px;
   position: relative;
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    min-height: ${props => props.viewHeight}px;
+  }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     padding: 0 2rem;
@@ -25,10 +30,13 @@ const Container = styled.div`
 
 const Logo = styled.img`
   margin-top: ${props => props.theme.spacing(7)};
-  margin-bottom: ${props => props.theme.spacing(5)};
   margin-bottom: ${props => props.theme.spacing(2)};
 
   width: 18vh;
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+  margin-bottom: ${props => props.theme.spacing(4)};
+  }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     width: 13vh;
@@ -43,8 +51,13 @@ const Title = styled.h1`
   font-weight: 900;
   margin-bottom: ${props => props.theme.spacing(2)};
 
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    font-size: 5rem;
+    line-height: 2.7rem;
+  }
+
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 3rem;
+    font-size: 2.2rem;
     line-height: 2.7rem;
   }
 `
@@ -61,7 +74,8 @@ const PlaceText = styled.p`
   font-weight: 900;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    font-size: 2rem;
+    font-size: 1.7rem;
+        margin-bottom: ${props => props.theme.spacing(0.3)};
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
@@ -77,7 +91,7 @@ const DateText = styled.p`
   font-weight: 700;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
@@ -94,7 +108,8 @@ const DescriptionText = styled.p`
   margin-bottom: ${props => props.theme.spacing(2)};
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    font-size: ${props => props.theme.typography.size.lg};
+    width: 70%;
+    font-size: ${props => props.theme.typography.size.md};
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
@@ -157,10 +172,16 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
 
   const { title, description, event } = site.siteMetadata
   const [visible, setVisible] = useState(false)
+  const [viewHeight, setViewHeight] = useState(0)
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 300)
+    updateViewHeight()
   }, [])
+
+  const updateViewHeight = () => {
+    setViewHeight(parseInt(window.innerHeight))
+  }
 
   return (
     <Container
@@ -168,6 +189,7 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
       style={{
         backgroundImage: `url(${bannerImage.childImageSharp.original.src})`,
       }}
+      viewHeight={viewHeight}
     >
       <Logo src={springLogoImage.publicURL} />
       <Title>{title.toUpperCase()}</Title>
