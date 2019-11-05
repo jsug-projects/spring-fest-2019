@@ -192,15 +192,29 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
     if (dynamic) {
       handleOnScroll()
       window.addEventListener('scroll', handleOnScroll, true)
-      window.addEventListener('touchmove', handleOnScroll, true)
+      window.addEventListener('touchmove', mobileScroll, true)
       return () => {
         window.removeEventListener('scroll', handleOnScroll, true)
-        window.removeEventListener('touchmove', handleOnScroll, true)
+        window.removeEventListener('touchmove', mobileScroll, true)
       }
     }
   }, [])
 
   const handleOnScroll = () => {
+    if (scrolled()) {
+      setIsScrolled(true)
+      setIconColor(primaryColor)
+      setOpacity(1)
+    } else {
+      setIsScrolled(false)
+      setIconColor(neutralColor)
+      setOpacity(0)
+    }
+  }
+
+  const mobileScroll = () => {
+    event.preventDefault()
+
     if (scrolled()) {
       setIsScrolled(true)
       setIconColor(primaryColor)
