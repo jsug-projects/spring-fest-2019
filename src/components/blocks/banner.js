@@ -8,6 +8,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
   padding: 0 5rem;
   padding-top: 64px;
   min-height: 100vh;
@@ -18,8 +19,8 @@ const Container = styled.div`
   position: relative;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    min-height: ${props => props.viewHeight}px;
     background-attachment: scroll;
+    min-height: ${props => props.viewHeight}px;
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
@@ -82,7 +83,7 @@ const PlaceText = styled.p`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: ${props => props.theme.spacing(-0.5)};
   }
 `
@@ -98,7 +99,7 @@ const DateText = styled.p`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     margin-top: 0;
   }
 `
