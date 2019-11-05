@@ -31,15 +31,16 @@ const Logo = styled.img`
   margin-top: ${props => props.theme.spacing(7)};
   margin-bottom: ${props => props.theme.spacing(2)};
 
-  width: 18vh;
+  width: 11rem;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    width: 8rem;
     margin-top: ${props => props.theme.spacing(5)};
     margin-bottom: ${props => props.theme.spacing(4)};
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    width: 13vh;
+    width: 5rem;
     margin-bottom: ${props => props.theme.spacing(1)};
   }
 `
@@ -60,7 +61,7 @@ const Title = styled.h1`
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: 1.9rem;
     line-height: 2.7rem;
-    margin-bottom: ${props => props.theme.spacing(0)};
+    margin-bottom: ${props => props.theme.spacing(-0.5)};
   }
 `
 
@@ -129,7 +130,8 @@ const ActionButton = styled.div`
   bottom: 2.5vh;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    display: none;
+    font-size: ${props => props.theme.typography.size.rg};
+    bottom: 4vh;
   }
 `
 

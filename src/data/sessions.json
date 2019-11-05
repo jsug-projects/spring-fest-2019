@@ -48,10 +48,27 @@
       "time": "11:00 - 11:45",
       "place": "sola city Hall (EAST)"
     },
+    "title": "大規模エンタープライズシステム開発におけるSpringアプリケーションのDevOps適用事例",
+    "abstract": "NRIでは社内の多くのプロジェクトでSpring Frameworkを利用したアプリケーションを開発しています。\r\n　本セッションではアプリケーション開発に欠かせないDevOpsに着目して、大規模プロジェクトでのコンテナ技術を活用したビルドやテストに関する事例を中心に、苦労した点や工夫した点をご紹介します。",
     "meta": [
       "NRI"
     ],
-    "speakers": []
+    "speakers": [
+      {
+        "id": 19,
+        "name": "三宅 光太郎",
+        "affiliation": "NRI",
+        "profile": "専門はクラウドネイティブのミドルウェア開発および開発ツールの構築・導入",
+        "image": "images/speakers/19.png"
+      },
+      {
+        "id": 20,
+        "name": "土屋 大樹",
+        "affiliation": "NRI",
+        "profile": "入社以来、テスト効率化・自動化に関する業務に従事。現在はコンテナ・k8sを活用したCI/CDパイプラインの設計・開発を行っている。",
+        "image": "images/speakers/20.png"
+      }
+    ]
   },
   {
     "timetable": {
@@ -71,10 +88,20 @@
       "time": "11:00 - 11:45",
       "place": "Room C"
     },
+    "title": "Spring Social でソーシャルログインを実装する",
+    "abstract": "最近ソーシャルログインを提供するサービスは増えてきています。Spring Social は各SNS 専用のライブラリが用意されていて、これらを使ってソーシャルログインを実装することができます。\r\n\r\nこのセッションでは、このソーシャルログイン機能を提供するWebアプリケーションを実装する方法を紹介します。",
     "meta": [
       "楽天"
     ],
-    "speakers": []
+    "speakers": [
+      {
+        "id": 18,
+        "name": "田中 竜介",
+        "affiliation": "楽天",
+        "profile": "楽天ペイ（オンライン決済）のアプリケーションエンジニアとして開発業務に携わっています。パブリッククラウドやコンテナオーケストラレーション、CI/CD などを良く触っています。",
+        "image": "images/speakers/18.png"
+      }
+    ]
   },
   {
     "timetable": {
@@ -87,7 +114,7 @@
     "speakers": [
       {
         "id": 12,
-        "name": "菊池真登",
+        "name": "菊池 真登",
         "affiliation": "カサレアル",
         "image": "images/speakers/12.png"
       }
@@ -199,6 +226,8 @@
       "time": "14:00 - 14:45",
       "place": "sola city Hall (EAST)"
     },
+    "title": "Spring Boot爆速開発超絶技巧",
+    "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring\r\nBootアプリケーションを開発する上で欠かせないキーボードショートカット、Dockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
     "meta": [
       "Spring Boot爆速開発超絶"
     ],
@@ -303,7 +332,7 @@
     "speakers": [
       {
         "id": 14,
-        "name": "長谷部良輔",
+        "name": "長谷部 良輔",
         "affiliation": "LINE",
         "profile": "2013年 LINE入社。LINEの公式アカウントに関するサーバーサイドの開発を担当しています。以前はLINE Login, LINE Notify, LINE GAME Platformなどのサーバーサイド開発を担当していました",
         "image": "images/speakers/14.png"
