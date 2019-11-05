@@ -12,7 +12,6 @@ const Container = styled.div`
   padding-top: 64px;
   min-height: 100vh;
   color: #fff;
-  background-attachment: fixed;
   background-size: cover;
   text-align: center;
   margin-bottom: -${props => props.pseudoMargin}px;
@@ -59,7 +58,7 @@ const Title = styled.h1`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 2.7rem;
     margin-bottom: ${props => props.theme.spacing(0)};
   }
@@ -112,7 +111,7 @@ const DescriptionText = styled.p`
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     width: 70%;
-    font-size: ${props => props.theme.typography.size.md};
+    font-size: ${props => props.theme.typography.size.rg};
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
