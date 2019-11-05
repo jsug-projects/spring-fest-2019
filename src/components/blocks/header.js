@@ -182,10 +182,10 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
   )
 
   const scrolled = () => {
-    const { innerHeight, pageYOffset } = window
+    const { innerHeight } = window
     const { scrollTop } = document.body
     const containerHeight = headerRef.current.getBoundingClientRect().height
-    return pageYOffset >= innerHeight - containerHeight
+    return scrollTop >= innerHeight - containerHeight
   }
 
   useEffect(() => {
