@@ -24,6 +24,7 @@
         "id": 1,
         "name": "Josh",
         "affiliation": "Pivotal",
+        "profile": "未定",
         "image": "images/speakers/1.png"
       }
     ],
@@ -58,7 +59,7 @@
         "id": 19,
         "name": "三宅 光太郎",
         "affiliation": "NRI",
-        "profile": "専門はクラウドネイティブのミドルウェア開発および開発ツールの構築・導入",
+        "profile": "専門はクラウドネイティブのミドルウェア開発および開発ツールの構築・導入。",
         "image": "images/speakers/19.png"
       },
       {
@@ -116,6 +117,7 @@
         "id": 12,
         "name": "菊池 真登",
         "affiliation": "カサレアル",
+        "profile": "未定",
         "image": "images/speakers/12.png"
       }
     ],
@@ -141,6 +143,7 @@
     "meta": [
       "JasmineSoft"
     ],
+    "lunch": "yes",
     "speakers": []
   },
   {
@@ -149,7 +152,7 @@
       "time": "Lunch Session (11:45 - 12:30)",
       "place": "sola city Hall (EAST)"
     },
-    "title": "ランチセッション Root42",
+    "title": "Root42",
     "abstract": "パート1(由利): DocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、\r\nかつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩): 実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。\r\n\r\n以上です。よろしくお願い致します。",
     "meta": [
       "Root42"
@@ -169,7 +172,8 @@
         "profile": "株式会社クオリティスタート代表。ITプランナー。ネット上では「ござ先輩」として著名で、コラム等の執筆活動も行う。ちなヤク。",
         "image": "images/speakers/16.png"
       }
-    ]
+    ],
+    "lunch": "yes"
   },
   {
     "timetable": {
@@ -177,10 +181,26 @@
       "time": "13:00 - 13:45",
       "place": "Room B"
     },
+    "title": "たぐばん",
     "meta": [
       "タグバンガーズ"
     ],
-    "speakers": []
+    "speakers": [
+      {
+        "id": 21,
+        "name": "山﨑 大",
+        "affiliation": "タグバンガーズ",
+        "profile": "タグバンガーズ入社5年目。DevチームにてWebアプリケーションの開発、マネジメントを担当。Java、Springはもちろん、技術のことならなんでも好き。ただのわさもん。",
+        "image": "images/speakers/21.png"
+      },
+      {
+        "id": 22,
+        "name": "設樂 大悟",
+        "affiliation": "タグバンガーズ",
+        "profile": "タグバンガーズ入社1年目。DevチームにてWebアプリケーションのフロントエンド開発を担当。",
+        "image": "images/speakers/22.png"
+      }
+    ]
   },
   {
     "timetable": {
@@ -195,7 +215,7 @@
         "id": 2,
         "name": "佐川 夫美雄",
         "affiliation": "アシラス",
-        "profile": "http://ashiras.xyz",
+        "profile": "<a href=\"http://ashiras.xyz/\" target=\"_blank\" style=\"color: white;\"><p>http://ashiras.xyz/</p></a>",
         "image": "images/speakers/2.png"
       }
     ],
@@ -236,6 +256,7 @@
         "id": 3,
         "name": "山本",
         "affiliation": "サムライズム",
+        "profile": "トラブルシューティングツールの侍や、Twitter4JといったOSSを開発しているJavaエンジニア。株式会社サムライズムという会社の社長で、海外のプログラマ向けツールの日本国内展開を手がけています。",
         "image": "images/speakers/3.png"
       }
     ]
@@ -254,6 +275,7 @@
         "id": 1,
         "name": "Josh",
         "affiliation": "Pivotal",
+        "profile": "未定",
         "image": "images/speakers/1.png"
       }
     ]
@@ -272,6 +294,7 @@
         "id": 4,
         "name": "Stéphane",
         "affiliation": "Pivotal",
+        "profile": "未定",
         "image": "images/speakers/4.png"
       }
     ]
@@ -334,7 +357,7 @@
         "id": 14,
         "name": "長谷部 良輔",
         "affiliation": "LINE",
-        "profile": "2013年 LINE入社。LINEの公式アカウントに関するサーバーサイドの開発を担当しています。以前はLINE Login, LINE Notify, LINE GAME Platformなどのサーバーサイド開発を担当していました",
+        "profile": "2013年 LINE入社。LINEの公式アカウントに関するサーバーサイドの開発を担当しています。以前はLINE Login, LINE Notify, LINE GAME Platformなどのサーバーサイド開発を担当していました。",
         "image": "images/speakers/14.png"
       }
     ],

@@ -102,6 +102,7 @@ export const query = graphql`
         abstract
         meta
         enquete
+        lunch
         hashtag
         timetable {
           id

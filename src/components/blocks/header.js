@@ -104,11 +104,6 @@ const Link = styled(GatsbyLink)`
   &:hover {
     color: ${props => props.theme.colors.neutral['25']};
   }
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    &:hover {
-      color: ${props => props.theme.colors.white};
-    }
-  }
 `
 
 const TitleHolder = styled.div`

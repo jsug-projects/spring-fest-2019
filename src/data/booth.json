@@ -18,8 +18,8 @@
       "profile": "株式会社ティ・アイ・オー＜TIO＞は、刻々と進化しているIT技術を駆使し、各産業分野における基幹業務、金融および製造流通分野における業務アプリケーションに構築からソフトウェア・画面デザイン・メンテナンスにいたる工程をトータル的にサポートしていく企業です。",
       "image": "images/companies/tio.png"
     },
-    "title": "",
-    "description": ""
+    "title": "For Your Happiness, Pleasure and Satisfaction",
+    "description": "ティ・アイ・オーはIT技術を駆使し、常に「ユーザー目線」で提案をしている会社です。各産業分野における基幹業務、製造流通および金融分野における業務アプリケーションの『コンサルティング』から『画面デザイン』『システム設計』『システム構築』『運用・保守のサポート』まで、トータルサポート致します。Springを導入した物流システムの開発や、現場で使えるシステム運用・保守の『見える化』など各実績をご紹介致しますので、ご興味をお持ちの方、システムに関してお困りの方は、是非ブースにお立ち寄り下さい！"
   },
   {
     "sponsor": {
@@ -40,19 +40,8 @@
       "profile": "",
       "image": "images/companies/nri.png"
     },
-    "title": "aslead",
-    "description": "DX時代のシステム開発およびオフィス業務の生産性向上のための製品・ソリューションの提供、技術サポートおよび導入支援・システム運用を提供する、asleadをご紹介します。"
-  },
-  {
-    "sponsor": {
-      "name": "NRI",
-      "url": "https://www.nri.com/jp",
-      "slug": "nri",
-      "profile": "",
-      "image": "images/companies/nri.png"
-    },
-    "title": "OpenStandia",
-    "description": "オープンソースソフトウェア（OSS）を使用したシステムの構築や課題発生時の解決にあたり、OSSに関する技術サポート、導入支援、コンサルティングなどを提供するサービスです。Sprigをはじめ、様々なOSSのサポートを提供していますので、OSSでお困りの方は是非ブースまでお越しください。"
+    "title": "TBD",
+    "description": "<b><a href=\"https://aslead.nri.co.jp\" target=\"_blank\">aslead</a></b>\r\n　　DX時代のシステム開発およびオフィス業務の生産性向上のための製品・ソリューションの提供、技術サポートおよび導入支援・システム運用を提供する、asleadをご紹介します。\r\n\r\n<b><a href=\"https://openstandia.jp\" target=\"_blank\">OpenStandia</a></b>\r\n　　オープンソースソフトウェア（OSS）を使用したシステムの構築や課題発生時の解決にあたり、OSSに関する技術サポート、導入支援、コンサルティングなどを提供するサービスです。Sprigをはじめ、様々なOSSのサポートを提供していますので、OSSでお困りの方は是非ブースまでお越しください。"
   },
   {
     "sponsor": {
@@ -150,7 +139,7 @@
       "profile": "",
       "image": "images/companies/ashiras.png"
     },
-    "title": "",
+    "title": "TBD",
     "description": "Angular を使ったアプリケーション開発のデモを致します。Angularは、モバイルおよびデスクトップWebアプリケーションを構築するためのプラットフォームです。"
   }
 ]

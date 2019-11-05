@@ -50,6 +50,7 @@ const result = convert({
         F: 'slides',
         G: 'hashtag',
         H: 'enquete',
+        I: 'lunch',
       },
     },
     {

@@ -129,7 +129,7 @@ const ActionButton = styled.div`
   position: absolute;
   bottom: 2.5vh;
 
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     display: none;
   }
 `
@@ -200,7 +200,7 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
         <PlaceText>{event.venue}</PlaceText>
         <DateText>{event.date}</DateText>
       </Center>
-      <DescriptionText>{description}</DescriptionText>
+      <DescriptionText>{description} </DescriptionText>
       <ActionButton onClick={scrollToSection}>
         <Transition visible={visible} animation={'fade up'} duration={500}>
           <>
