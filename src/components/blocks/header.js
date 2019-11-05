@@ -192,8 +192,10 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
     if (dynamic) {
       handleOnScroll()
       window.addEventListener('scroll', handleOnScroll, true)
+      window.addEventListener('touchmove', handleOnScroll, true)
       return () => {
         window.removeEventListener('scroll', handleOnScroll, true)
+        window.removeEventListener('touchmove', handleOnScroll, true)
       }
     }
   }, [])

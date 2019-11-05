@@ -174,16 +174,10 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
 
   const { title, description, event } = site.siteMetadata
   const [visible, setVisible] = useState(false)
-  const [viewHeight, setViewHeight] = useState(0)
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 300)
-    updateViewHeight()
   }, [])
-
-  const updateViewHeight = () => {
-    setViewHeight(parseInt(window.innerHeight))
-  }
 
   return (
     <Container
