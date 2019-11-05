@@ -93,8 +93,7 @@ const ContentsHolder = styled.div`
 `
 
 const TitleHolder = styled.div`
-  display: flex;
-  align-items: center;
+  display: inline-block;
 `
 
 const LunchHolder = styled.div`
@@ -102,7 +101,6 @@ const LunchHolder = styled.div`
   color: ${props => props.theme.colors.white};
   padding: ${props => props.theme.spacing(0.5, 1)};
   border-radius: 3px;
-  display: flex;
   align-items: baseline;
   margin-right: ${props => props.theme.spacing(1)};
 `
