@@ -129,9 +129,8 @@ const ActionButton = styled.div`
   position: absolute;
   bottom: 2.5vh;
 
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    font-size: ${props => props.theme.typography.size.rg};
-    bottom: 4vh;
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    display: none;
   }
 `
 
