@@ -25,12 +25,12 @@ const Container = styled.div`
 `
 
 const Background = styled.img`
-  display: ${props => (props.hide ? 'none' : 'block')};
   position: fixed;
   top: 0;
   z-index: -3000;
   object-fit: cover;
   min-height: 100vh;
+  opacity: ${props => (props.hide ? 0 : 1)};
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     min-height: ${props => props.viewHeight}px;
