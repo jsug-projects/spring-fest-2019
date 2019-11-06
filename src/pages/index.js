@@ -64,6 +64,7 @@ export default ({ data }) => {
       <SectionWrap ref={sectionRef} pseudoMargin={pseudoMargin}>
         <Section
           title="sessions"
+          backgroundColor={props => props.theme.colors.white}
           fontColor={props => props.theme.colors.primary['300']}
         >
           <Sessions items={allSessionsJson.nodes} time={time} />
@@ -77,6 +78,7 @@ export default ({ data }) => {
         </Section>
         <Section
           title="sponsors"
+          backgroundColor={props => props.theme.colors.white}
           fontColor={props => props.theme.colors.primary['300']}
         >
           <Sponsors items={sponsor} />

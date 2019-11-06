@@ -8,23 +8,32 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-attachment: fixed;
   padding: 0 5rem;
   padding-top: 64px;
   min-height: 100vh;
   color: #fff;
-  background-size: cover;
   text-align: center;
   margin-bottom: -${props => props.pseudoMargin}px;
   position: relative;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    background-attachment: scroll;
     min-height: ${props => props.viewHeight}px;
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     padding: 0 2rem;
+  }
+`
+
+const Background = styled.img`
+  position: fixed;
+  top: 0;
+  z-index: -3000;
+  object-fit: cover;
+  min-height: 100vh;
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    min-height: ${props => props.viewHeight}px;
   }
 `
 
@@ -188,13 +197,11 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
   }
 
   return (
-    <Container
-      pseudoMargin={pseudoMargin}
-      style={{
-        backgroundImage: `url(${bannerImage.childImageSharp.original.src})`,
-      }}
-      viewHeight={viewHeight}
-    >
+    <Container pseudoMargin={pseudoMargin} viewHeight={viewHeight}>
+      <Background
+        src={bannerImage.childImageSharp.original.src}
+        viewHeight={viewHeight}
+      />
       <Logo src={springLogoImage.publicURL} />
       <Title>{title.toUpperCase()}</Title>
       <Center>
