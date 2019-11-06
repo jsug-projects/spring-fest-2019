@@ -114,12 +114,20 @@ const Title = styled.h3`
 
 const MetaHolder = styled.div`
   display: inline-block;
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    display: block;
+  }
 `
 
 const ContentsHeader = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: ${props => props.theme.spacing(1)};
+
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    display: block;
+    margin-bottom: ${props => props.theme.spacing(0)};
+  }
 `
 
 const ContentsBody = styled.div`

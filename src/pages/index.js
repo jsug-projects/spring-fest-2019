@@ -120,7 +120,7 @@ export const query = graphql`
           profile
           image {
             childImageSharp {
-              resize(width: 144) {
+              resize(width: 300) {
                 src
               }
             }
