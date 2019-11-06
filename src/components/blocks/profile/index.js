@@ -113,7 +113,6 @@ const Bio = styled.p`
 `
 
 const Profile = ({ speaker, isOpen, onClose }) => {
-  console.log(speaker.profile)
   return (
     <Modal open={isOpen} onClose={onClose}>
       <Card key={speaker.id}>
