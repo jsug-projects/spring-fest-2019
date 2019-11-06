@@ -120,9 +120,8 @@
       "time": "13:00 - 13:45",
       "place": "sola city Hall (EAST)"
     },
-    "meta": [
-      "Google"
-    ],
+    "slides": "Google",
+    "meta": [],
     "speakers": []
   },
   {
@@ -132,8 +131,9 @@
       "place": "sola city Hall (WEST)"
     },
     "meta": [
-      "JasmineSoft"
+      "ランチセッション"
     ],
+    "slides": "JasmineSoft",
     "lunch": "yes",
     "speakers": []
   },
@@ -145,6 +145,9 @@
     },
     "title": "Root42",
     "abstract": "パート1(由利): DocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、\r\nかつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩): 実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。\r\n\r\n以上です。よろしくお願い致します。",
+    "meta": [
+      "ランチセッション"
+    ],
     "speakers": [
       {
         "id": 15,
@@ -161,8 +164,7 @@
         "image": "images/speakers/16.png"
       }
     ],
-    "lunch": "yes",
-    "meta": []
+    "lunch": "yes"
   },
   {
     "timetable": {
@@ -445,10 +447,13 @@
       "time": "17:15 - 18:00",
       "place": "Room C"
     },
+    "title": "Springアプリケーションのテスト道具 使いどころ、使わないどころ",
+    "abstract": "Springアプリケーションのテストにはたくさんの道具の選択肢があります。何を使えばいいか、いつ使うのが良いか、使い方はあっているか、使うべきでないとこらで使っていないか、、悩みは尽きません。\r\n本セッションではJUnitやSpringの機能、モック、Selenium、Dockerなどを使ったテストや、それらを使った際のありがちな問題、使うべきでない場面などをお話しします。",
     "speakers": [
       {
         "id": 10,
         "name": "いろふ",
+        "profile": "大阪在住のふつうのプログラマです。 Javaエンジニア養成読本でJava入門とかWEB+DB PRESSでJavaの新定石とか書きました。",
         "image": "images/speakers/10.png"
       }
     ],

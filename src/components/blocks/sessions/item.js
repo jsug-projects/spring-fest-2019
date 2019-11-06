@@ -96,26 +96,6 @@ const TitleHolder = styled.div`
   display: inline-block;
 `
 
-const LunchHolder = styled.div`
-  background: ${props => props.theme.colors.neutral['400']};
-  color: ${props => props.theme.colors.white};
-  padding: ${props => props.theme.spacing(0.5, 1)};
-  border-radius: 3px;
-  align-items: baseline;
-  margin-right: ${props => props.theme.spacing(1)};
-`
-
-const Lunch = styled.span`
-  font-family: ${props => props.theme.typography.types.display};
-  font-size: ${props => props.theme.typography.size.md};
-  font-weight: 800;
-
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: ${props => props.theme.typography.size.sm};
-    font-weight: 700;
-  }
-`
-
 const Title = styled.h3`
   font-size: ${props => props.theme.typography.size.rg};
   font-family: ${props => props.theme.typography.types.display};
@@ -132,7 +112,7 @@ const Title = styled.h3`
 `
 
 const MetaHolder = styled.div`
-  display: none;
+  display: inline-block;
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
   }
 `
@@ -243,17 +223,11 @@ const SessionItem = ({ session }) => {
                 {session.meta.length > 0 && (
                   <MetaHolder>
                     {session.meta.map(m => (
-                      <Meta key={m} meta={m} />
+                      <Meta key={m} meta={m} lunch={session.lunch} />
                     ))}
                   </MetaHolder>
                 )}
                 <TitleHolder>
-                  {session.lunch && (
-                    <LunchHolder>
-                      <Icon name={'utensils'} inverted />
-                      <Lunch>ランチセッション</Lunch>
-                    </LunchHolder>
-                  )}
                   <Title>{session.title}</Title>
                 </TitleHolder>
               </ContentsHeader>
