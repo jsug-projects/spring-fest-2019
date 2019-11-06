@@ -119,7 +119,7 @@ const MetaHolder = styled.div`
 const ContentsHeader = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 `
 
 const ContentsBody = styled.div`
