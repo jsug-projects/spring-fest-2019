@@ -3,10 +3,17 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { ThemeProvider } from 'styled-components'
 
-import { Header, Footer } from '../blocks'
+import { Header, Footer, Banner } from '../blocks'
 import { theme, GlobalStyles } from '../foundations'
 
-const Layout = ({ children, siteTitle, headerColor, dynamic, headerRef }) => {
+const Layout = ({
+  children,
+  siteTitle,
+  headerColor,
+  dynamic,
+  headerRef,
+  sectionRef,
+}) => {
   return (
     <ThemeProvider theme={theme}>
       <>
@@ -30,6 +37,7 @@ const Layout = ({ children, siteTitle, headerColor, dynamic, headerRef }) => {
         <GlobalStyles />
         <Header
           headerRef={headerRef}
+          sectionRef={sectionRef}
           siteTitle={siteTitle}
           headerColor={headerColor}
           dynamic={dynamic}

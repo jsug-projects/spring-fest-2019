@@ -55,6 +55,7 @@ export default ({ data }) => {
       siteTitle={site.siteMetadata.title}
       dynamic
       headerRef={headerRef}
+      sectionRef={sectionRef}
     >
       <SEO title="Home" />
       <Banner

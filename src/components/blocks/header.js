@@ -149,7 +149,7 @@ const IconHolder = styled.div`
   }
 `
 
-const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
+const Header = ({ siteTitle, dynamic, headerColor, headerRef, sectionRef }) => {
   const { pdf, springLogoImage } = useStaticQuery(
     graphql`
       query {
@@ -179,9 +179,9 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
 
   const scrolled = () => {
     const { innerHeight } = window
-    const { scrollTop } = document.body
+    const scrollTop = sectionRef.current.getBoundingClientRect().top
     const containerHeight = headerRef.current.getBoundingClientRect().height
-    return scrollTop >= innerHeight - containerHeight
+    return scrollTop <= 0
   }
 
   useEffect(() => {
@@ -196,6 +196,8 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
 
   const handleOnScroll = () => {
     setScroll(document.body.scrollTop)
+
+    console.log(sectionRef.current.getBoundingClientRect())
 
     if (scrolled()) {
       setIsScrolled(true)
