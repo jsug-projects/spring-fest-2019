@@ -36,7 +36,8 @@ const Logo = styled.img`
   margin-right: ${props => props.theme.spacing(1.5)};
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    max-height: 1.5rem;
+    max-height: 1.3rem;
+    margin-right: ${props => props.theme.spacing(1.5)};
   }
 `
 
@@ -45,6 +46,14 @@ const Title = styled.h1`
   font-family: ${props => props.theme.typography.types.display};
   font-weight: 900;
   margin: 0;
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    font-size: ${props => props.theme.typography.size.lg};
+  }
+
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    font-size: 1.1rem;
+  }
 `
 
 const Nav = styled.nav`
@@ -123,6 +132,7 @@ const MobileHeader = styled.div`
   padding: ${props => props.theme.spacing(1.5, 3)};
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    padding: ${props => props.theme.spacing(1, 3)};
     display: flex;
     align-items: center;
     justify-content: space-between;

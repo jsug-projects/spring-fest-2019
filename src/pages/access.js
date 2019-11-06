@@ -26,6 +26,7 @@ export default ({ data }) => {
         <Section
           title="Access"
           fontColor={props => props.theme.colors.primary['300']}
+          backgroundColor={props => props.theme.colors.white}
         >
           <Access />
         </Section>

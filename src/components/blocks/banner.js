@@ -12,26 +12,46 @@ const Container = styled.div`
   padding-top: 64px;
   min-height: 100vh;
   color: #fff;
-  background-attachment: fixed;
-  background-size: cover;
   text-align: center;
   margin-bottom: -${props => props.pseudoMargin}px;
   position: relative;
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    min-height: ${props => props.viewHeight}px;
+  }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     padding: 0 2rem;
   }
 `
 
+const Background = styled.img`
+  position: fixed;
+  top: 0;
+  z-index: -3000;
+  object-fit: cover;
+  min-height: 100vh;
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    min-height: ${props => props.viewHeight}px;
+  }
+`
+
 const Logo = styled.img`
   margin-top: ${props => props.theme.spacing(7)};
-  margin-bottom: ${props => props.theme.spacing(5)};
   margin-bottom: ${props => props.theme.spacing(2)};
 
-  width: 18vh;
+  width: 11rem;
+
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    width: 8rem;
+    margin-top: ${props => props.theme.spacing(5)};
+    margin-bottom: ${props => props.theme.spacing(4)};
+  }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    width: 13vh;
+    width: 5rem;
+    margin-bottom: ${props => props.theme.spacing(1)};
   }
 `
 
@@ -43,9 +63,15 @@ const Title = styled.h1`
   font-weight: 900;
   margin-bottom: ${props => props.theme.spacing(2)};
 
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 3rem;
+  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+    font-size: 5rem;
     line-height: 2.7rem;
+  }
+
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-bottom: ${props => props.theme.spacing(-0.5)};
   }
 `
 
@@ -61,11 +87,12 @@ const PlaceText = styled.p`
   font-weight: 900;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin-bottom: ${props => props.theme.spacing(0.3)};
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: ${props => props.theme.spacing(-0.5)};
   }
 `
@@ -77,11 +104,11 @@ const DateText = styled.p`
   font-weight: 700;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     margin-top: 0;
   }
 `
@@ -94,11 +121,12 @@ const DescriptionText = styled.p`
   margin-bottom: ${props => props.theme.spacing(2)};
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    font-size: ${props => props.theme.typography.size.lg};
+    width: 70%;
+    font-size: ${props => props.theme.typography.size.rg};
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    width: 80%;
+    width: 85%;
     margin: 1rem auto;
     font-size: ${props => props.theme.typography.size.sm};
   }
@@ -157,25 +185,30 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
 
   const { title, description, event } = site.siteMetadata
   const [visible, setVisible] = useState(false)
+  const [viewHeight, setViewHeight] = useState(0)
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 300)
+    updateViewHeight()
   }, [])
 
+  const updateViewHeight = () => {
+    setViewHeight(parseInt(window.innerHeight))
+  }
+
   return (
-    <Container
-      pseudoMargin={pseudoMargin}
-      style={{
-        backgroundImage: `url(${bannerImage.childImageSharp.original.src})`,
-      }}
-    >
+    <Container pseudoMargin={pseudoMargin} viewHeight={viewHeight}>
+      <Background
+        src={bannerImage.childImageSharp.original.src}
+        viewHeight={viewHeight}
+      />
       <Logo src={springLogoImage.publicURL} />
       <Title>{title.toUpperCase()}</Title>
       <Center>
         <PlaceText>{event.venue}</PlaceText>
         <DateText>{event.date}</DateText>
       </Center>
-      <DescriptionText>{description}</DescriptionText>
+      <DescriptionText>{description} </DescriptionText>
       <ActionButton onClick={scrollToSection}>
         <Transition visible={visible} animation={'fade up'} duration={500}>
           <>

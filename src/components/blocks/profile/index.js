@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import { Modal } from 'semantic-ui-react'
+import parse from 'html-react-parser'
 
 const Card = styled.div`
   padding: ${props => props.theme.spacing(2)};
@@ -73,7 +74,7 @@ const BioHolder = styled.div`
   background: ${props => props.theme.colors.primaryGradient};
   padding: ${props => props.theme.spacing(1, 2)};
   border-radius: ${props => props.theme.shape.radius}px;
-  display: block;
+  display: flex;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     margin: 0;
@@ -104,14 +105,15 @@ const HolderHelper = styled.div`
 
 const Bio = styled.p`
   color: ${props => props.theme.colors.white};
+  text-decoration: none;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.md};
-    flex: 1;
   }
 `
 
 const Profile = ({ speaker, isOpen, onClose }) => {
+  console.log(speaker.profile)
   return (
     <Modal open={isOpen} onClose={onClose}>
       <Card key={speaker.id}>
@@ -124,7 +126,7 @@ const Profile = ({ speaker, isOpen, onClose }) => {
             </MobileSpeakerHolder>
           </PhotoHolder>
           <MobileBioHolder>
-            <Bio>{speaker.profile || '未定'}</Bio>
+            <Bio>{parse(String(speaker.profile))}</Bio>
           </MobileBioHolder>
         </MobileHolder>
         <HolderHelper>
@@ -133,7 +135,7 @@ const Profile = ({ speaker, isOpen, onClose }) => {
             <Company>{speaker.affiliation || '未定'}</Company>
           </NormalHolder>
           <BioHolder>
-            <Bio>{speaker.profile || '未定'}</Bio>
+            <Bio>{parse(String(speaker.profile))}</Bio>
           </BioHolder>
         </HolderHelper>
       </Card>

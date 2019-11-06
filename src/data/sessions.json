@@ -16,19 +16,19 @@
       "time": "10:00 - 10:45",
       "place": "sola city Hall"
     },
-    "meta": [
-      "基調講演"
-    ],
     "speakers": [
       {
         "id": 1,
         "name": "Josh",
         "affiliation": "Pivotal",
+        "profile": "未定",
         "image": "images/speakers/1.png"
       }
     ],
+    "slides": "基調講演",
     "hashtag": "test",
-    "enquete": "test"
+    "enquete": "test",
+    "meta": []
   },
   {
     "timetable": {
@@ -36,10 +36,8 @@
       "time": "11:00 - 11:45",
       "place": "sola city Hall (WEST)"
     },
-    "meta": [
-      "NTT Data"
-    ],
-    "slides": "https://speakerdeck.com/danielanewman/im-feeling-lucky-building-great-search-experiences-for-todays-users-number-iac19",
+    "slides": "NTT Data",
+    "meta": [],
     "speakers": []
   },
   {
@@ -48,10 +46,25 @@
       "time": "11:00 - 11:45",
       "place": "sola city Hall (EAST)"
     },
-    "meta": [
-      "NRI"
+    "title": "大規模エンタープライズシステム開発におけるSpringアプリケーションのDevOps適用事例",
+    "abstract": "NRIでは社内の多くのプロジェクトでSpring Frameworkを利用したアプリケーションを開発しています。\r\n　本セッションではアプリケーション開発に欠かせないDevOpsに着目して、大規模プロジェクトでのコンテナ技術を活用したビルドやテストに関する事例を中心に、苦労した点や工夫した点をご紹介します。",
+    "speakers": [
+      {
+        "id": 19,
+        "name": "三宅 光太郎",
+        "affiliation": "NRI",
+        "profile": "専門はクラウドネイティブのミドルウェア開発および開発ツールの構築・導入。",
+        "image": "images/speakers/19.png"
+      },
+      {
+        "id": 20,
+        "name": "土屋 大樹",
+        "affiliation": "NRI",
+        "profile": "入社以来、テスト効率化・自動化に関する業務に従事。現在はコンテナ・k8sを活用したCI/CDパイプラインの設計・開発を行っている。",
+        "image": "images/speakers/20.png"
+      }
     ],
-    "speakers": []
+    "meta": []
   },
   {
     "timetable": {
@@ -59,10 +72,8 @@
       "time": "11:00 - 11:45",
       "place": "Room B"
     },
-    "meta": [
-      "ウルシステムズ"
-    ],
-    "slides": "https://speakerdeck.com/revolveconf/creatively-recalculating-your-daily-design-routine",
+    "slides": "ウルシステムズ",
+    "meta": [],
     "speakers": []
   },
   {
@@ -71,10 +82,18 @@
       "time": "11:00 - 11:45",
       "place": "Room C"
     },
-    "meta": [
-      "楽天"
+    "title": "Spring Social でソーシャルログインを実装する",
+    "abstract": "最近ソーシャルログインを提供するサービスは増えてきています。Spring Social は各SNS 専用のライブラリが用意されていて、これらを使ってソーシャルログインを実装することができます。\r\n\r\nこのセッションでは、このソーシャルログイン機能を提供するWebアプリケーションを実装する方法を紹介します。",
+    "speakers": [
+      {
+        "id": 18,
+        "name": "田中 竜介",
+        "affiliation": "楽天",
+        "profile": "楽天ペイ（オンライン決済）のアプリケーションエンジニアとして開発業務に携わっています。パブリッククラウドやコンテナオーケストラレーション、CI/CD などを良く触っています。",
+        "image": "images/speakers/18.png"
+      }
     ],
-    "speakers": []
+    "meta": []
   },
   {
     "timetable": {
@@ -87,8 +106,9 @@
     "speakers": [
       {
         "id": 12,
-        "name": "菊池真登",
+        "name": "菊池 真登",
         "affiliation": "カサレアル",
+        "profile": "2010年にIT業界に身を置く。当初は組込制御系システム開発のテスターを行っていた。2012年3月にSpring MVCを使ったWebアプリケーション開発に携わったことをきっかけに、以後様々なWebアプリケーション開発に従事する。現在は株式会社カサレアルでSpring系コースを中心に技術講師として研修の登壇を行っている。",
         "image": "images/speakers/12.png"
       }
     ],
@@ -114,6 +134,7 @@
     "meta": [
       "JasmineSoft"
     ],
+    "lunch": "yes",
     "speakers": []
   },
   {
@@ -122,11 +143,8 @@
       "time": "Lunch Session (11:45 - 12:30)",
       "place": "sola city Hall (EAST)"
     },
-    "title": "ランチセッション Root42",
+    "title": "Root42",
     "abstract": "パート1(由利): DocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、\r\nかつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩): 実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。\r\n\r\n以上です。よろしくお願い致します。",
-    "meta": [
-      "Root42"
-    ],
     "speakers": [
       {
         "id": 15,
@@ -142,7 +160,9 @@
         "profile": "株式会社クオリティスタート代表。ITプランナー。ネット上では「ござ先輩」として著名で、コラム等の執筆活動も行う。ちなヤク。",
         "image": "images/speakers/16.png"
       }
-    ]
+    ],
+    "lunch": "yes",
+    "meta": []
   },
   {
     "timetable": {
@@ -150,10 +170,24 @@
       "time": "13:00 - 13:45",
       "place": "Room B"
     },
-    "meta": [
-      "タグバンガーズ"
+    "speakers": [
+      {
+        "id": 21,
+        "name": "山﨑 大",
+        "affiliation": "タグバンガーズ",
+        "profile": "タグバンガーズ入社5年目。DevチームにてWebアプリケーションの開発、マネジメントを担当。Java、Springはもちろん、技術のことならなんでも好き。ただのわさもん。",
+        "image": "images/speakers/21.png"
+      },
+      {
+        "id": 22,
+        "name": "設樂 大悟",
+        "affiliation": "タグバンガーズ",
+        "profile": "タグバンガーズ入社1年目。DevチームにてWebアプリケーションのフロントエンド開発を担当。",
+        "image": "images/speakers/22.png"
+      }
     ],
-    "speakers": []
+    "slides": "タグバンガーズ",
+    "meta": []
   },
   {
     "timetable": {
@@ -168,7 +202,7 @@
         "id": 2,
         "name": "佐川 夫美雄",
         "affiliation": "アシラス",
-        "profile": "http://ashiras.xyz",
+        "profile": "<a href=\"http://ashiras.xyz/\" target=\"_blank\" style=\"color: white;\"><p>http://ashiras.xyz/</p></a>",
         "image": "images/speakers/2.png"
       }
     ],
@@ -199,17 +233,18 @@
       "time": "14:00 - 14:45",
       "place": "sola city Hall (EAST)"
     },
-    "meta": [
-      "Spring Boot爆速開発超絶"
-    ],
+    "title": "Spring Boot爆速開発超絶技巧",
+    "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring\r\nBootアプリケーションを開発する上で欠かせないキーボードショートカット、Dockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
     "speakers": [
       {
         "id": 3,
         "name": "山本",
         "affiliation": "サムライズム",
+        "profile": "トラブルシューティングツールの侍や、Twitter4JといったOSSを開発しているJavaエンジニア。株式会社サムライズムという会社の社長で、海外のプログラマ向けツールの日本国内展開を手がけています。",
         "image": "images/speakers/3.png"
       }
-    ]
+    ],
+    "meta": []
   },
   {
     "timetable": {
@@ -217,17 +252,17 @@
       "time": "14:00 - 14:45",
       "place": "Room B"
     },
-    "meta": [
-      "Pivotal"
-    ],
     "speakers": [
       {
         "id": 1,
         "name": "Josh",
         "affiliation": "Pivotal",
+        "profile": "未定",
         "image": "images/speakers/1.png"
       }
-    ]
+    ],
+    "slides": "Pivotal",
+    "meta": []
   },
   {
     "timetable": {
@@ -235,17 +270,17 @@
       "time": "14:00 - 14:45",
       "place": "Room C"
     },
-    "meta": [
-      "Pivotal"
-    ],
     "speakers": [
       {
         "id": 4,
         "name": "Stéphane",
         "affiliation": "Pivotal",
+        "profile": "未定",
         "image": "images/speakers/4.png"
       }
-    ]
+    ],
+    "slides": "Pivotal",
+    "meta": []
   },
   {
     "timetable": {
@@ -254,9 +289,8 @@
       "place": "sola city Hall (WEST)"
     },
     "title": "Spring初心者必見、フレームワーク別の便利なテスト機能紹介",
-    "abstract": "Springが提供する機能（フレームワーク）で良く使用される Spring Framework、Spring MVC、Spring Securityと Springとシームレスに連携できるO/R Mappingツールである MyBatisに対するユニットテストに関して ・自動テストのメリットについて ・どのようなテストが出来るか をデモを交えて紹介させて頂きます。\r\n\r\n\r\n■：テストはJUnit5を使用\r\n\r\n■：Spring Frameworkのテスト\r\n〇：@Mockを使用して、まだ作成されていない実装クラスをスタブとして利用するテストを紹介します。\r\n\r\n・whenメソッドの使い方\r\n・verifyメソッドの使い方\r\n\r\n■：MyBatisのテスト\r\n〇：mybatis-spring-boot-starter-testを使用して\r\nMyBatisのMapperインターフェースを利用したデータアクセス機能のCRUD処理のテストを紹介します。\r\n\r\n・@MybatisTestアノテーションの説明\r\n・@AutoConfigureTestDatabaseアノテーションの説明\r\n\r\n■：Spring MVCのテスト\r\n〇：MockMvcを利用した、リクエストハンドラメソッドの呼び出し結果を取得し、評価するテストを紹介します。\r\n\r\n・メソッドチェーンの説明\r\n・HTTPレスポンスステータスの評価方法の説明\r\n・（View）遷移先の評価方法の説明\r\n・Modelの評価方法の説明\r\n\r\n■：Spring Securityのテスト\r\n〇：spring-security-testを使用してフォーム認証のテスト及びログアウトのテストを紹介します。",
+    "abstract": "Springが提供する機能（フレームワーク）で良く使用される Spring Framework、Spring MVC、Spring Securityと Springとシームレスに連携できるO/R Mappingツールである MyBatisに対するユニットテストに関して ・自動テストのメリットについて ・どのようなテストが出来るか をデモを交えて紹介させて頂きます。\r\n\r\n■：テストはJUnit5を使用\r\n\r\n■：Spring Frameworkのテスト\r\n〇：@Mockを使用して、まだ作成されていない実装クラスをスタブとして利用するテストを紹介します。\r\n\r\n・whenメソッドの使い方\r\n・verifyメソッドの使い方\r\n\r\n■：MyBatisのテスト\r\n〇：mybatis-spring-boot-starter-testを使用して\r\nMyBatisのMapperインターフェースを利用したデータアクセス機能のCRUD処理のテストを紹介します。\r\n\r\n・@MybatisTestアノテーションの説明\r\n・@AutoConfigureTestDatabaseアノテーションの説明\r\n\r\n■：Spring MVCのテスト\r\n〇：MockMvcを利用した、リクエストハンドラメソッドの呼び出し結果を取得し、評価するテストを紹介します。\r\n\r\n・メソッドチェーンの説明\r\n・HTTPレスポンスステータスの評価方法の説明\r\n・（View）遷移先の評価方法の説明\r\n・Modelの評価方法の説明\r\n\r\n■：Spring Securityのテスト\r\n〇：spring-security-testを使用してフォーム認証のテスト及びログアウトのテストを紹介します。",
     "meta": [
-      "テスト関係",
       "For Beginner"
     ],
     "speakers": [
@@ -275,9 +309,8 @@
       "time": "15:00 - 15:45",
       "place": "sola city Hall (EAST)"
     },
-    "meta": [
-      "マイクロソフト"
-    ],
+    "slides": "マイクロソフト",
+    "meta": [],
     "speakers": []
   },
   {
@@ -287,9 +320,8 @@
       "place": "Room B"
     },
     "abstract": "Spring単体テストの効率化",
-    "meta": [
-      "テクマトリックス"
-    ],
+    "slides": "テクマトリックス",
+    "meta": [],
     "speakers": []
   },
   {
@@ -303,9 +335,9 @@
     "speakers": [
       {
         "id": 14,
-        "name": "長谷部良輔",
+        "name": "長谷部 良輔",
         "affiliation": "LINE",
-        "profile": "2013年 LINE入社。LINEの公式アカウントに関するサーバーサイドの開発を担当しています。以前はLINE Login, LINE Notify, LINE GAME Platformなどのサーバーサイド開発を担当していました",
+        "profile": "2013年 LINE入社。LINEの公式アカウントに関するサーバーサイドの開発を担当しています。以前はLINE Login, LINE Notify, LINE GAME Platformなどのサーバーサイド開発を担当していました。",
         "image": "images/speakers/14.png"
       }
     ],
@@ -336,9 +368,8 @@
       "time": "16:15 - 17:00",
       "place": "sola city Hall (EAST)"
     },
-    "meta": [
-      "レッドハット"
-    ],
+    "slides": "レッドハット",
+    "meta": [],
     "speakers": []
   },
   {
@@ -362,16 +393,15 @@
       "time": "16:15 - 17:00",
       "place": "Room C"
     },
-    "meta": [
-      "GraalVM Native Image関連"
-    ],
     "speakers": [
       {
         "id": 7,
         "name": "岩塚",
         "image": "images/speakers/7.png"
       }
-    ]
+    ],
+    "slides": "GraalVM Native Image関連",
+    "meta": []
   },
   {
     "timetable": {
@@ -388,7 +418,8 @@
         "name": "進藤",
         "image": "images/speakers/8.png"
       }
-    ]
+    ],
+    "slides": "進藤さん"
   },
   {
     "timetable": {
@@ -405,7 +436,8 @@
         "name": "土岐",
         "image": "images/speakers/9.png"
       }
-    ]
+    ],
+    "slides": "土岐さん"
   },
   {
     "timetable": {
@@ -438,7 +470,7 @@
         "image": "images/speakers/11.png"
       }
     ],
-    "slides": "https://www.slideshare.net/OgawaTakeshi/spring-datarestandspringcloudcontract?ref=http://springfest2018.springframework.jp/"
+    "slides": "伊賀さん"
   },
   {
     "timetable": {
@@ -446,8 +478,17 @@
       "time": "18:15 - 19:00",
       "place": "Room B"
     },
-    "meta": [],
-    "speakers": []
+    "meta": [
+      "For Beginner"
+    ],
+    "speakers": [
+      {
+        "id": 23,
+        "name": "大野",
+        "image": "images/speakers/23.png"
+      }
+    ],
+    "slides": "大野さん"
   },
   {
     "timetable": {
@@ -455,8 +496,17 @@
       "time": "18:15 - 19:00",
       "place": "Room C"
     },
-    "meta": [],
-    "speakers": []
+    "meta": [
+      "For Beginner"
+    ],
+    "speakers": [
+      {
+        "id": 24,
+        "name": "長谷川",
+        "image": "images/speakers/24.png"
+      }
+    ],
+    "slides": "長谷川さん"
   },
   {
     "timetable": {
@@ -464,9 +514,8 @@
       "time": "19:15 - 20:45",
       "place": "sola city Hall (WEST)"
     },
-    "meta": [
-      "懇親会"
-    ],
+    "slides": "懇親会",
+    "meta": [],
     "speakers": []
   }
 ]

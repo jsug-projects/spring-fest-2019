@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import parse from 'html-react-parser'
 
 const Container = styled.div`
   border-radius: ${props => props.theme.shape.radius * 2}px;
@@ -95,7 +96,7 @@ export default ({ booth, position }) => {
       {title && (
         <ContentsHolder>
           <Title>{title}</Title>
-          <Description>{description}</Description>
+          <Description>{parse(description)}</Description>
         </ContentsHolder>
       )}
       <Sponsor>

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'gatsby'
+import { Icon } from 'semantic-ui-react'
 
 import { Meta } from '../../elements'
 import { Profile, ShowMore } from '../index'
@@ -92,7 +93,27 @@ const ContentsHolder = styled.div`
 `
 
 const TitleHolder = styled.div`
-  margin;  ${props => props.theme.spacing(1, 0)};
+  display: inline-block;
+`
+
+const LunchHolder = styled.div`
+  background: ${props => props.theme.colors.neutral['400']};
+  color: ${props => props.theme.colors.white};
+  padding: ${props => props.theme.spacing(0.5, 1)};
+  border-radius: 3px;
+  align-items: baseline;
+  margin-right: ${props => props.theme.spacing(1)};
+`
+
+const Lunch = styled.span`
+  font-family: ${props => props.theme.typography.types.display};
+  font-size: ${props => props.theme.typography.size.md};
+  font-weight: 800;
+
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    font-size: ${props => props.theme.typography.size.sm};
+    font-weight: 700;
+  }
 `
 
 const Title = styled.h3`
@@ -102,6 +123,7 @@ const Title = styled.h3`
   white-space: pre-line;
   padding: ${props => props.theme.spacing(0.5, 0)};
   margin-bottom: 0;
+  margin-top: 0;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.md};
@@ -116,6 +138,7 @@ const MetaHolder = styled.div`
 `
 
 const ContentsHeader = styled.div`
+  margin-bottom: 4px;
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     flex-direction: column;
     width: 100%;
@@ -225,6 +248,12 @@ const SessionItem = ({ session }) => {
                   </MetaHolder>
                 )}
                 <TitleHolder>
+                  {session.lunch && (
+                    <LunchHolder>
+                      <Icon name={'utensils'} inverted />
+                      <Lunch>ランチセッション</Lunch>
+                    </LunchHolder>
+                  )}
                   <Title>{session.title}</Title>
                 </TitleHolder>
               </ContentsHeader>
