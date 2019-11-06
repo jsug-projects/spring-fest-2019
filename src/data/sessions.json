@@ -119,10 +119,8 @@
       "time": "13:00 - 13:45",
       "place": "sola city Hall (EAST)"
     },
-    "meta": [
-      "ランチセッション"
-    ],
     "slides": "Google",
+    "meta": [],
     "speakers": []
   },
   {
@@ -131,12 +129,22 @@
       "time": "Lunch Session (11:45 - 12:30)",
       "place": "sola city Hall (WEST)"
     },
+    "title": "ローコード開発プラットフォームと、ドメイン駆動設計と、Springの関係",
+    "abstract": "日本で\"超高速開発”と位置付けられていたツール群が、あらためて\"ローコード開発プラットフォーム”という視点で再編成されつつあります。一方、Spring界隈では、業務系のシステム開発分野へドメイン駆動設計を適用するアプローチが注目されています。ローコード開発プラットフォーム、ドメイン駆動設計、そしてSpringの関係をどう読みといていくのか。Wagbyを題材に説明します。",
     "meta": [
       "ランチセッション"
     ],
+    "speakers": [
+      {
+        "id": 25,
+        "name": "贄 良則",
+        "affiliation": "ジャスミンソフト",
+        "profile": "ジャスミンソフト社長。Wagbyのコンセプトデザイン、アーキテクチャ設計を行う。ローコード開発コミュニティ幹事。",
+        "image": "images/speakers/25.png"
+      }
+    ],
     "slides": "JasmineSoft",
-    "lunch": "yes",
-    "speakers": []
+    "lunch": "yes"
   },
   {
     "timetable": {
@@ -146,6 +154,9 @@
     },
     "title": "Root42",
     "abstract": "パート1(由利): DocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、\r\nかつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩): 実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。\r\n\r\n以上です。よろしくお願い致します。",
+    "meta": [
+      "ランチセッション"
+    ],
     "speakers": [
       {
         "id": 15,
@@ -162,8 +173,7 @@
         "image": "images/speakers/16.png"
       }
     ],
-    "lunch": "yes",
-    "meta": []
+    "lunch": "yes"
   },
   {
     "timetable": {
@@ -171,6 +181,8 @@
       "time": "13:00 - 13:45",
       "place": "Room B"
     },
+    "title": "Spring with React for Enterprise Application",
+    "abstract": "Enterprise な アプリケーションにおいてもデザイン性、使い勝手に対する要求は高まってきています。\r\nその要求を Spring と React を使って実現する方法をお話します。\r\n・EventStorming を用いたモデリング\r\n・Backend と Frontend を並行して開発する by Spring and React\r\n・Contract による変化に強い開発チーム",
     "speakers": [
       {
         "id": 21,
@@ -447,7 +459,7 @@
       "place": "Room C"
     },
     "title": "Springアプリケーションのテスト道具 使いどころ、使わないどころ",
-    "abstract": "Springアプリケーションのテストにはたくさんの道具の選択肢があります。何を使えばいいか、いつ使うのが良いか、使い方はあっているか、使うべきでないとこらで使っていないか、、悩みは尽きません。\r\n本セッションではJUnitやSpringの機能、モック、Selenium、Dockerなどを使ったテストや、それらを使った際のありがちな問題、使うべきでない場面などをお話しします。",
+    "abstract": "Springアプリケーションのテストにはたくさんの道具の選択肢があります。何を使えばいいか、いつ使うのが良いか、使い方はあっているか、使うべきでないところで使っていないか、、悩みは尽きません。\r\n本セッションではJUnitやSpringの機能、モック、Selenium、Dockerなどを使ったテストや、それらを使った際のありがちな問題、使うべきでない場面などをお話しします。",
     "speakers": [
       {
         "id": 10,
