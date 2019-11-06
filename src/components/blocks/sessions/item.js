@@ -94,6 +94,7 @@ const ContentsHolder = styled.div`
 
 const TitleHolder = styled.div`
   display: inline-block;
+  flex: 1;
 `
 
 const Title = styled.h3`
@@ -113,16 +114,12 @@ const Title = styled.h3`
 
 const MetaHolder = styled.div`
   display: inline-block;
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-  }
 `
 
 const ContentsHeader = styled.div`
+  display: flex;
+  align-items: center;
   margin-bottom: 4px;
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    flex-direction: column;
-    width: 100%;
-  }
 `
 
 const ContentsBody = styled.div`
