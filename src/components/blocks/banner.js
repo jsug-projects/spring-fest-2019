@@ -12,27 +12,19 @@ const Container = styled.div`
   padding-top: 64px;
   min-height: 100vh;
   color: #fff;
+  background-attachment: fixed;
+  background-size: cover;
   text-align: center;
+  margin-bottom: -${props => props.pseudoMargin}px;
   position: relative;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     min-height: ${props => props.viewHeight}px;
+    background-attachment: scroll;
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     padding: 0 2rem;
-  }
-`
-
-const Background = styled.img`
-  position: fixed;
-  top: 0;
-  z-index: -3000;
-  object-fit: cover;
-  min-height: 100vh;
-
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    min-height: ${props => props.viewHeight}px;
   }
 `
 
@@ -196,18 +188,19 @@ const Banner = ({ scrollToSection }) => {
   }
 
   return (
-    <Container viewHeight={viewHeight}>
-      <Background
-        src={bannerImage.childImageSharp.original.src}
-        viewHeight={viewHeight}
-      />
+    <Container
+      style={{
+        backgroundImage: `url(${bannerImage.childImageSharp.original.src})`,
+      }}
+      viewHeight={viewHeight}
+    >
       <Logo src={springLogoImage.publicURL} />
       <Title>{title.toUpperCase()}</Title>
       <Center>
         <PlaceText>{event.venue}</PlaceText>
         <DateText>{event.date}</DateText>
       </Center>
-      <DescriptionText>{description} </DescriptionText>
+      <DescriptionText>{description}</DescriptionText>
       <ActionButton onClick={scrollToSection}>
         <Transition visible={visible} animation={'fade up'} duration={500}>
           <>
