@@ -11,7 +11,6 @@ import {
   Section,
   Sessions,
   Sponsors,
-  Header,
 } from '../components/blocks'
 
 const SectionWrap = styled.div`
