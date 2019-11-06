@@ -14,13 +14,11 @@ import {
 } from '../components/blocks'
 
 const SectionWrap = styled.div`
-  padding-top: ${props => props.pseudoMargin}px;
   margin: 0 auto;
 `
 
 export default ({ data }) => {
   const { site, allBoothJson, allSessionsJson, allCompaniesJson } = data
-  const [pseudoMargin, setPseudoMargin] = useState(0)
   const time = ['timetable', 'time']
   const sectionRef = useRef(null)
   const headerRef = useRef(null)
@@ -33,20 +31,13 @@ export default ({ data }) => {
   }
 
   useEffect(() => {
-    updateMargin()
-    window.addEventListener('resize', updateMargin, true)
-    return () => {
-      window.removeEventListener('resize', updateMargin, true)
-    }
+    console.log(headerRef.current.getBoundingClientRect().height)
   }, [])
-
-  const updateMargin = () => {
-    setPseudoMargin(headerRef.current.getBoundingClientRect().height)
-  }
 
   const scrolled = () => {
     const scrollTop = sectionRef.current.getBoundingClientRect().top
-    return scrollTop <= 0
+    const headerHeight = headerRef.current.getBoundingClientRect().height
+    return scrollTop <= headerHeight
   }
 
   const sponsor = []
@@ -63,11 +54,8 @@ export default ({ data }) => {
       scrolled={scrolled}
     >
       <SEO title="Home" />
-      <Banner
-        scrollToSection={() => scrollToSection()}
-        pseudoMargin={pseudoMargin}
-      />
-      <SectionWrap ref={sectionRef} pseudoMargin={pseudoMargin}>
+      <Banner scrollToSection={() => scrollToSection()} />
+      <SectionWrap ref={sectionRef}>
         <Section
           title="sessions"
           backgroundColor={props => props.theme.colors.white}

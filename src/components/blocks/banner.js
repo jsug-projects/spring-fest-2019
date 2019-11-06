@@ -13,7 +13,6 @@ const Container = styled.div`
   min-height: 100vh;
   color: #fff;
   text-align: center;
-  margin-bottom: -${props => props.pseudoMargin}px;
   position: relative;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
@@ -150,7 +149,7 @@ const ButtonText = styled.p`
   font-weight: 700;
 `
 
-const Banner = ({ scrollToSection, pseudoMargin }) => {
+const Banner = ({ scrollToSection }) => {
   const { site, bannerImage, springLogoImage } = useStaticQuery(
     graphql`
       query {
@@ -197,7 +196,7 @@ const Banner = ({ scrollToSection, pseudoMargin }) => {
   }
 
   return (
-    <Container pseudoMargin={pseudoMargin} viewHeight={viewHeight}>
+    <Container viewHeight={viewHeight}>
       <Background
         src={bannerImage.childImageSharp.original.src}
         viewHeight={viewHeight}
