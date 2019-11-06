@@ -11,6 +11,7 @@ const Container = styled.footer`
 const Copyright = styled.span`
   font-size: ${props => props.theme.typography.size.sm};
   color: ${props => props.theme.colors.neutral[200]};
+  height: 500px;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: 0.7rem;

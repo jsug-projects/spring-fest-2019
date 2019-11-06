@@ -5,9 +5,8 @@
       "time": "9:45 - 10:00",
       "place": "sola city Hall (WEST)"
     },
-    "meta": [
-      "ご挨拶"
-    ],
+    "slides": "ご挨拶",
+    "meta": [],
     "speakers": []
   },
   {
@@ -121,8 +120,9 @@
       "place": "sola city Hall (EAST)"
     },
     "meta": [
-      "Google"
+      "ランチセッション"
     ],
+    "slides": "Google",
     "speakers": []
   },
   {
@@ -132,8 +132,9 @@
       "place": "sola city Hall (WEST)"
     },
     "meta": [
-      "JasmineSoft"
+      "ランチセッション"
     ],
+    "slides": "JasmineSoft",
     "lunch": "yes",
     "speakers": []
   },
@@ -291,7 +292,7 @@
     "title": "Spring初心者必見、フレームワーク別の便利なテスト機能紹介",
     "abstract": "Springが提供する機能（フレームワーク）で良く使用される Spring Framework、Spring MVC、Spring Securityと Springとシームレスに連携できるO/R Mappingツールである MyBatisに対するユニットテストに関して ・自動テストのメリットについて ・どのようなテストが出来るか をデモを交えて紹介させて頂きます。\r\n\r\n■：テストはJUnit5を使用\r\n\r\n■：Spring Frameworkのテスト\r\n〇：@Mockを使用して、まだ作成されていない実装クラスをスタブとして利用するテストを紹介します。\r\n\r\n・whenメソッドの使い方\r\n・verifyメソッドの使い方\r\n\r\n■：MyBatisのテスト\r\n〇：mybatis-spring-boot-starter-testを使用して\r\nMyBatisのMapperインターフェースを利用したデータアクセス機能のCRUD処理のテストを紹介します。\r\n\r\n・@MybatisTestアノテーションの説明\r\n・@AutoConfigureTestDatabaseアノテーションの説明\r\n\r\n■：Spring MVCのテスト\r\n〇：MockMvcを利用した、リクエストハンドラメソッドの呼び出し結果を取得し、評価するテストを紹介します。\r\n\r\n・メソッドチェーンの説明\r\n・HTTPレスポンスステータスの評価方法の説明\r\n・（View）遷移先の評価方法の説明\r\n・Modelの評価方法の説明\r\n\r\n■：Spring Securityのテスト\r\n〇：spring-security-testを使用してフォーム認証のテスト及びログアウトのテストを紹介します。",
     "meta": [
-      "For Beginner"
+      "初心者"
     ],
     "speakers": [
       {
@@ -410,7 +411,7 @@
       "place": "sola city Hall (EAST)"
     },
     "meta": [
-      "For Beginner"
+      "初心者"
     ],
     "speakers": [
       {
@@ -428,7 +429,7 @@
       "place": "Room B"
     },
     "meta": [
-      "For Beginner"
+      "初心者"
     ],
     "speakers": [
       {
@@ -464,7 +465,7 @@
       "place": "sola city Hall (EAST)"
     },
     "meta": [
-      "For Beginner"
+      "初心者"
     ],
     "speakers": [
       {
@@ -482,7 +483,7 @@
       "place": "Room B"
     },
     "meta": [
-      "For Beginner"
+      "初心者"
     ],
     "speakers": [
       {
@@ -500,7 +501,7 @@
       "place": "Room C"
     },
     "meta": [
-      "For Beginner"
+      "初心者"
     ],
     "speakers": [
       {
