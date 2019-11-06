@@ -187,16 +187,13 @@ const Banner = ({ scrollToSection, scrolled }) => {
   const [viewHeight, setViewHeight] = useState(0)
   const [hide, setHide] = useState(false)
 
-  useEffect(() => {
-    setTimeout(() => setVisible(true), 300)
-    updateViewHeight()
-  }, [])
-
   const updateViewHeight = () => {
     setViewHeight(parseInt(window.innerHeight))
   }
 
   useEffect(() => {
+    setTimeout(() => setVisible(true), 300)
+    updateViewHeight()
     window.addEventListener('scroll', handleOnScroll, true)
     return () => {
       window.removeEventListener('scroll', handleOnScroll, true)
