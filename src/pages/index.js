@@ -40,6 +40,11 @@ export default ({ data }) => {
     return scrollTop <= headerHeight
   }
 
+  const bannerScrolled = () => {
+    const scrollTop = sectionRef.current.getBoundingClientRect().top
+    return scrollTop <= 0
+  }
+
   const sponsor = []
   allCompaniesJson.nodes.map(s => {
     if (s.sponsoring) sponsor.push(s)
@@ -54,7 +59,10 @@ export default ({ data }) => {
       scrolled={scrolled}
     >
       <SEO title="Home" />
-      <Banner scrollToSection={() => scrollToSection()} scrolled={scrolled} />
+      <Banner
+        scrollToSection={() => scrollToSection()}
+        bannerScrolled={bannerScrolled}
+      />
       <SectionWrap ref={sectionRef}>
         <Section
           title="sessions"

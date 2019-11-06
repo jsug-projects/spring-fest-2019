@@ -25,6 +25,7 @@ const Container = styled.div`
 `
 
 const Background = styled.img`
+  display: ${props => (props.hide ? 'none' : 'block')};
   position: fixed;
   top: 0;
   z-index: -3000;
@@ -149,7 +150,7 @@ const ButtonText = styled.p`
   font-weight: 700;
 `
 
-const Banner = ({ scrollToSection, scrolled }) => {
+const Banner = ({ scrollToSection, bannerScrolled }) => {
   const { site, bannerImage, springLogoImage } = useStaticQuery(
     graphql`
       query {
@@ -201,7 +202,7 @@ const Banner = ({ scrollToSection, scrolled }) => {
   }, [hide])
 
   const handleOnScroll = () => {
-    if (scrolled()) {
+    if (bannerScrolled()) {
       setHide(true)
     } else {
       setHide(false)
@@ -211,7 +212,8 @@ const Banner = ({ scrollToSection, scrolled }) => {
   return (
     <Container viewHeight={viewHeight}>
       <Background
-        src={hide ? '' : bannerImage.childImageSharp.original.src}
+        src={bannerImage.childImageSharp.original.src}
+        hide={hide}
         viewHeight={viewHeight}
       />
       <Logo src={springLogoImage.publicURL} />
