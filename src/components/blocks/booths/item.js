@@ -93,7 +93,7 @@ export default ({ booth, position }) => {
   const { title, description, sponsor } = booth
   return (
     <Container position={position}>
-      {description && (
+      {(description || title) && (
         <ContentsHolder>
           <Title>{title}</Title>
           <Description>{parse(description)}</Description>
