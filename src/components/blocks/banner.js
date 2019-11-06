@@ -150,7 +150,7 @@ const ButtonText = styled.p`
   font-weight: 700;
 `
 
-const Banner = ({ scrollToSection, pseudoMargin, bannerRef }) => {
+const Banner = ({ scrollToSection, pseudoMargin }) => {
   const { site, bannerImage, springLogoImage } = useStaticQuery(
     graphql`
       query {

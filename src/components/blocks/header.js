@@ -149,7 +149,7 @@ const IconHolder = styled.div`
   }
 `
 
-const Header = ({ siteTitle, dynamic, headerColor, headerRef, sectionRef }) => {
+const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
   const { pdf, springLogoImage } = useStaticQuery(
     graphql`
       query {
@@ -171,18 +171,10 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, sectionRef }) => {
 
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [scroll, setScroll] = useState(0)
   const [opacity, setOpacity] = useState(0)
   const [iconColor, setIconColor] = useState(
     dynamic ? neutralColor : primaryColor
   )
-
-  const scrolled = () => {
-    const { innerHeight } = window
-    const scrollTop = sectionRef.current.getBoundingClientRect().top
-    const containerHeight = headerRef.current.getBoundingClientRect().height
-    return scrollTop <= 0
-  }
 
   useEffect(() => {
     if (dynamic) {
@@ -195,10 +187,6 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, sectionRef }) => {
   }, [])
 
   const handleOnScroll = () => {
-    setScroll(document.body.scrollTop)
-
-    console.log(sectionRef.current.getBoundingClientRect())
-
     if (scrolled()) {
       setIsScrolled(true)
       setIconColor(primaryColor)
@@ -246,7 +234,7 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, sectionRef }) => {
           <Link to="/#index">
             <TitleHolder>
               <Logo src={springLogoImage.publicURL} />
-              <Title>{scroll}</Title>
+              <Title>{siteTitle.toUpperCase()}</Title>
             </TitleHolder>
           </Link>
         )}
