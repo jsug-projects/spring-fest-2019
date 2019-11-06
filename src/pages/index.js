@@ -54,7 +54,7 @@ export default ({ data }) => {
       scrolled={scrolled}
     >
       <SEO title="Home" />
-      <Banner scrollToSection={() => scrollToSection()} />
+      <Banner scrollToSection={() => scrollToSection()} scrolled={scrolled} />
       <SectionWrap ref={sectionRef}>
         <Section
           title="sessions"

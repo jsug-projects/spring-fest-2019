@@ -149,7 +149,7 @@ const ButtonText = styled.p`
   font-weight: 700;
 `
 
-const Banner = ({ scrollToSection }) => {
+const Banner = ({ scrollToSection, scrolled }) => {
   const { site, bannerImage, springLogoImage } = useStaticQuery(
     graphql`
       query {
@@ -185,6 +185,7 @@ const Banner = ({ scrollToSection }) => {
   const { title, description, event } = site.siteMetadata
   const [visible, setVisible] = useState(false)
   const [viewHeight, setViewHeight] = useState(0)
+  const [hide, setHide] = useState(false)
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 300)
@@ -195,10 +196,25 @@ const Banner = ({ scrollToSection }) => {
     setViewHeight(parseInt(window.innerHeight))
   }
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleOnScroll, true)
+    return () => {
+      window.removeEventListener('scroll', handleOnScroll, true)
+    }
+  }, [hide])
+
+  const handleOnScroll = () => {
+    if (scrolled()) {
+      setHide(true)
+    } else {
+      setHide(false)
+    }
+  }
+
   return (
     <Container viewHeight={viewHeight}>
       <Background
-        src={bannerImage.childImageSharp.original.src}
+        src={hide ? '' : bannerImage.childImageSharp.original.src}
         viewHeight={viewHeight}
       />
       <Logo src={springLogoImage.publicURL} />
