@@ -195,7 +195,8 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
   }, [])
 
   const handleOnScroll = () => {
-    setScroll(window.scrollY)
+    setScroll(document.body.scrollTop)
+    console.log(document.body.scrollTop)
 
     if (scrolled()) {
       setIsScrolled(true)
