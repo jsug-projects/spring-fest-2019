@@ -108,6 +108,7 @@ const Title = styled.h3`
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.md};
+    line-height: 1.2rem;
     font-weight: 700;
   }
 `
@@ -116,6 +117,7 @@ const MetaHolder = styled.div`
   display: inline-block;
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     display: block;
+    margin-bottom: ${props => props.theme.spacing(0.5)};
   }
 `
 
