@@ -108,7 +108,7 @@ const Title = styled.h3`
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.md};
-    line-height: 1.2rem;
+    line-height: 1.1rem;
     font-weight: 700;
   }
 `
