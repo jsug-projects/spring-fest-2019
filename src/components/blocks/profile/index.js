@@ -113,7 +113,6 @@ const Bio = styled.p`
 `
 
 const Profile = ({ speaker, isOpen, onClose }) => {
-  console.log(speaker.profile)
   return (
     <Modal open={isOpen} onClose={onClose}>
       <Card key={speaker.id}>
@@ -132,7 +131,7 @@ const Profile = ({ speaker, isOpen, onClose }) => {
         <HolderHelper>
           <NormalHolder>
             <Name>{speaker.name}</Name>
-            <Company>{speaker.affiliation || '未定'}</Company>
+            <Company>{speaker.affiliation}</Company>
           </NormalHolder>
           <BioHolder>
             <Bio>{parse(String(speaker.profile))}</Bio>

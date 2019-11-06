@@ -5,9 +5,8 @@
       "time": "9:45 - 10:00",
       "place": "sola city Hall (WEST)"
     },
-    "meta": [
-      "ご挨拶"
-    ],
+    "slides": "ご挨拶",
+    "meta": [],
     "speakers": []
   },
   {
@@ -120,8 +119,10 @@
       "time": "13:00 - 13:45",
       "place": "sola city Hall (EAST)"
     },
+    "meta": [
+      "ランチセッション"
+    ],
     "slides": "Google",
-    "meta": [],
     "speakers": []
   },
   {
@@ -145,9 +146,6 @@
     },
     "title": "Root42",
     "abstract": "パート1(由利): DocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、\r\nかつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩): 実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。\r\n\r\n以上です。よろしくお願い致します。",
-    "meta": [
-      "ランチセッション"
-    ],
     "speakers": [
       {
         "id": 15,
@@ -164,7 +162,8 @@
         "image": "images/speakers/16.png"
       }
     ],
-    "lunch": "yes"
+    "lunch": "yes",
+    "meta": []
   },
   {
     "timetable": {
