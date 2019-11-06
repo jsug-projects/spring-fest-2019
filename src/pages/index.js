@@ -44,6 +44,11 @@ export default ({ data }) => {
     setPseudoMargin(headerRef.current.getBoundingClientRect().height)
   }
 
+  const scrolled = () => {
+    const scrollTop = sectionRef.current.getBoundingClientRect().top
+    return scrollTop <= 0
+  }
+
   const sponsor = []
   allCompaniesJson.nodes.map(s => {
     if (s.sponsoring) sponsor.push(s)
@@ -55,6 +60,7 @@ export default ({ data }) => {
       siteTitle={site.siteMetadata.title}
       dynamic
       headerRef={headerRef}
+      scrolled={scrolled}
     >
       <SEO title="Home" />
       <Banner
