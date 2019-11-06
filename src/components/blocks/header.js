@@ -171,6 +171,7 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
 
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [scroll, setScroll] = useState(0)
   const [opacity, setOpacity] = useState(0)
   const [iconColor, setIconColor] = useState(
     dynamic ? neutralColor : primaryColor
@@ -194,6 +195,8 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
   }, [])
 
   const handleOnScroll = () => {
+    setScroll(window.scrollY)
+
     if (scrolled()) {
       setIsScrolled(true)
       setIconColor(primaryColor)
@@ -241,7 +244,7 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
           <Link to="/#index">
             <TitleHolder>
               <Logo src={springLogoImage.publicURL} />
-              <Title>{siteTitle.toUpperCase()}</Title>
+              <Title>{scroll}</Title>
             </TitleHolder>
           </Link>
         )}
