@@ -30,7 +30,6 @@ const Background = styled.img`
   z-index: -3000;
   object-fit: cover;
   min-height: 100vh;
-  opacity: ${props => (props.hide ? 0 : 1)};
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     min-height: ${props => props.viewHeight}px;
@@ -150,7 +149,7 @@ const ButtonText = styled.p`
   font-weight: 700;
 `
 
-const Banner = ({ scrollToSection, bannerScrolled }) => {
+const Banner = ({ scrollToSection }) => {
   const { site, bannerImage, springLogoImage } = useStaticQuery(
     graphql`
       query {
@@ -186,34 +185,20 @@ const Banner = ({ scrollToSection, bannerScrolled }) => {
   const { title, description, event } = site.siteMetadata
   const [visible, setVisible] = useState(false)
   const [viewHeight, setViewHeight] = useState(0)
-  const [hide, setHide] = useState(false)
-
-  const updateViewHeight = () => {
-    setViewHeight(parseInt(window.innerHeight))
-  }
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 300)
     updateViewHeight()
-    window.addEventListener('scroll', handleOnScroll, true)
-    return () => {
-      window.removeEventListener('scroll', handleOnScroll, true)
-    }
-  }, [hide])
+  }, [])
 
-  const handleOnScroll = () => {
-    if (bannerScrolled()) {
-      setHide(true)
-    } else {
-      setHide(false)
-    }
+  const updateViewHeight = () => {
+    setViewHeight(parseInt(window.innerHeight))
   }
 
   return (
     <Container viewHeight={viewHeight}>
       <Background
         src={bannerImage.childImageSharp.original.src}
-        hide={hide}
         viewHeight={viewHeight}
       />
       <Logo src={springLogoImage.publicURL} />
