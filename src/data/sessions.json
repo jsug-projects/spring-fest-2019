@@ -20,7 +20,7 @@
         "id": 1,
         "name": "Josh Long",
         "affiliation": "Pivotal",
-        "profile": "Josh (<a href=\"https://twitter.com/starbuxman\" target=\"_blank\" style=\"color: white;\"><b>@starbuxman</b></a>) is the Spring Developer Advocate at Pivotal and a Java Champion. He's host of \"<a href=\"https://soundcloud.com/a-bootiful-podcast\" target=\"_blank\" style=\"color: white;\"><b>A Bootiful Podcast</b></a>\" , host of the \"<a href=\"http://bit.ly/spring-tips-playlist\" target=\"_blank\" style=\"color: white;\"><b>Spring Tips Videos</b></a>\", co-author of 6+ <a href=\"http://joshlong.com/books.html\" target=\"_blank\" style=\"color: white;\"><b>books</b></a>, and instructor on 8+ <a href=\"http://joshlong.com/livelessons.html\" target=\"_blank\" style=\"color: white;\"><b>Livelessons Training Videos</b></a>.",
+        "profile": "Josh (<a href=\"https://twitter.com/starbuxman\" target=\"_blank\" style=\"color: white;\"><b>@starbuxman</b></a>) is the Spring Developer Advocate at Pivotal and a Java Champion. He's host of \"A Bootiful Podcast\" (<a href=\"https://soundcloud.com/a-bootiful-podcast\" target=\"_blank\" style=\"color: white;\"><b>https://soundcloud.com/a-bootiful-podcast</b></a>), host of the \"Spring Tips Videos\" (<a href=\"http://bit.ly/spring-tips-playlist\" target=\"_blank\" style=\"color: white;\"><b>http://bit.ly/spring-tips-playlist</b></a>), co-author of 6+ books (<a href=\"http://joshlong.com/books.html\" target=\"_blank\" style=\"color: white;\"><b>http://joshlong.com/books.html</b></a>), and instructor on 8+ Livelessons Training Videos (<a href=\"http://joshlong.com/livelessons.html\" target=\"_blank\" style=\"color: white;\"><b>http://joshlong.com/livelessons.html</b></a>).",
         "image": "images/speakers/1.png"
       }
     ],
@@ -46,7 +46,7 @@
       "place": "sola city Hall (EAST)"
     },
     "title": "大規模エンタープライズシステム開発におけるSpringアプリケーションのDevOps適用事例",
-    "abstract": "NRIでは社内の多くのプロジェクトでSpring Frameworkを利用したアプリケーションを開発しています。\r\n　本セッションではアプリケーション開発に欠かせないDevOpsに着目して、大規模プロジェクトでのコンテナ技術を活用したビルドやテストに関する事例を中心に、苦労した点や工夫した点をご紹介します。",
+    "abstract": "NRIでは社内の多くのプロジェクトでSpring Frameworkを利用したアプリケーションを開発しています。\r\n本セッションではアプリケーション開発に欠かせないDevOpsに着目して、大規模プロジェクトでのコンテナ技術を活用したビルドやテストに関する事例を中心に、苦労した点や工夫した点をご紹介します。",
     "speakers": [
       {
         "id": 19,
@@ -152,8 +152,8 @@
       "time": "Lunch Session (11:45 - 12:30)",
       "place": "sola city Hall (EAST)"
     },
-    "title": "Root42",
-    "abstract": "パート1(由利): DocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、\r\nかつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩): 実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。\r\n\r\n以上です。よろしくお願い致します。",
+    "title": "帳票開発が苦痛なエンジニア大集合！豪華「人形町今半」の弁当付き！その代わり、少し宣伝を聞いてください！",
+    "abstract": "パート1(由利):\r\nDocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、かつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩):\r\n実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。",
     "meta": [
       "ランチセッション"
     ],
@@ -272,7 +272,7 @@
         "id": 1,
         "name": "Josh Long",
         "affiliation": "Pivotal",
-        "profile": "Josh (<a href=\"https://twitter.com/starbuxman\" target=\"_blank\" style=\"color: white;\"><b>@starbuxman</b></a>) is the Spring Developer Advocate at Pivotal and a Java Champion. He's host of \"<a href=\"https://soundcloud.com/a-bootiful-podcast\" target=\"_blank\" style=\"color: white;\"><b>A Bootiful Podcast</b></a>\" , host of the \"<a href=\"http://bit.ly/spring-tips-playlist\" target=\"_blank\" style=\"color: white;\"><b>Spring Tips Videos</b></a>\", co-author of 6+ <a href=\"http://joshlong.com/books.html\" target=\"_blank\" style=\"color: white;\"><b>books</b></a>, and instructor on 8+ <a href=\"http://joshlong.com/livelessons.html\" target=\"_blank\" style=\"color: white;\"><b>Livelessons Training Videos</b></a>.",
+        "profile": "Josh (<a href=\"https://twitter.com/starbuxman\" target=\"_blank\" style=\"color: white;\"><b>@starbuxman</b></a>) is the Spring Developer Advocate at Pivotal and a Java Champion. He's host of \"A Bootiful Podcast\" (<a href=\"https://soundcloud.com/a-bootiful-podcast\" target=\"_blank\" style=\"color: white;\"><b>https://soundcloud.com/a-bootiful-podcast</b></a>), host of the \"Spring Tips Videos\" (<a href=\"http://bit.ly/spring-tips-playlist\" target=\"_blank\" style=\"color: white;\"><b>http://bit.ly/spring-tips-playlist</b></a>), co-author of 6+ books (<a href=\"http://joshlong.com/books.html\" target=\"_blank\" style=\"color: white;\"><b>http://joshlong.com/books.html</b></a>), and instructor on 8+ Livelessons Training Videos (<a href=\"http://joshlong.com/livelessons.html\" target=\"_blank\" style=\"color: white;\"><b>http://joshlong.com/livelessons.html</b></a>).",
         "image": "images/speakers/1.png"
       }
     ],

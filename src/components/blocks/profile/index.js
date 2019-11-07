@@ -106,6 +106,7 @@ const HolderHelper = styled.div`
 const Bio = styled.p`
   color: ${props => props.theme.colors.white};
   text-decoration: none;
+  white-space: pre-line;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.md};
