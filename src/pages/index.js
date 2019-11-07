@@ -30,19 +30,10 @@ export default ({ data }) => {
     })
   }
 
-  useEffect(() => {
-    console.log(headerRef.current.getBoundingClientRect().height)
-  }, [])
-
   const scrolled = () => {
     const scrollTop = sectionRef.current.getBoundingClientRect().top
     const headerHeight = headerRef.current.getBoundingClientRect().height
     return scrollTop <= headerHeight
-  }
-
-  const bannerScrolled = () => {
-    const scrollTop = sectionRef.current.getBoundingClientRect().top
-    return scrollTop <= 0
   }
 
   const sponsor = []
@@ -59,10 +50,7 @@ export default ({ data }) => {
       scrolled={scrolled}
     >
       <SEO title="Home" />
-      <Banner
-        scrollToSection={() => scrollToSection()}
-        bannerScrolled={bannerScrolled}
-      />
+      <Banner scrollToSection={() => scrollToSection()} />
       <SectionWrap ref={sectionRef}>
         <Section
           title="sessions"
