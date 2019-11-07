@@ -19,7 +19,10 @@ export default () => {
             }
           }
         }
-        allFile(filter: { relativeDirectory: { eq: "images/hall" } }) {
+        allFile(
+          sort: { order: ASC, fields: name }
+          filter: { relativeDirectory: { eq: "images/hall" } }
+        ) {
           edges {
             node {
               childImageSharp {
@@ -36,6 +39,7 @@ export default () => {
   )
   const { hall } = site.siteMetadata.event
   const hallMap = allFile.edges
+  console.log(hallMap)
   return hall.map((hallItem, idx) => (
     <div key={hallItem.floor}>
       <FloorItem item={hallItem} map={hallMap[idx]} />
