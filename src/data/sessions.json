@@ -20,6 +20,7 @@
         "id": 1,
         "name": "Josh Long",
         "affiliation": "Pivotal",
+        "profile": "Josh (<a href=\"https://twitter.com/starbuxman\" target=\"_blank\" style=\"color: white;\"><b>@starbuxman</b></a>) is the Spring Developer Advocate at Pivotal and a Java Champion. He's host of \"<a href=\"https://soundcloud.com/a-bootiful-podcast\" target=\"_blank\" style=\"color: white;\"><b>A Bootiful Podcast</b></a>\" , host of the \"<a href=\"http://bit.ly/spring-tips-playlist\" target=\"_blank\" style=\"color: white;\"><b>Spring Tips Videos</b></a>\", co-author of 6+ <a href=\"http://joshlong.com/books.html\" target=\"_blank\" style=\"color: white;\"><b>books</b></a>, and instructor on 8+ <a href=\"http://joshlong.com/livelessons.html\" target=\"_blank\" style=\"color: white;\"><b>Livelessons Training Videos</b></a>.",
         "image": "images/speakers/1.png"
       }
     ],
@@ -271,6 +272,7 @@
         "id": 1,
         "name": "Josh Long",
         "affiliation": "Pivotal",
+        "profile": "Josh (<a href=\"https://twitter.com/starbuxman\" target=\"_blank\" style=\"color: white;\"><b>@starbuxman</b></a>) is the Spring Developer Advocate at Pivotal and a Java Champion. He's host of \"<a href=\"https://soundcloud.com/a-bootiful-podcast\" target=\"_blank\" style=\"color: white;\"><b>A Bootiful Podcast</b></a>\" , host of the \"<a href=\"http://bit.ly/spring-tips-playlist\" target=\"_blank\" style=\"color: white;\"><b>Spring Tips Videos</b></a>\", co-author of 6+ <a href=\"http://joshlong.com/books.html\" target=\"_blank\" style=\"color: white;\"><b>books</b></a>, and instructor on 8+ <a href=\"http://joshlong.com/livelessons.html\" target=\"_blank\" style=\"color: white;\"><b>Livelessons Training Videos</b></a>.",
         "image": "images/speakers/1.png"
       }
     ],
@@ -286,9 +288,9 @@
     "speakers": [
       {
         "id": 4,
-        "name": "Stéphane",
+        "name": "Stéphane Nicoll",
         "affiliation": "Pivotal",
-        "profile": "未定",
+        "profile": "Stéphane has a thing for code quality and robustness. He's been spreading the word for more than ten years while developing large scale Java enterprise applications in the geospatial, financial, or logistics sectors. An Apache Maven PMC member since 2006, he joined the core Spring Framework development team early 2014, being one of the main contributors to both Spring Framework and Spring Boot since. During his free time, he loves traveling around the world.",
         "image": "images/speakers/4.png"
       }
     ],
