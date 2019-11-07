@@ -18,9 +18,8 @@
     "speakers": [
       {
         "id": 1,
-        "name": "Josh",
+        "name": "Josh Long",
         "affiliation": "Pivotal",
-        "profile": "未定",
         "image": "images/speakers/1.png"
       }
     ],
@@ -209,13 +208,13 @@
       "place": "Room C"
     },
     "title": "Enterprise Angular Development (仮)",
-    "abstract": "エンタープライズでも近年、Webアプリケーション開発ではReactやAngularが利用されるようになってきました。大規模な何百億円プロジェクトでもAngularを採用し開発を進める事例も出始めています。ここでは、そういったプロジェクトを上手く回すためのコツを簡単にご紹介致します。\r\n講師プロフィール：エンタープライズ業界にWebを広めるべく日々奮闘。COBOLでの生産管理/会計システムから始まり、Oracle Databaseでの物流系DB設計&実装、Javaフレームワーク/品質管理システム開発など経験。現在はWebの魅力に取り憑かれ、html5jやAngular Japan User Group などコミュニティ活動を積極的に行っている。",
+    "abstract": "エンタープライズでも近年、Webアプリケーション開発ではサーバサイドはSpring Boot、クライアントサイドではReactやAngularが利用されるようになってきました。大規模な何百億円プロジェクトでもAngularを採用し開発を進める事例も出始めています。ここでは、そういったプロジェクトを上手く回すためのコツを簡単にご紹介致します。",
     "speakers": [
       {
         "id": 2,
         "name": "佐川 夫美雄",
         "affiliation": "アシラス",
-        "profile": "<a href=\"http://ashiras.xyz/\" target=\"_blank\" style=\"color: white;\"><p>http://ashiras.xyz/</p></a>",
+        "profile": "エンタープライズ業界にWebを広めるべく日々奮闘。COBOLでの生産管理/会計システムから始まり、Oracle Databaseでの物流系DB設計&実装、Javaフレームワーク/品質管理システム開発など経験。現在はWebの魅力に取り憑かれ、html5jやAngular Japan User Group などコミュニティ活動を積極的に行っている。",
         "image": "images/speakers/2.png"
       }
     ],
@@ -265,12 +264,13 @@
       "time": "14:00 - 14:45",
       "place": "Room B"
     },
+    "title": "Reactive Spring",
+    "abstract": "Microservices and big-data increasingly confront us with the limitations of traditional input/output. In traditional IO, work that is IO-bound dominates threads. This wouldn't be such a big deal if we could add more threads cheaply, but threads are expensive on the JVM, and most other platforms. Even if threads were cheap and infinitely scalable, we'd still be confronted with the faulty nature of networks. Things break, and they often do so in subtle, but non-exceptional ways. Traditional approaches to integration bury the faulty nature of networks behind overly simplifying abstractions. We need something better.\r\nSpring Framework 5 is here ! It introduces the Spring developer to a growing world of support for reactive programming across the Spring portfolio, starting with a new Netty-based web runtime, component model and module called Spring WebFlux, and then continuing to Spring Data Kay, Spring Security, Spring Boot, and Spring Cloud Finchley. Sure, it sounds like a lot, but don't worry! Join me, your guide, Spring developer advocate Josh Long, and we'll explore the wacky, wonderful world of Reactive Spring together.",
     "speakers": [
       {
         "id": 1,
-        "name": "Josh",
+        "name": "Josh Long",
         "affiliation": "Pivotal",
-        "profile": "未定",
         "image": "images/speakers/1.png"
       }
     ],
