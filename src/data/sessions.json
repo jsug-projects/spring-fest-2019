@@ -33,7 +33,7 @@
     "timetable": {
       "id": 1,
       "time": "11:00 - 11:45",
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "slides": "NTT Data",
     "meta": [],
@@ -43,7 +43,7 @@
     "timetable": {
       "id": 2,
       "time": "11:00 - 11:45",
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "title": "大規模エンタープライズシステム開発におけるSpringアプリケーションのDevOps適用事例",
     "abstract": "NRIでは社内の多くのプロジェクトでSpring Frameworkを利用したアプリケーションを開発しています。\r\n本セッションではアプリケーション開発に欠かせないDevOpsに着目して、大規模プロジェクトでのコンテナ技術を活用したビルドやテストに関する事例を中心に、苦労した点や工夫した点をご紹介します。",
@@ -126,8 +126,8 @@
   {
     "timetable": {
       "id": 101,
-      "time": "Lunch Session (11:45 - 12:30)",
-      "place": "sola city Hall (WEST)"
+      "time": "Lunch Session (11:55 - 12:40)",
+      "place": "sola city Hall (EAST)"
     },
     "title": "ローコード開発プラットフォームと、ドメイン駆動設計と、Springの関係",
     "abstract": "日本で\"超高速開発”と位置付けられていたツール群が、あらためて\"ローコード開発プラットフォーム”という視点で再編成されつつあります。一方、Spring界隈では、業務系のシステム開発分野へドメイン駆動設計を適用するアプローチが注目されています。ローコード開発プラットフォーム、ドメイン駆動設計、そしてSpringの関係をどう読みといていくのか。Wagbyを題材に説明します。",
@@ -149,11 +149,11 @@
   {
     "timetable": {
       "id": 102,
-      "time": "Lunch Session (11:45 - 12:30)",
-      "place": "sola city Hall (EAST)"
+      "time": "Lunch Session (11:55 - 12:40)",
+      "place": "sola city Hall (WEST)"
     },
     "title": "帳票開発が苦痛なエンジニア大集合！豪華「人形町今半」の弁当付き！その代わり、少し宣伝を聞いてください！",
-    "abstract": "パート1(由利):\r\nDocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、かつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩):\r\n実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。",
+    "abstract": "名刺を1枚頂戴します。お忘れの場合は氏名と所属企業名をメールで送信して頂くことによる確認手続きが発生します。\r\n\r\nパート1(由利):\r\nDocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、かつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩):\r\n実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。",
     "meta": [
       "ランチセッション"
     ],
@@ -225,7 +225,7 @@
     "timetable": {
       "id": 9,
       "time": "14:00 - 14:45",
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "title": "受託開発におけるハイアジリティへのとりくみ",
     "abstract": "ITサービスが企業のビジネスの中心となり久しい昨今、ビジネスを成功に導くため早期の意思決定はますます重要性が高まっています。それは受託開発でも変わりません\r\n\r\n* 開発に入る前の仮説検証プロセス\r\n* ミニマムなスコープ管理によるプロジェクト運営\r\n* Spring Boot と Spring Test\r\n* 仕様の見える化とテストファーストによる品質保証\r\n* 自動テストと向き合った新卒の半年間\r\n\r\nなど、SIerであるBTCにおけるハイアジリティを目指す取り組みの事例をご紹介いたします。",
@@ -244,7 +244,7 @@
     "timetable": {
       "id": 10,
       "time": "14:00 - 14:45",
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "title": "Spring Boot爆速開発超絶技巧",
     "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring\r\nBootアプリケーションを開発する上で欠かせないキーボードショートカット、Dockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
@@ -301,7 +301,7 @@
     "timetable": {
       "id": 13,
       "time": "15:00 - 15:45",
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "title": "Spring初心者必見、フレームワーク別の便利なテスト機能紹介",
     "abstract": "Springが提供する機能（フレームワーク）で良く使用される Spring Framework、Spring MVC、Spring Securityと Springとシームレスに連携できるO/R Mappingツールである MyBatisに対するユニットテストに関して ・自動テストのメリットについて ・どのようなテストが出来るか をデモを交えて紹介させて頂きます。\r\n\r\n■：テストはJUnit5を使用\r\n\r\n■：Spring Frameworkのテスト\r\n〇：@Mockを使用して、まだ作成されていない実装クラスをスタブとして利用するテストを紹介します。\r\n\r\n・whenメソッドの使い方\r\n・verifyメソッドの使い方\r\n\r\n■：MyBatisのテスト\r\n〇：mybatis-spring-boot-starter-testを使用して\r\nMyBatisのMapperインターフェースを利用したデータアクセス機能のCRUD処理のテストを紹介します。\r\n\r\n・@MybatisTestアノテーションの説明\r\n・@AutoConfigureTestDatabaseアノテーションの説明\r\n\r\n■：Spring MVCのテスト\r\n〇：MockMvcを利用した、リクエストハンドラメソッドの呼び出し結果を取得し、評価するテストを紹介します。\r\n\r\n・メソッドチェーンの説明\r\n・HTTPレスポンスステータスの評価方法の説明\r\n・（View）遷移先の評価方法の説明\r\n・Modelの評価方法の説明\r\n\r\n■：Spring Securityのテスト\r\n〇：spring-security-testを使用してフォーム認証のテスト及びログアウトのテストを紹介します。",
@@ -322,7 +322,7 @@
     "timetable": {
       "id": 14,
       "time": "15:00 - 15:45",
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "slides": "マイクロソフト",
     "meta": [],
@@ -362,7 +362,7 @@
     "timetable": {
       "id": 17,
       "time": "16:15 - 17:00",
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "title": "NissanConnectの舞台裏で動くSpring Boot／Spring Cloud 〜Microserviceの実運用の事例〜",
     "abstract": "自動車産業における変革を表すキーワード\"CASE\"におけるC(Connected)を、日産ではNissanConnectというサービスとして提供しています。\r\n特に、新型スカイライン及びリーフで提供しているサービスでは、スマホアプリを通してクルマと連携できる機能を提供しており、\r\nそのバックエンドはSpring BootやSpring Cloudを使ったMicroservice群として開発され、稼働しています。\r\n\r\n自動車メーカーとSpringという組み合わせが生み出したMicroservice群を実際に運用する中で見えてきたポイントなどを事例としてご紹介したいと思います。",
@@ -381,7 +381,7 @@
     "timetable": {
       "id": 18,
       "time": "16:15 - 17:00",
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "slides": "レッドハット",
     "meta": [],
@@ -422,7 +422,7 @@
     "timetable": {
       "id": 21,
       "time": "17:15 - 18:00",
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "meta": [
       "初心者"
@@ -476,7 +476,7 @@
     "timetable": {
       "id": 24,
       "time": "18:15 - 19:00",
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "meta": [
       "初心者"
