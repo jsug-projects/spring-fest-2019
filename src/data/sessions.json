@@ -383,9 +383,18 @@
       "time": "16:15 - 17:00",
       "place": "sola city Hall (WEST)"
     },
-    "slides": "レッドハット",
-    "meta": [],
-    "speakers": []
+    "title": "Quarkus による超音速な Spring アプリケーション開発",
+    "abstract": "Quarkus はSupersonic. Subatomic. Javaを理念に設計され、Cloud Native, Microservices, ServerlessのJavaアプリケーションを作成するための開発者向けに最適化された凝縮性の高いプラットフォームです。これらはQuarkusが低メモリ消費、高速起動に最適化されていることを意味しています。\r\n本セッションでは、Quarkus の紹介に加え、Springを使用してQuarkusアプリケーションを開発する流れを紹介します。",
+    "speakers": [
+      {
+        "id": 26,
+        "name": "須江 信洋",
+        "affiliation": "レッドハット",
+        "profile": "テクニカルセールス本部\r\nAssociate Principal Solution Architect",
+        "image": "images/speakers/26.png"
+      }
+    ],
+    "meta": []
   },
   {
     "timetable": {
