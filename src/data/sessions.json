@@ -35,9 +35,18 @@
       "time": "11:00 - 11:45",
       "place": "sola city Hall (EAST)"
     },
-    "slides": "NTT Data",
-    "meta": [],
-    "speakers": []
+    "title": "システム間連携を担うSpring　Integrationのエンタープライズ開発での活用",
+    "abstract": "異なるアーキテクチャを採用したシステムを連携させる手法として、Enterprise Integration Pattern(EIP)と呼ばれるベストプラクティスが存在します。\r\n\r\nSpring IntegrationはそのEIPをSpringで実現するフレームワークです。\r\n\r\n本セッションでは、Spring Integrationの基本的な使用方法やメッセージ送受信の仕組みを理解しつつ、\r\n\r\n実際にエンタープライズ開発に適用した際の工夫や考慮事項を紹介します。",
+    "speakers": [
+      {
+        "id": 28,
+        "name": "太田 浩介",
+        "affiliation": "NTT DATA",
+        "profile": "2019入社、インテグレーション技術センタに所属。SpringでのWeb開発の習熟を経て、現在は某既存システムのSpringフレームワークへの移行支援を行っている。",
+        "image": "images/speakers/28.png"
+      }
+    ],
+    "meta": []
   },
   {
     "timetable": {
@@ -71,9 +80,19 @@
       "time": "11:00 - 11:45",
       "place": "Room B"
     },
+    "title": "大規模基幹システムにSpring Cloudを使いたい！",
+    "abstract": "Spring Cloudをエンタープライズの世界でも使ってみたい！大規模基幹システムにマイクロサービスアーキテクチャを導入したい！そんな熱い想いを抱くみなさまに、ウルシステムズが実案件で培ってきたSpring Cloud導入のノウハウをご紹介します。エンタープライズに求められる認証や運用監視、ポータビリティ、開発統制などの本格活用にお役に立てるセッションです。",
+    "speakers": [
+      {
+        "id": 29,
+        "name": "黒川 徳介",
+        "affiliation": "ウルシステムズ",
+        "profile": "政令指定都市や小売業の大規模基幹システム刷新に、アーキテクト/コンサルタントとして歴任。フレームワーク開発やマイクロサービス、CI/CDの導入を得意としている。技術者が輝ける世界を作るべく、日々奔走中。",
+        "image": "images/speakers/29.png"
+      }
+    ],
     "slides": "ウルシステムズ",
-    "meta": [],
-    "speakers": []
+    "meta": []
   },
   {
     "timetable": {
@@ -119,9 +138,18 @@
       "time": "13:00 - 13:45",
       "place": "sola city Hall (EAST)"
     },
-    "slides": "Google",
-    "meta": [],
-    "speakers": []
+    "title": "Spring Developer のための コンテナ入門",
+    "abstract": "Microservices や CI/CD Cloud Native といったキーワードで注目度の高まっているコンテナ技術ですが、本セッションではコンテナを使ったことがない、またはほとんど知らない方向けに、コンテナそのものの概要に加え、コンテナオーケストレーターの役割、アプリケーション開発者がコンテナを活用することによるメリットを紹介します。また、実際に Spring アプリケーションをどのように Kubernetes 上にデプロイするかをデモを交えてご紹介します。\r\n\r\nコンテナ技術概要\r\nなぜ Kubernetes が必要になったのか\r\nコンテナオーケストレーターとその役割\r\nKubernetes のアーキテクチャ\r\nSpring アプリケーションを簡単にKubernetes 上にデプロイするデモ\r\nまとめ\r\nKubernetes というワードはよく聞くけど実はよくわかっていないという方はぜひお越しください！",
+    "speakers": [
+      {
+        "id": 27,
+        "name": "塚越 啓介",
+        "affiliation": "Google Cloud",
+        "profile": "Web企業にてミッションクリティカルなシステムの開発や海外向けサービスの立ち上げをリード。その後クラウドベンダーにてコンサルタントやソリューションアーキテクトとして活動。現在はGoogle Cloudでアプリケーション開発者向けにサーバーレス/マイクロサービス/DevOpsといった領域の技術支援に従事している。",
+        "image": "images/speakers/27.png"
+      }
+    ],
+    "meta": []
   },
   {
     "timetable": {
@@ -247,11 +275,11 @@
       "place": "sola city Hall (WEST)"
     },
     "title": "Spring Boot爆速開発超絶技巧",
-    "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring\r\nBootアプリケーションを開発する上で欠かせないキーボードショートカット、Dockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
+    "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring Bootアプリケーションを開発する上で欠かせないキーボードショートカット、\r\nDockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
     "speakers": [
       {
         "id": 3,
-        "name": "山本",
+        "name": "山本 裕介",
         "affiliation": "サムライズム",
         "profile": "トラブルシューティングツールの侍や、Twitter4JといったOSSを開発しているJavaエンジニア。株式会社サムライズムという会社の社長で、海外のプログラマ向けツールの日本国内展開を手がけています。",
         "image": "images/speakers/3.png"
@@ -284,8 +312,8 @@
       "time": "14:00 - 14:45",
       "place": "Room C"
     },
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "Efficient Web Apps with Spring Boot 2",
+    "abstract": "How can we improve the efficiency of an existing web application? We could completely rewrite it, leverage more concurrency and even reactive features. But is it really worth it if we don't even measure and track the relevant metrics? In this talk, Stéphane will work on an existing Spring Boot MVC application to make it more efficient. He'll replace RestTemplate with WebClient and Reactor operators to improve efficiency, without the concurrency pitfalls. He'll use out-of-the-box metrics, add new ones to measure, and keep an eye on capacity gains with dashboards.",
     "speakers": [
       {
         "id": 4,
@@ -417,14 +445,16 @@
       "time": "16:15 - 17:00",
       "place": "Room C"
     },
+    "title": "Spring と GraalVM Native Image - 2019/12",
+    "abstract": "GraalVMのNative Image Generatorを使用すると、JavaのコードをNative Imageと呼ばれるネイティブバイナリへと事前コンパイルすることができます。\r\nNative Imageは現在Early Adopter technologyという扱いではありますが、Springでもサポートに向けた準備が着々と進められているようです。\r\n本セッションでは、Native Imageへコンパイルする際の制約と、その制約に対するSpringのアプローチについて調査した内容を紹介します。",
     "speakers": [
       {
         "id": 7,
-        "name": "岩塚",
+        "name": "岩塚 卓弥",
+        "profile": "NTTの研究所でソフトウェア工学の研究に従事。業務ではSpringを利用するよりもSpringのコードを読む機会の方が多い。",
         "image": "images/speakers/7.png"
       }
     ],
-    "slides": "GraalVM Native Image関連",
     "meta": []
   },
   {
