@@ -68,8 +68,8 @@ const Photo = styled.img`
   object-fit: contain;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    max-height: 5rem;
-    max-width: 5rem;
+    max-height: ${props => (props.speakerNumber < 3 ? '5rem' : '4.5rem')};
+    max-width: ${props => (props.speakerNumber < 3 ? '5rem' : '4.5rem')};
   }
 `
 
@@ -220,7 +220,10 @@ const SessionItem = ({ session }) => {
                     isOpen={speakerModal === speaker.id}
                     onClose={closeModal}
                   />
-                  <Photo src={speaker.image.childImageSharp.resize.src} />
+                  <Photo
+                    src={speaker.image.childImageSharp.resize.src}
+                    speakerNumber={session.speakers.length}
+                  />
                   <SpeakerName>{speaker.name}</SpeakerName>
                 </SpeakerHolder>
               ))}
