@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
+import parse from 'html-react-parser'
 
 const Container = styled.div`
   display: flex;
@@ -51,7 +52,7 @@ const ShowMore = ({ children }) => {
     <Container>
       <TextHolder boxHeight={boxHeight}>
         <Text ref={texts} lineHeight={lineHeight}>
-          {children}
+          {parse(children)}
         </Text>
       </TextHolder>
       {showButton && (

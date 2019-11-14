@@ -430,10 +430,14 @@
       "time": "16:15 - 17:00",
       "place": "Room B"
     },
+    "title": "Spring 5.2の目玉機能であるRSocket対応とは",
+    "abstract": "RSocket（<a href=\"https://rsocket.io\" style=\"color: #0E7373;\"><b>https://rsocket.io</b></a>）はTCP, WebSocket、UDP上でReactive Streamsのセマンティクスを持つ双方向通信可能な新しいバイナリプロトコルです。\r\nHTTPの代わりに利用可能です。\r\nRSocket自体は言語非依存ですが、Spring 5.2からお馴染みのプログラミングスタイルでRSocketサーバー/クライアントを実装できるようになりました。\r\n本セッションではRSocketとは何か、何が変わる・うれしいのか、SpringのRSocket対応とはどのようなものかを説明します。\r\nSpringが追加する新機能が好きな方、新しい技術を手っ取り早く知りたい方は必見です。",
     "speakers": [
       {
         "id": 6,
-        "name": "槙",
+        "name": "槙 俊明",
+        "affiliation": "Pivotal",
+        "profile": "エンタープライズ企業のPivotal Platform (Cloud FoundryやKubernetes)の導入やPlatform Team作りの支援。Spring Bootを使ったアプリケーション開発の支援も。",
         "image": "images/speakers/6.png"
       }
     ],

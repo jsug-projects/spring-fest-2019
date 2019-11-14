@@ -19,7 +19,7 @@ const Title = styled.h3`
   }
 `
 
-const Description = styled.p`
+const Description = styled.div`
   white-space: pre-line;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {

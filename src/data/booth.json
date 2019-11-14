@@ -41,7 +41,7 @@
       "image": "images/companies/nri.png"
     },
     "title": "",
-    "description": "<b><a href=\"https://aslead.nri.co.jp\" target=\"_blank\">aslead</a></b>\r\n　　DX時代のシステム開発およびオフィス業務の生産性向上のための製品・ソリューションの提供、技術サポートおよび導入支援・システム運用を提供する、asleadをご紹介します。\r\n\r\n<b><a href=\"https://openstandia.jp\" target=\"_blank\">OpenStandia</a></b>\r\n　　オープンソースソフトウェア（OSS）を使用したシステムの構築や課題発生時の解決にあたり、OSSに関する技術サポート、導入支援、コンサルティングなどを提供するサービスです。Springをはじめ、様々なOSSのサポートを提供していますので、OSSでお困りの方は是非ブースまでお越しください。"
+    "description": "<div style=\"display: flex; align-items:center; flex-wrap: wrap;\"><img src=\"/images/extras/logo_aslead.png\" height=\"30px\" style=\"margin-bottom: 0px; margin-right: 1rem;\"><a href=\"https://aslead.nri.co.jp\" target=\"_blank\"><b style=\"color: #0E7373; opacity: 0.9;\">https://aslead.nri.co.jp</b></a></div>\r\n　　DX時代のシステム開発およびオフィス業務の生産性向上のための製品・ソリューションの提供、技術サポートおよび導入支援・システム運用を提供する、asleadをご紹介します。\r\n\r\n\r\n<div style=\"display: flex; align-items:center; flex-wrap: wrap;\"><img src=\"/images/extras/logo_OpenStandia.png\" height=\"30px\" style=\"margin-bottom: 0px; margin-right: 1rem; \"><a href=\"https://openstandia.jp\" target=\"_blank\"><b style=\"color: #0E7373; opacity: 0.9;\">https://openstandia.jp</b></a></div>\r\n　　オープンソースソフトウェア（OSS）を使用したシステムの構築や課題発生時の解決にあたり、OSSに関する技術サポート、導入支援、コンサルティングなどを提供するサービスです。Springをはじめ、様々なOSSのサポートを提供していますので、OSSでお困りの方は是非ブースまでお越しください。"
   },
   {
     "sponsor": {
@@ -116,17 +116,6 @@
       "slug": "rakuten",
       "profile": "",
       "image": "images/companies/rakuten.png"
-    },
-    "title": "",
-    "description": ""
-  },
-  {
-    "sponsor": {
-      "name": "マイクロソフト",
-      "url": "https://www.microsoft.com/ja-jp",
-      "slug": "microsoft",
-      "profile": "",
-      "image": "images/companies/microsoft.png"
     },
     "title": "",
     "description": ""
