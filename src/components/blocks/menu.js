@@ -47,7 +47,7 @@ const Shares = styled.div`
   display: flex;
 `
 
-const Menu = ({ open, pdf }) => {
+const Menu = ({ open, setIsOpen, pdf }) => {
   return (
     <Transition visible={open} animation="fade up" duration={300} directional>
       <Block>
@@ -55,8 +55,14 @@ const Menu = ({ open, pdf }) => {
           <div>
             <Nav>
               <NavItem>
-                <Link to="/#index">
-                  <NavItem>Session</NavItem>
+                <Link to="/#session">
+                  <NavItem>Sessions</NavItem>
+                </Link>
+                <Link to="/#booth" onClick={setIsOpen(false)}>
+                  <NavItem>Booths</NavItem>
+                </Link>
+                <Link to="/#sponsor" onClick={setIsOpen(false)}>
+                  <NavItem>Sponsors</NavItem>
                 </Link>
               </NavItem>
               {/*<Pdf href={pdf} target="_blank">*/}

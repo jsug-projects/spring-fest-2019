@@ -33,6 +33,7 @@ const media = {
    @tabletBreakpoint            : 768px;
    @computerBreakpoint          : 992px;
   */
+  computer: '1200px',
   tablet: '991px',
   mobile: '767px',
 }

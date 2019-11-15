@@ -523,17 +523,19 @@
       "time": "18:15 - 19:00",
       "place": "sola city Hall (WEST)"
     },
+    "title": "JSP/JSF から Spring Web + Thymeleaf への移行",
+    "abstract": "JSP (+Struts) など古いタイプのサーバサイドレンダリング開発から、最新系 Web 開発環境の Spring Web + Thymeleaf によるサーバサイドレンダリングへの移行に関心がある方向けのセッションです。\r\nひとたび Spring Boot + Spring Web + Thymeleaf に乗り換えてしまえば、幸せな開発環境が手に入ります。\r\nこのセッションでは、古いタイプのサーバサイドレンダリング技術と新技術とを比較などしながら、すばやく Spring Web + Thymeleaf 開発を理解できるようなコンテンツとなる予定です。\r\n前提知識：Java、HTMLを多少は知っていること。",
     "meta": [
       "初心者"
     ],
     "speakers": [
       {
         "id": 11,
-        "name": "伊賀",
+        "name": "伊賀 敏樹",
+        "profile": "古くから Java をもちいたエンタープライズシステム開発に多く従事してきました。\r\n最近は Heroku/Spring Web をもちいた大規模開発に関わることが多いです。",
         "image": "images/speakers/11.png"
       }
-    ],
-    "slides": "伊賀さん"
+    ]
   },
   {
     "timetable": {

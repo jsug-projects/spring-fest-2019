@@ -20,8 +20,21 @@ const SectionWrap = styled.div`
 export default ({ data }) => {
   const { site, allBoothJson, allSessionsJson, allCompaniesJson } = data
   const time = ['timetable', 'time']
+  const [headerHeight, setHeaderHeight] = useState(0)
   const sectionRef = useRef(null)
   const headerRef = useRef(null)
+
+  useEffect(() => {
+    setHeaderHeight(headerRef.current.getBoundingClientRect().height)
+  })
+
+  const anchor = {
+    paddingTop: headerHeight,
+  }
+
+  const helper = {
+    marginTop: -headerHeight,
+  }
 
   const scrollToSection = () => {
     sectionRef.current.scrollIntoView({
@@ -32,8 +45,7 @@ export default ({ data }) => {
 
   const scrolled = () => {
     const scrollTop = sectionRef.current.getBoundingClientRect().top
-    const headerHeight = headerRef.current.getBoundingClientRect().height
-    return scrollTop <= headerHeight
+    return scrollTop <= 0
   }
 
   const sponsor = []
@@ -52,27 +64,39 @@ export default ({ data }) => {
       <SEO title="Home" />
       <Banner scrollToSection={() => scrollToSection()} />
       <SectionWrap ref={sectionRef}>
-        <Section
-          title="sessions"
-          backgroundColor={props => props.theme.colors.white}
-          fontColor={props => props.theme.colors.primary['300']}
-        >
-          <Sessions items={allSessionsJson.nodes} time={time} />
-        </Section>
-        <Section
-          title="booth"
-          backgroundColor={props => props.theme.colors.primaryGradient}
-          fontColor={props => props.theme.colors.white}
-        >
-          <Booths items={allBoothJson.nodes} />
-        </Section>
-        <Section
-          title="sponsors"
-          backgroundColor={props => props.theme.colors.white}
-          fontColor={props => props.theme.colors.primary['300']}
-        >
-          <Sponsors items={sponsor} />
-        </Section>
+        <div style={helper}>
+          <div id="session" style={anchor}>
+            <Section
+              title="sessions"
+              backgroundColor={props => props.theme.colors.white}
+              fontColor={props => props.theme.colors.primary['300']}
+            >
+              <Sessions items={allSessionsJson.nodes} time={time} />
+            </Section>
+          </div>
+        </div>
+        <div style={helper}>
+          <div id="booth" style={anchor}>
+            <Section
+              title="booths"
+              backgroundColor={props => props.theme.colors.primaryGradient}
+              fontColor={props => props.theme.colors.white}
+            >
+              <Booths items={allBoothJson.nodes} />
+            </Section>
+          </div>
+        </div>
+        <div style={helper}>
+          <div id="sponsor" style={anchor}>
+            <Section
+              title="sponsors"
+              backgroundColor={props => props.theme.colors.white}
+              fontColor={props => props.theme.colors.primary['300']}
+            >
+              <Sponsors items={sponsor} />
+            </Section>
+          </div>
+        </div>
       </SectionWrap>
     </BaseLayout>
   )

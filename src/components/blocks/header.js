@@ -35,7 +35,7 @@ const Logo = styled.img`
   margin-bottom: 0;
   margin-right: ${props => props.theme.spacing(1.5)};
 
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
     max-height: 1.3rem;
     margin-right: ${props => props.theme.spacing(1.5)};
   }
@@ -47,11 +47,7 @@ const Title = styled.h1`
   font-weight: 900;
   margin: 0;
 
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    font-size: ${props => props.theme.typography.size.lg};
-  }
-
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
     font-size: 1.1rem;
   }
 `
@@ -62,18 +58,10 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: flex-end;
   padding-right: ${props => props.theme.spacing(4)};
-
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    padding-right: ${props => props.theme.spacing(3)};
-  }
 `
 
 const NavItem = styled.div`
   margin: ${props => props.theme.spacing(1, 2)};
-
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    margin: ${props => props.theme.spacing(1)};
-  }
 `
 
 const Shares = styled.div`
@@ -118,11 +106,7 @@ const NormalHeader = styled.div`
   justify-content: space-between;
   padding: ${props => props.theme.spacing(1, 5)};
 
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    padding: ${props => props.theme.spacing(1, 3)};
-  }
-
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
     display: none;
   }
 `
@@ -131,7 +115,7 @@ const MobileHeader = styled.div`
   display: none;
   padding: ${props => props.theme.spacing(1.5, 3)};
 
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
     padding: ${props => props.theme.spacing(1, 3)};
     display: flex;
     align-items: center;
@@ -144,7 +128,7 @@ const IconHolder = styled.div`
   z-index: 100;
   cursor: pointer;
 
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
     display: block;
   }
 `
@@ -212,7 +196,13 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
         )}
         <Nav>
           <NavItem>
-            <Link to="/#index">SESSIONS</Link>
+            <Link to="/#session">SESSIONS</Link>
+          </NavItem>
+          <NavItem>
+            <Link to="/#booth">BOOTHS</Link>
+          </NavItem>
+          <NavItem>
+            <Link to="/#sponsor">SPONSORS</Link>
           </NavItem>
           {/*<NavItem>*/}
           {/*  <Pdf href={pdf.publicURL} target="_blank">*/}
@@ -229,7 +219,7 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
         </Shares>
       </NormalHeader>
       <MobileHeader>
-        <Menu open={isOpen} pdf={pdf.publicURL} />
+        <Menu open={isOpen} setIsOpen={setIsOpen} pdf={pdf.publicURL} />
         {siteTitle && (
           <Link to="/#index">
             <TitleHolder>

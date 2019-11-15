@@ -15,7 +15,6 @@ const Container = styled.div`
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  margin-bottom: -${props => props.pseudoMargin}px;
   position: relative;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
