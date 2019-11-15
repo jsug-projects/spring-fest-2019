@@ -187,7 +187,12 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
       <PseudoBackground opacity={opacity} />
       <NormalHeader>
         {siteTitle && (
-          <Link to="/#index">
+          <Link
+            to="/#index"
+            onClick={() => {
+              document.body.scrollTo(0, 0)
+            }}
+          >
             <TitleHolder>
               <Logo src={springLogoImage.publicURL} />
               <Title>{siteTitle.toUpperCase()}</Title>
