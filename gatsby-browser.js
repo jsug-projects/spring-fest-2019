@@ -20,9 +20,3 @@ module.exports = {
         window.console.log('Made by Tagbangers - https://tagbangers.co.jp/')
   },
 }
-
-module.exports.onRouteUpdate = ({ location, prevLocation }) => {
-  prevLocation
-    ? document.body.scroll(0, 0)
-    : window.scrollTo(0, 0) || document.body.scrollTo(0, 0)
-}
