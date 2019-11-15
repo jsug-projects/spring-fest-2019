@@ -24,5 +24,5 @@ module.exports = {
 module.exports.onRouteUpdate = ({ location, prevLocation }) => {
   prevLocation
     ? document.body.scroll(0, 0)
-    : document.body.scrollTo(0, 0) || window.scrollTo(0, 0)
+    : window.scrollTo(0, 0) || document.body.scrollTo(0, 0)
 }

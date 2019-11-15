@@ -14,7 +14,7 @@ const Container = styled.header`
   position: fixed;
   z-index: 1000;
   top: 0;
-
+  overflow: hidden;
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
 `
 
