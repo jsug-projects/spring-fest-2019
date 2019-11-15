@@ -68,7 +68,12 @@ const Menu = ({ open, setIsOpen, pdf }) => {
               {/*<Pdf href={pdf} target="_blank">*/}
               {/*  <NavItem style={{ opacity: 0.5 }}>Timetable</NavItem>*/}
               {/*</Pdf>*/}
-              <Link to="/access">
+              <Link
+                to="/access"
+                onClick={() => {
+                  document.body.scrollTo(0, 0)
+                }}
+              >
                 <NavItem>Access</NavItem>
               </Link>
             </Nav>

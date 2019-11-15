@@ -215,7 +215,14 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
           {/*  </Pdf>*/}
           {/*</NavItem>*/}
           <NavItem>
-            <Link to="/access">ACCESS</Link>
+            <Link
+              to="/access"
+              onClick={() => {
+                document.body.scrollTo(0, 0)
+              }}
+            >
+              ACCESS
+            </Link>
           </NavItem>
         </Nav>
         <Shares>
@@ -226,7 +233,12 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
       <MobileHeader>
         <Menu open={isOpen} setIsOpen={setIsOpen} pdf={pdf.publicURL} />
         {siteTitle && (
-          <Link to="/#index">
+          <Link
+            to="/#index"
+            onClick={() => {
+              document.body.scrollTo(0, 0)
+            }}
+          >
             <TitleHolder>
               <Logo src={springLogoImage.publicURL} />
               <Title>{siteTitle.toUpperCase()}</Title>
