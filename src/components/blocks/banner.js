@@ -16,7 +16,6 @@ const Container = styled.div`
   background-size: cover;
   text-align: center;
   position: relative;
-  overflow: hidden;
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     min-height: ${props => props.viewHeight}px;
