@@ -1,12 +1,13 @@
 import React from 'react'
 
 import Session from './item'
+import { Time } from './../../elements/index'
 
 import { groupBy, path, sort } from 'ramda'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  // padding: ${props => props.theme.spacing(2, 0)};
+  padding: ${props => props.theme.spacing(3, 0)};
 `
 
 export default ({ items, time }) => {
@@ -15,7 +16,6 @@ export default ({ items, time }) => {
   const sortedTime = sort((a, b) => a - b, Object.keys(grouped))
   const show = []
 
-  // hide time container(?) with no data
   sortedTime.map(t => {
     let i = 0
     grouped[t].map(s => {
@@ -28,7 +28,7 @@ export default ({ items, time }) => {
     (t, idx) =>
       show[idx] && (
         <Container key={t}>
-          {/*<Time time={t} />*/}
+          <Time time={t} />
           {grouped[t].map(s => (
             <Session session={s} key={s.id} />
           ))}

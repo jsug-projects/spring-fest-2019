@@ -205,11 +205,11 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
           <NavItem>
             <Link to="/#sponsor">SPONSORS</Link>
           </NavItem>
-          {/*<NavItem>*/}
-          {/*  <Pdf href={pdf.publicURL} target="_blank">*/}
-          {/*    TIMETABLE*/}
-          {/*  </Pdf>*/}
-          {/*</NavItem>*/}
+          <NavItem>
+            <Pdf href={pdf.publicURL} target="_blank">
+              TIMETABLE
+            </Pdf>
+          </NavItem>
           <NavItem>
             <Link to="/access">ACCESS</Link>
           </NavItem>

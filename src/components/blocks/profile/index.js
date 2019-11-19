@@ -107,9 +107,11 @@ const Bio = styled.p`
   color: ${props => props.theme.colors.white};
   text-decoration: none;
   white-space: pre-line;
+  line-height: 1.7rem;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.md};
+    line-height: 1.4rem;
   }
 `
 

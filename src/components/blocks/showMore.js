@@ -16,9 +16,11 @@ const TextHolder = styled.div`
 const Text = styled.p`
   line-height: ${props => props.lineHeight}rem;
   word-wrap: break-word;
+  line-height: 1.7rem;
+
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.xs};
-    line-height: 1.2rem;
+    line-height: 1.4rem;
   }
 `
 

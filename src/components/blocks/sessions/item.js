@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'gatsby'
-import { Icon } from 'semantic-ui-react'
 
 import { Meta } from '../../elements'
 import { Profile, ShowMore } from '../index'
@@ -204,8 +203,7 @@ const SessionItem = ({ session }) => {
       <Container>
         <Card>
           <Header>
-            {/*<Hall>{session.timetable.place}</Hall>*/}
-            <Hall>Hall TBD</Hall>
+            <Hall>{session.timetable.place}</Hall>
           </Header>
           <Body>
             <Speaker>

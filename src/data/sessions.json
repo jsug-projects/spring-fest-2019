@@ -1,16 +1,6 @@
 [
   {
     "timetable": {
-      "id": 100,
-      "time": "9:45 - 10:00",
-      "place": "sola city Hall (WEST)"
-    },
-    "slides": "ご挨拶",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
       "id": 0,
       "time": "10:00 - 10:45",
       "place": "sola city Hall"
@@ -35,15 +25,15 @@
       "time": "11:00 - 11:45",
       "place": "sola city Hall (EAST)"
     },
-    "title": "システム間連携を担うSpring　Integrationのエンタープライズ開発での活用",
-    "abstract": "異なるアーキテクチャを採用したシステムを連携させる手法として、Enterprise Integration Pattern(EIP)と呼ばれるベストプラクティスが存在します。\r\n\r\nSpring IntegrationはそのEIPをSpringで実現するフレームワークです。\r\n\r\n本セッションでは、Spring Integrationの基本的な使用方法やメッセージ送受信の仕組みを理解しつつ、\r\n\r\n実際にエンタープライズ開発に適用した際の工夫や考慮事項を紹介します。",
+    "title": "Spring Boot爆速開発超絶技巧",
+    "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring Bootアプリケーションを開発する上で欠かせないキーボードショートカット、\r\nDockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
     "speakers": [
       {
-        "id": 28,
-        "name": "太田 浩介",
-        "affiliation": "NTT DATA",
-        "profile": "2019入社、インテグレーション技術センタに所属。SpringでのWeb開発の習熟を経て、現在は某既存システムのSpringフレームワークへの移行支援を行っている。",
-        "image": "images/speakers/28.png"
+        "id": 3,
+        "name": "山本 裕介",
+        "affiliation": "サムライズム",
+        "profile": "トラブルシューティングツールの侍や、Twitter4JといったOSSを開発しているJavaエンジニア。株式会社サムライズムという会社の社長で、海外のプログラマ向けツールの日本国内展開を手がけています。",
+        "image": "images/speakers/3.png"
       }
     ],
     "meta": []
@@ -53,6 +43,36 @@
       "id": 2,
       "time": "11:00 - 11:45",
       "place": "sola city Hall (WEST)"
+    },
+    "slides": "マイクロソフト",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
+      "id": 3,
+      "time": "11:00 - 11:45",
+      "place": "Room B"
+    },
+    "title": "入社１年目のプログラム初心者がSpringを学ぶための手引き",
+    "abstract": "これからSpringを勉強したいけど、どこから手を付ければいいか分からない」という方にお勧めのセッションです。まだJavaにも慣れていないプログラム初心者が、Springを学んでいく際に抑えるべきポイントを解説します。前半はJavaやServletなどの前提知識についてお話して、後半にSpringについてお話します。",
+    "meta": [
+      "初心者"
+    ],
+    "speakers": [
+      {
+        "id": 9,
+        "name": "土岐 孝平",
+        "profile": "Springをベースにしたアーキテクチャの作成や、JavaやSpringに関する研修の講師を行っている。 書籍の執筆も行っており、[改訂新版]Spring入門(技術評論社)の著者のひとりである。",
+        "image": "images/speakers/9.png"
+      }
+    ]
+  },
+  {
+    "timetable": {
+      "id": 4,
+      "time": "11:00 - 11:45",
+      "place": "Room C"
     },
     "title": "大規模エンタープライズシステム開発におけるSpringアプリケーションのDevOps適用事例",
     "abstract": "NRIでは社内の多くのプロジェクトでSpring Frameworkを利用したアプリケーションを開発しています。\r\n本セッションではアプリケーション開発に欠かせないDevOpsに着目して、大規模プロジェクトでのコンテナ技術を活用したビルドやテストに関する事例を中心に、苦労した点や工夫した点をご紹介します。",
@@ -76,84 +96,7 @@
   },
   {
     "timetable": {
-      "id": 3,
-      "time": "11:00 - 11:45",
-      "place": "Room B"
-    },
-    "title": "大規模基幹システムにSpring Cloudを使いたい！",
-    "abstract": "Spring Cloudをエンタープライズの世界でも使ってみたい！大規模基幹システムにマイクロサービスアーキテクチャを導入したい！そんな熱い想いを抱くみなさまに、ウルシステムズが実案件で培ってきたSpring Cloud導入のノウハウをご紹介します。エンタープライズに求められる認証や運用監視、ポータビリティ、開発統制などの本格活用にお役に立てるセッションです。",
-    "speakers": [
-      {
-        "id": 29,
-        "name": "黒川 徳介",
-        "affiliation": "ウルシステムズ",
-        "profile": "政令指定都市や小売業の大規模基幹システム刷新に、アーキテクト/コンサルタントとして歴任。フレームワーク開発やマイクロサービス、CI/CDの導入を得意としている。技術者が輝ける世界を作るべく、日々奔走中。",
-        "image": "images/speakers/29.png"
-      }
-    ],
-    "slides": "ウルシステムズ",
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 4,
-      "time": "11:00 - 11:45",
-      "place": "Room C"
-    },
-    "title": "Spring Social でソーシャルログインを実装する",
-    "abstract": "最近ソーシャルログインを提供するサービスは増えてきています。Spring Social は各SNS 専用のライブラリが用意されていて、これらを使ってソーシャルログインを実装することができます。\r\n\r\nこのセッションでは、このソーシャルログイン機能を提供するWebアプリケーションを実装する方法を紹介します。",
-    "speakers": [
-      {
-        "id": 18,
-        "name": "田中 竜介",
-        "affiliation": "楽天",
-        "profile": "楽天ペイ（オンライン決済）のアプリケーションエンジニアとして開発業務に携わっています。パブリッククラウドやコンテナオーケストラレーション、CI/CD などを良く触っています。",
-        "image": "images/speakers/18.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 5,
-      "time": "13:00 - 13:45",
-      "place": "sola city Hall (WEST)"
-    },
-    "title": "徹底解剖Spring MVCアーキテクチャー\r\n-DispatcherServletの中身を覗いてきました-",
-    "abstract": "様々なWebアプリケーション開発で採用実績のあるSpring MVCですが、「アーキテクチャーがどの様に実現されているのか」と疑問に思ったことはありませんか？\r\n\r\n・どうしてアノテーションを付けるだけで、リクエストURLとコントローラーメソッドの対応付けができるのか？\r\n・コントローラーメソッドに指定した引数のインスタンスは、どこで作られるのか？\r\n・コントローラーメソッドの戻り値に指定できる型がたくさんあるが、なぜ動くのか？\r\n・コントローラーメソッドの戻り値にビューの論理名を指定しただけで、なぜビューに処理が移るのか？\r\n・なぜControllerとRestControllerを使い分けるだけで、レスポンスをHTMLとJSONで切り替えられるのか？\r\n等\r\n\r\n本セッションでは、そのような謎を「ソースコードリーディング」により解き明かしていきます。\r\n\r\nすでに業務でSpring MVCを使っているが、より詳しくアーキテクチャーを理解したいという方に、ぴったりのセッションとなっています。",
-    "speakers": [
-      {
-        "id": 12,
-        "name": "菊池 真登",
-        "affiliation": "カサレアル",
-        "profile": "2010年にIT業界に身を置く。当初は組込制御系システム開発のテスターを行っていた。2012年3月にSpring MVCを使ったWebアプリケーション開発に携わったことをきっかけに、以後様々なWebアプリケーション開発に従事する。現在は株式会社カサレアルでSpring系コースを中心に技術講師として研修の登壇を行っている。",
-        "image": "images/speakers/12.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 6,
-      "time": "13:00 - 13:45",
-      "place": "sola city Hall (EAST)"
-    },
-    "title": "Spring Developer のための コンテナ入門",
-    "abstract": "Microservices や CI/CD Cloud Native といったキーワードで注目度の高まっているコンテナ技術ですが、本セッションではコンテナを使ったことがない、またはほとんど知らない方向けに、コンテナそのものの概要に加え、コンテナオーケストレーターの役割、アプリケーション開発者がコンテナを活用することによるメリットを紹介します。また、実際に Spring アプリケーションをどのように Kubernetes 上にデプロイするかをデモを交えてご紹介します。\r\n\r\nコンテナ技術概要\r\nなぜ Kubernetes が必要になったのか\r\nコンテナオーケストレーターとその役割\r\nKubernetes のアーキテクチャ\r\nSpring アプリケーションを簡単にKubernetes 上にデプロイするデモ\r\nまとめ\r\nKubernetes というワードはよく聞くけど実はよくわかっていないという方はぜひお越しください！",
-    "speakers": [
-      {
-        "id": 27,
-        "name": "塚越 啓介",
-        "affiliation": "Google Cloud",
-        "profile": "Web企業にてミッションクリティカルなシステムの開発や海外向けサービスの立ち上げをリード。その後クラウドベンダーにてコンサルタントやソリューションアーキテクトとして活動。現在はGoogle Cloudでアプリケーション開発者向けにサーバーレス/マイクロサービス/DevOpsといった領域の技術支援に従事している。",
-        "image": "images/speakers/27.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 101,
+      "id": 4.1,
       "time": "Lunch Session (11:55 - 12:40)",
       "place": "sola city Hall (EAST)"
     },
@@ -171,12 +114,11 @@
         "image": "images/speakers/25.png"
       }
     ],
-    "slides": "JasmineSoft",
     "lunch": "yes"
   },
   {
     "timetable": {
-      "id": 102,
+      "id": 4.2,
       "time": "Lunch Session (11:55 - 12:40)",
       "place": "sola city Hall (WEST)"
     },
@@ -205,93 +147,9 @@
   },
   {
     "timetable": {
-      "id": 7,
-      "time": "13:00 - 13:45",
-      "place": "Room B"
-    },
-    "title": "Spring with React for Enterprise Application",
-    "abstract": "Enterprise な アプリケーションにおいてもデザイン性、使い勝手に対する要求は高まってきています。\r\nその要求を Spring と React を使って実現する方法をお話します。\r\n・EventStorming を用いたモデリング\r\n・Backend と Frontend を並行して開発する by Spring and React\r\n・Contract による変化に強い開発チーム",
-    "speakers": [
-      {
-        "id": 21,
-        "name": "山﨑 大",
-        "affiliation": "タグバンガーズ",
-        "profile": "タグバンガーズ入社5年目。DevチームにてWebアプリケーションの開発、マネジメントを担当。Java、Springはもちろん、技術のことならなんでも好き。ただのわさもん。",
-        "image": "images/speakers/21.png"
-      },
-      {
-        "id": 22,
-        "name": "設樂 大悟",
-        "affiliation": "タグバンガーズ",
-        "profile": "タグバンガーズ入社1年目。DevチームにてWebアプリケーションのフロントエンド開発を担当。",
-        "image": "images/speakers/22.png"
-      }
-    ],
-    "slides": "タグバンガーズ",
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 8,
-      "time": "13:00 - 13:45",
-      "place": "Room C"
-    },
-    "title": "Enterprise Angular Development (仮)",
-    "abstract": "エンタープライズでも近年、Webアプリケーション開発ではサーバサイドはSpring Boot、クライアントサイドではReactやAngularが利用されるようになってきました。大規模な何百億円プロジェクトでもAngularを採用し開発を進める事例も出始めています。ここでは、そういったプロジェクトを上手く回すためのコツを簡単にご紹介致します。",
-    "speakers": [
-      {
-        "id": 2,
-        "name": "佐川 夫美雄",
-        "affiliation": "アシラス",
-        "profile": "エンタープライズ業界にWebを広めるべく日々奮闘。COBOLでの生産管理/会計システムから始まり、Oracle Databaseでの物流系DB設計&実装、Javaフレームワーク/品質管理システム開発など経験。現在はWebの魅力に取り憑かれ、html5jやAngular Japan User Group などコミュニティ活動を積極的に行っている。",
-        "image": "images/speakers/2.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 9,
-      "time": "14:00 - 14:45",
+      "id": 5,
+      "time": "13:00 - 15:45",
       "place": "sola city Hall (EAST)"
-    },
-    "title": "受託開発におけるハイアジリティへのとりくみ",
-    "abstract": "ITサービスが企業のビジネスの中心となり久しい昨今、ビジネスを成功に導くため早期の意思決定はますます重要性が高まっています。それは受託開発でも変わりません\r\n\r\n* 開発に入る前の仮説検証プロセス\r\n* ミニマムなスコープ管理によるプロジェクト運営\r\n* Spring Boot と Spring Test\r\n* 仕様の見える化とテストファーストによる品質保証\r\n* 自動テストと向き合った新卒の半年間\r\n\r\nなど、SIerであるBTCにおけるハイアジリティを目指す取り組みの事例をご紹介いたします。",
-    "speakers": [
-      {
-        "id": 17,
-        "name": "寺島 秀樹",
-        "affiliation": "ビッグツリーコンサルティング",
-        "profile": "独立系システム開発会社、フリーランス、サービス系スタートアップ企業を経て2016年にBTCに入社。エンタープライズ系システム開発での経験が長く、アジャイルコーチとして開発プロジェクトのアジャイル化に携わる。\r\n\r\nJava、Groovy、特にSpringでの設計・実装を得意とし、近年はスクラムやテスト駆動開発などアジャイルプラクティスの導入・運用の支援やCI/CDなどの開発環境整備を得意とする。",
-        "image": "images/speakers/17.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 10,
-      "time": "14:00 - 14:45",
-      "place": "sola city Hall (WEST)"
-    },
-    "title": "Spring Boot爆速開発超絶技巧",
-    "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring Bootアプリケーションを開発する上で欠かせないキーボードショートカット、\r\nDockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
-    "speakers": [
-      {
-        "id": 3,
-        "name": "山本 裕介",
-        "affiliation": "サムライズム",
-        "profile": "トラブルシューティングツールの侍や、Twitter4JといったOSSを開発しているJavaエンジニア。株式会社サムライズムという会社の社長で、海外のプログラマ向けツールの日本国内展開を手がけています。",
-        "image": "images/speakers/3.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 11,
-      "time": "14:00 - 14:45",
-      "place": "Room B"
     },
     "title": "Reactive Spring",
     "abstract": "Microservices and big-data increasingly confront us with the limitations of traditional input/output. In traditional IO, work that is IO-bound dominates threads. This wouldn't be such a big deal if we could add more threads cheaply, but threads are expensive on the JVM, and most other platforms. Even if threads were cheap and infinitely scalable, we'd still be confronted with the faulty nature of networks. Things break, and they often do so in subtle, but non-exceptional ways. Traditional approaches to integration bury the faulty nature of networks behind overly simplifying abstractions. We need something better.\r\nSpring Framework 5 is here ! It introduces the Spring developer to a growing world of support for reactive programming across the Spring portfolio, starting with a new Netty-based web runtime, component model and module called Spring WebFlux, and then continuing to Spring Data Kay, Spring Security, Spring Boot, and Spring Cloud Finchley. Sure, it sounds like a lot, but don't worry! Join me, your guide, Spring developer advocate Josh Long, and we'll explore the wacky, wonderful world of Reactive Spring together.",
@@ -308,78 +166,9 @@
   },
   {
     "timetable": {
-      "id": 12,
-      "time": "14:00 - 14:45",
-      "place": "Room C"
-    },
-    "title": "Efficient Web Apps with Spring Boot 2",
-    "abstract": "How can we improve the efficiency of an existing web application? We could completely rewrite it, leverage more concurrency and even reactive features. But is it really worth it if we don't even measure and track the relevant metrics? In this talk, Stéphane will work on an existing Spring Boot MVC application to make it more efficient. He'll replace RestTemplate with WebClient and Reactor operators to improve efficiency, without the concurrency pitfalls. He'll use out-of-the-box metrics, add new ones to measure, and keep an eye on capacity gains with dashboards.",
-    "speakers": [
-      {
-        "id": 4,
-        "name": "Stéphane Nicoll",
-        "affiliation": "Pivotal",
-        "profile": "Stéphane has a thing for code quality and robustness. He's been spreading the word for more than ten years while developing large scale Java enterprise applications in the geospatial, financial, or logistics sectors. An Apache Maven PMC member since 2006, he joined the core Spring Framework development team early 2014, being one of the main contributors to both Spring Framework and Spring Boot since. During his free time, he loves traveling around the world.",
-        "image": "images/speakers/4.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 13,
-      "time": "15:00 - 15:45",
-      "place": "sola city Hall (EAST)"
-    },
-    "title": "Spring初心者必見、フレームワーク別の便利なテスト機能紹介",
-    "abstract": "Springが提供する機能（フレームワーク）で良く使用される Spring Framework、Spring MVC、Spring Securityと Springとシームレスに連携できるO/R Mappingツールである MyBatisに対するユニットテストに関して ・自動テストのメリットについて ・どのようなテストが出来るか をデモを交えて紹介させて頂きます。\r\n\r\n■：テストはJUnit5を使用\r\n\r\n■：Spring Frameworkのテスト\r\n〇：@Mockを使用して、まだ作成されていない実装クラスをスタブとして利用するテストを紹介します。\r\n\r\n・whenメソッドの使い方\r\n・verifyメソッドの使い方\r\n\r\n■：MyBatisのテスト\r\n〇：mybatis-spring-boot-starter-testを使用して\r\nMyBatisのMapperインターフェースを利用したデータアクセス機能のCRUD処理のテストを紹介します。\r\n\r\n・@MybatisTestアノテーションの説明\r\n・@AutoConfigureTestDatabaseアノテーションの説明\r\n\r\n■：Spring MVCのテスト\r\n〇：MockMvcを利用した、リクエストハンドラメソッドの呼び出し結果を取得し、評価するテストを紹介します。\r\n\r\n・メソッドチェーンの説明\r\n・HTTPレスポンスステータスの評価方法の説明\r\n・（View）遷移先の評価方法の説明\r\n・Modelの評価方法の説明\r\n\r\n■：Spring Securityのテスト\r\n〇：spring-security-testを使用してフォーム認証のテスト及びログアウトのテストを紹介します。",
-    "meta": [
-      "初心者"
-    ],
-    "speakers": [
-      {
-        "id": 5,
-        "name": "樹下 雅章",
-        "affiliation": "フルネス",
-        "profile": "JavaやPythonのIT講師をしています。相手に興味を引かせるように講義する至難の業を追求し、日々精進中です。",
-        "image": "images/speakers/5.png"
-      }
-    ]
-  },
-  {
-    "timetable": {
-      "id": 14,
-      "time": "15:00 - 15:45",
+      "id": 6,
+      "time": "13:00 - 13:45",
       "place": "sola city Hall (WEST)"
-    },
-    "slides": "マイクロソフト",
-    "meta": [],
-    "speakers": []
-  },
-  {
-    "timetable": {
-      "id": 15,
-      "time": "15:00 - 15:45",
-      "place": "Room B"
-    },
-    "title": "Springフレームワークの単体テストをどのくらい楽にできるか、シミュレーションしてみる",
-    "abstract": "Springフレームワークの単体テストって、使い方が難しく、実装する量も多くなりがちで大変ですよね。そんな悩みを解決するためにJtestには単体テストを支援する機能が搭載されています。Jtestを使うとどのくらい実装量が減り、工数が削減されるのかをご紹介します。\r\nJtestは有償ツールのため、導入して元が取れるのか、仮想プロジェクトを例にシミュレーションしてみます。",
-    "speakers": [
-      {
-        "id": 32,
-        "name": "天久 慎介",
-        "affiliation": "テクマトリックス",
-        "profile": "テクマトリックスという会社でJavaや.NETのテストツールを扱っています。現在はJavaの単体テストツールJtestを中心に評価・導入支援などを担当。得意な料理はスパイスカレー。",
-        "image": "images/speakers/32.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 16,
-      "time": "15:00 - 15:45",
-      "place": "Room C"
     },
     "title": "LINE公式アカウントのチャットシステムにおけるSpringおよびWebFluxの活用事例",
     "abstract": "LINEでは、企業･個店向けに公式アカウントというもの提供しています。公式アカウントでは多種多様な機能を提供しているのですが、その中の一つにチャット機能があります。そのチャットシステムにおける、Springの活用事例やアーキテクチャなどをご紹介致します。",
@@ -396,180 +185,9 @@
   },
   {
     "timetable": {
-      "id": 17,
-      "time": "16:15 - 17:00",
-      "place": "sola city Hall (EAST)"
-    },
-    "title": "NissanConnectの舞台裏で動くSpring Boot／Spring Cloud 〜Microserviceの実運用の事例〜",
-    "abstract": "自動車産業における変革を表すキーワード\"CASE\"におけるC(Connected)を、日産ではNissanConnectというサービスとして提供しています。\r\n特に、新型スカイライン及びリーフで提供しているサービスでは、スマホアプリを通してクルマと連携できる機能を提供しており、\r\nそのバックエンドはSpring BootやSpring Cloudを使ったMicroservice群として開発され、稼働しています。\r\n\r\n自動車メーカーとSpringという組み合わせが生み出したMicroservice群を実際に運用する中で見えてきたポイントなどを事例としてご紹介したいと思います。",
-    "speakers": [
-      {
-        "id": 13,
-        "name": "森下大介",
-        "affiliation": "日産自動車",
-        "profile": "2019年に日産自動車に転職。コネクティッドカーサービスに携わっているクルマ好きbackendエンジニア。\r\n前職はヤフーで広告サービスに携わりつつJava黒帯なんてこともしてました。",
-        "image": "images/speakers/13.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 18,
-      "time": "16:15 - 17:00",
-      "place": "sola city Hall (WEST)"
-    },
-    "title": "Quarkus による超音速な Spring アプリケーション開発",
-    "abstract": "Quarkus はSupersonic. Subatomic. Javaを理念に設計され、Cloud Native, Microservices, ServerlessのJavaアプリケーションを作成するための開発者向けに最適化された凝縮性の高いプラットフォームです。これらはQuarkusが低メモリ消費、高速起動に最適化されていることを意味しています。\r\n本セッションでは、Quarkus の紹介に加え、Springを使用してQuarkusアプリケーションを開発する流れを紹介します。",
-    "speakers": [
-      {
-        "id": 26,
-        "name": "須江 信洋",
-        "affiliation": "レッドハット",
-        "profile": "テクニカルセールス本部\r\nAssociate Principal Solution Architect",
-        "image": "images/speakers/26.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 19,
-      "time": "16:15 - 17:00",
+      "id": 7,
+      "time": "13:00 - 13:45",
       "place": "Room B"
-    },
-    "title": "Spring 5.2の目玉機能であるRSocket対応とは",
-    "abstract": "RSocket（<a href=\"https://rsocket.io\" style=\"color: #0E7373;\"><b>https://rsocket.io</b></a>）はTCP, WebSocket、UDP上でReactive Streamsのセマンティクスを持つ双方向通信可能な新しいバイナリプロトコルです。\r\nHTTPの代わりに利用可能です。\r\nRSocket自体は言語非依存ですが、Spring 5.2からお馴染みのプログラミングスタイルでRSocketサーバー/クライアントを実装できるようになりました。\r\n本セッションではRSocketとは何か、何が変わる・うれしいのか、SpringのRSocket対応とはどのようなものかを説明します。\r\nSpringが追加する新機能が好きな方、新しい技術を手っ取り早く知りたい方は必見です。",
-    "speakers": [
-      {
-        "id": 6,
-        "name": "槙 俊明",
-        "affiliation": "Pivotal",
-        "profile": "エンタープライズ企業のPivotal Platform (Cloud FoundryやKubernetes)の導入やPlatform Team作りの支援。Spring Bootを使ったアプリケーション開発の支援も。",
-        "image": "images/speakers/6.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 20,
-      "time": "16:15 - 17:00",
-      "place": "Room C"
-    },
-    "title": "Spring と GraalVM Native Image - 2019/12",
-    "abstract": "GraalVMのNative Image Generatorを使用すると、JavaのコードをNative Imageと呼ばれるネイティブバイナリへと事前コンパイルすることができます。\r\nNative Imageは現在Early Adopter technologyという扱いではありますが、Springでもサポートに向けた準備が着々と進められているようです。\r\n本セッションでは、Native Imageへコンパイルする際の制約と、その制約に対するSpringのアプローチについて調査した内容を紹介します。",
-    "speakers": [
-      {
-        "id": 7,
-        "name": "岩塚 卓弥",
-        "profile": "NTTの研究所でソフトウェア工学の研究に従事。業務ではSpringを利用するよりもSpringのコードを読む機会の方が多い。",
-        "image": "images/speakers/7.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 21,
-      "time": "17:15 - 18:00",
-      "place": "sola city Hall (WEST)"
-    },
-    "title": "実践 Spring Boot Actuator + Micrometer",
-    "abstract": "Spring Boot ActuatorはSpring Bootアプリケーションの運用のためのエンドポイントを追加するサブモジュールです。\r\n本セッションでは、Spring Boot Actuatorの概要、Micrometerとの連携をお話しします。\r\n開発に使うだけではもったいない、Actuatorの活用方法をお伝えできればと思います。",
-    "meta": [
-      "初心者"
-    ],
-    "speakers": [
-      {
-        "id": 8,
-        "name": "進藤",
-        "profile": "TBD",
-        "image": "images/speakers/8.png"
-      }
-    ]
-  },
-  {
-    "timetable": {
-      "id": 22,
-      "time": "17:15 - 18:00",
-      "place": "Room B"
-    },
-    "title": "入社１年目のプログラム初心者がSpringを学ぶための手引き",
-    "abstract": "これからSpringを勉強したいけど、どこから手を付ければいいか分からない」という方にお勧めのセッションです。まだJavaにも慣れていないプログラム初心者が、Springを学んでいく際に抑えるべきポイントを解説します。前半はJavaやServletなどの前提知識についてお話して、後半にSpringについてお話します。",
-    "meta": [
-      "初心者"
-    ],
-    "speakers": [
-      {
-        "id": 9,
-        "name": "土岐 孝平",
-        "profile": "Springをベースにしたアーキテクチャの作成や、JavaやSpringに関する研修の講師を行っている。 書籍の執筆も行っており、[改訂新版]Spring入門(技術評論社)の著者のひとりである。",
-        "image": "images/speakers/9.png"
-      }
-    ]
-  },
-  {
-    "timetable": {
-      "id": 23,
-      "time": "17:15 - 18:00",
-      "place": "Room C"
-    },
-    "title": "Springアプリケーションのテスト道具 使いどころ、使わないどころ",
-    "abstract": "Springアプリケーションのテストにはたくさんの道具の選択肢があります。何を使えばいいか、いつ使うのが良いか、使い方はあっているか、使うべきでないところで使っていないか、、悩みは尽きません。\r\n本セッションではJUnitやSpringの機能、モック、Selenium、Dockerなどを使ったテストや、それらを使った際のありがちな問題、使うべきでない場面などをお話しします。",
-    "speakers": [
-      {
-        "id": 10,
-        "name": "いろふ",
-        "profile": "大阪在住のふつうのプログラマです。 Javaエンジニア養成読本でJava入門とかWEB+DB PRESSでJavaの新定石とか書きました。",
-        "image": "images/speakers/10.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 24,
-      "time": "18:15 - 19:00",
-      "place": "sola city Hall (WEST)"
-    },
-    "title": "JSP/JSF から Spring Web + Thymeleaf への移行",
-    "abstract": "JSP (+Struts) など古いタイプのサーバサイドレンダリング開発から、最新系 Web 開発環境の Spring Web + Thymeleaf によるサーバサイドレンダリングへの移行に関心がある方向けのセッションです。\r\nひとたび Spring Boot + Spring Web + Thymeleaf に乗り換えてしまえば、幸せな開発環境が手に入ります。\r\nこのセッションでは、古いタイプのサーバサイドレンダリング技術と新技術とを比較などしながら、すばやく Spring Web + Thymeleaf 開発を理解できるようなコンテンツとなる予定です。\r\n前提知識：Java、HTMLを多少は知っていること。",
-    "meta": [
-      "初心者"
-    ],
-    "speakers": [
-      {
-        "id": 11,
-        "name": "伊賀 敏樹",
-        "profile": "古くから Java をもちいたエンタープライズシステム開発に多く従事してきました。\r\n最近は Heroku/Spring Web をもちいた大規模開発に関わることが多いです。",
-        "image": "images/speakers/11.png"
-      }
-    ]
-  },
-  {
-    "timetable": {
-      "id": 25,
-      "time": "18:15 - 19:00",
-      "place": "Room B"
-    },
-    "meta": [
-      "初心者"
-    ],
-    "speakers": [
-      {
-        "id": 23,
-        "name": "大野",
-        "image": "images/speakers/23.png"
-      }
-    ],
-    "slides": "大野さん"
-  },
-  {
-    "timetable": {
-      "id": 26,
-      "time": "18:15 - 19:00",
-      "place": "Room C"
     },
     "title": "春の特選アイテム",
     "abstract": "折角のFestなので、3名で賑やかにやってみることにしましたが、どうなることか!? さて、肝心のセッションの内容は、初めてSpringで開発するプロジェクトに従事しているエンジニアが、知っておくとちょっとだけ得をするかもしれないアイテム（プロパティの補完機能やSQLをログに出す方法、リトライの方法など）をご紹介します。",
@@ -596,6 +214,369 @@
         "image": "images/speakers/31.png"
       }
     ]
+  },
+  {
+    "timetable": {
+      "id": 8,
+      "time": "13:00 - 13:45",
+      "place": "Room C"
+    },
+    "title": "徹底解剖Spring MVCアーキテクチャー\r\n-DispatcherServletの中身を覗いてきました-",
+    "abstract": "様々なWebアプリケーション開発で採用実績のあるSpring MVCですが、「アーキテクチャーがどの様に実現されているのか」と疑問に思ったことはありませんか？\r\n\r\n・どうしてアノテーションを付けるだけで、リクエストURLとコントローラーメソッドの対応付けができるのか？\r\n・コントローラーメソッドに指定した引数のインスタンスは、どこで作られるのか？\r\n・コントローラーメソッドの戻り値に指定できる型がたくさんあるが、なぜ動くのか？\r\n・コントローラーメソッドの戻り値にビューの論理名を指定しただけで、なぜビューに処理が移るのか？\r\n・なぜControllerとRestControllerを使い分けるだけで、レスポンスをHTMLとJSONで切り替えられるのか？\r\n等\r\n\r\n本セッションでは、そのような謎を「ソースコードリーディング」により解き明かしていきます。\r\n\r\nすでに業務でSpring MVCを使っているが、より詳しくアーキテクチャーを理解したいという方に、ぴったりのセッションとなっています。",
+    "speakers": [
+      {
+        "id": 12,
+        "name": "菊池 真登",
+        "affiliation": "カサレアル",
+        "profile": "2010年にIT業界に身を置く。当初は組込制御系システム開発のテスターを行っていた。2012年3月にSpring MVCを使ったWebアプリケーション開発に携わったことをきっかけに、以後様々なWebアプリケーション開発に従事する。現在は株式会社カサレアルでSpring系コースを中心に技術講師として研修の登壇を行っている。",
+        "image": "images/speakers/12.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 9,
+      "time": "14:00 - 14:45",
+      "place": "sola city Hall (EAST)"
+    },
+    "title": "NissanConnectの舞台裏で動くSpring Boot／Spring Cloud 〜Microserviceの実運用の事例〜",
+    "abstract": "自動車産業における変革を表すキーワード\"CASE\"におけるC(Connected)を、日産ではNissanConnectというサービスとして提供しています。\r\n特に、新型スカイライン及びリーフで提供しているサービスでは、スマホアプリを通してクルマと連携できる機能を提供しており、\r\nそのバックエンドはSpring BootやSpring Cloudを使ったMicroservice群として開発され、稼働しています。\r\n\r\n自動車メーカーとSpringという組み合わせが生み出したMicroservice群を実際に運用する中で見えてきたポイントなどを事例としてご紹介したいと思います。",
+    "speakers": [
+      {
+        "id": 13,
+        "name": "森下大介",
+        "affiliation": "日産自動車",
+        "profile": "2019年に日産自動車に転職。コネクティッドカーサービスに携わっているクルマ好きbackendエンジニア。\r\n前職はヤフーで広告サービスに携わりつつJava黒帯なんてこともしてました。",
+        "image": "images/speakers/13.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 10,
+      "time": "14:00 - 14:45",
+      "place": "Room B"
+    },
+    "title": "実践 Spring Boot Actuator + Micrometer",
+    "abstract": "Spring Boot ActuatorはSpring Bootアプリケーションの運用のためのエンドポイントを追加するサブモジュールです。\r\n本セッションでは、Spring Boot Actuatorの概要、Micrometerとの連携をお話しします。\r\n開発に使うだけではもったいない、Actuatorの活用方法をお伝えできればと思います。",
+    "meta": [
+      "初心者"
+    ],
+    "speakers": [
+      {
+        "id": 8,
+        "name": "進藤",
+        "profile": "TBD",
+        "image": "images/speakers/8.png"
+      }
+    ]
+  },
+  {
+    "timetable": {
+      "id": 11,
+      "time": "14:00 - 14:45",
+      "place": "Room C"
+    },
+    "title": "システム間連携を担うSpring　Integrationのエンタープライズ開発での活用",
+    "abstract": "異なるアーキテクチャを採用したシステムを連携させる手法として、Enterprise Integration Pattern(EIP)と呼ばれるベストプラクティスが存在します。\r\n\r\nSpring IntegrationはそのEIPをSpringで実現するフレームワークです。\r\n\r\n本セッションでは、Spring Integrationの基本的な使用方法やメッセージ送受信の仕組みを理解しつつ、\r\n\r\n実際にエンタープライズ開発に適用した際の工夫や考慮事項を紹介します。",
+    "speakers": [
+      {
+        "id": 28,
+        "name": "太田 浩介",
+        "affiliation": "NTT DATA",
+        "profile": "2019入社、インテグレーション技術センタに所属。SpringでのWeb開発の習熟を経て、現在は某既存システムのSpringフレームワークへの移行支援を行っている。",
+        "image": "images/speakers/28.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 12,
+      "time": "15:00 - 15:45",
+      "place": "sola city Hall (WEST)"
+    },
+    "title": "Spring Developer のための コンテナ入門",
+    "abstract": "Microservices や CI/CD Cloud Native といったキーワードで注目度の高まっているコンテナ技術ですが、本セッションではコンテナを使ったことがない、またはほとんど知らない方向けに、コンテナそのものの概要に加え、コンテナオーケストレーターの役割、アプリケーション開発者がコンテナを活用することによるメリットを紹介します。また、実際に Spring アプリケーションをどのように Kubernetes 上にデプロイするかをデモを交えてご紹介します。\r\n\r\nコンテナ技術概要\r\nなぜ Kubernetes が必要になったのか\r\nコンテナオーケストレーターとその役割\r\nKubernetes のアーキテクチャ\r\nSpring アプリケーションを簡単にKubernetes 上にデプロイするデモ\r\nまとめ\r\nKubernetes というワードはよく聞くけど実はよくわかっていないという方はぜひお越しください！",
+    "speakers": [
+      {
+        "id": 27,
+        "name": "塚越 啓介",
+        "affiliation": "Google Cloud",
+        "profile": "Web企業にてミッションクリティカルなシステムの開発や海外向けサービスの立ち上げをリード。その後クラウドベンダーにてコンサルタントやソリューションアーキテクトとして活動。現在はGoogle Cloudでアプリケーション開発者向けにサーバーレス/マイクロサービス/DevOpsといった領域の技術支援に従事している。",
+        "image": "images/speakers/27.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 13,
+      "time": "15:00 - 15:45",
+      "place": "Room B"
+    },
+    "title": "Enterprise Angular Development (仮)",
+    "abstract": "エンタープライズでも近年、Webアプリケーション開発ではサーバサイドはSpring Boot、クライアントサイドではReactやAngularが利用されるようになってきました。大規模な何百億円プロジェクトでもAngularを採用し開発を進める事例も出始めています。ここでは、そういったプロジェクトを上手く回すためのコツを簡単にご紹介致します。",
+    "speakers": [
+      {
+        "id": 2,
+        "name": "佐川 夫美雄",
+        "affiliation": "アシラス",
+        "profile": "エンタープライズ業界にWebを広めるべく日々奮闘。COBOLでの生産管理/会計システムから始まり、Oracle Databaseでの物流系DB設計&実装、Javaフレームワーク/品質管理システム開発など経験。現在はWebの魅力に取り憑かれ、html5jやAngular Japan User Group などコミュニティ活動を積極的に行っている。",
+        "image": "images/speakers/2.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 14,
+      "time": "15:00 - 15:45",
+      "place": "Room C"
+    },
+    "title": "Spring と GraalVM Native Image - 2019/12",
+    "abstract": "GraalVMのNative Image Generatorを使用すると、JavaのコードをNative Imageと呼ばれるネイティブバイナリへと事前コンパイルすることができます。\r\nNative Imageは現在Early Adopter technologyという扱いではありますが、Springでもサポートに向けた準備が着々と進められているようです。\r\n本セッションでは、Native Imageへコンパイルする際の制約と、その制約に対するSpringのアプローチについて調査した内容を紹介します。",
+    "speakers": [
+      {
+        "id": 7,
+        "name": "岩塚 卓弥",
+        "profile": "NTTの研究所でソフトウェア工学の研究に従事。業務ではSpringを利用するよりもSpringのコードを読む機会の方が多い。",
+        "image": "images/speakers/7.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 15,
+      "time": "16:15 - 17:00",
+      "place": "sola city Hall (WEST)"
+    },
+    "title": "Quarkus による超音速な Spring アプリケーション開発",
+    "abstract": "Quarkus はSupersonic. Subatomic. Javaを理念に設計され、Cloud Native, Microservices, ServerlessのJavaアプリケーションを作成するための開発者向けに最適化された凝縮性の高いプラットフォームです。これらはQuarkusが低メモリ消費、高速起動に最適化されていることを意味しています。\r\n本セッションでは、Quarkus の紹介に加え、Springを使用してQuarkusアプリケーションを開発する流れを紹介します。",
+    "speakers": [
+      {
+        "id": 26,
+        "name": "須江 信洋",
+        "affiliation": "レッドハット",
+        "profile": "テクニカルセールス本部\r\nAssociate Principal Solution Architect",
+        "image": "images/speakers/26.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 16,
+      "time": "16:15 - 17:00",
+      "place": "sola city Hall (EAST)"
+    },
+    "title": "Spring 5.2の目玉機能であるRSocket対応とは",
+    "abstract": "RSocket（<a href=\"https://rsocket.io\" style=\"color: #0E7373;\"><b>https://rsocket.io</b></a>）はTCP, WebSocket、UDP上でReactive Streamsのセマンティクスを持つ双方向通信可能な新しいバイナリプロトコルです。\r\nHTTPの代わりに利用可能です。\r\nRSocket自体は言語非依存ですが、Spring 5.2からお馴染みのプログラミングスタイルでRSocketサーバー/クライアントを実装できるようになりました。\r\n本セッションではRSocketとは何か、何が変わる・うれしいのか、SpringのRSocket対応とはどのようなものかを説明します。\r\nSpringが追加する新機能が好きな方、新しい技術を手っ取り早く知りたい方は必見です。",
+    "speakers": [
+      {
+        "id": 6,
+        "name": "槙 俊明",
+        "affiliation": "Pivotal",
+        "profile": "エンタープライズ企業のPivotal Platform (Cloud FoundryやKubernetes)の導入やPlatform Team作りの支援。Spring Bootを使ったアプリケーション開発の支援も。",
+        "image": "images/speakers/6.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 17,
+      "time": "16:15 - 17:00",
+      "place": "Room B"
+    },
+    "title": "JSP/JSF から Spring Web + Thymeleaf への移行",
+    "abstract": "JSP (+Struts) など古いタイプのサーバサイドレンダリング開発から、最新系 Web 開発環境の Spring Web + Thymeleaf によるサーバサイドレンダリングへの移行に関心がある方向けのセッションです。\r\nひとたび Spring Boot + Spring Web + Thymeleaf に乗り換えてしまえば、幸せな開発環境が手に入ります。\r\nこのセッションでは、古いタイプのサーバサイドレンダリング技術と新技術とを比較などしながら、すばやく Spring Web + Thymeleaf 開発を理解できるようなコンテンツとなる予定です。\r\n前提知識：Java、HTMLを多少は知っていること。",
+    "meta": [
+      "初心者"
+    ],
+    "speakers": [
+      {
+        "id": 11,
+        "name": "伊賀 敏樹",
+        "profile": "古くから Java をもちいたエンタープライズシステム開発に多く従事してきました。\r\n最近は Heroku/Spring Web をもちいた大規模開発に関わることが多いです。",
+        "image": "images/speakers/11.png"
+      }
+    ]
+  },
+  {
+    "timetable": {
+      "id": 18,
+      "time": "16:15 - 17:00",
+      "place": "Room C"
+    },
+    "title": "Springフレームワークの単体テストをどのくらい楽にできるか、シミュレーションしてみる",
+    "abstract": "Springフレームワークの単体テストって、使い方が難しく、実装する量も多くなりがちで大変ですよね。そんな悩みを解決するためにJtestには単体テストを支援する機能が搭載されています。Jtestを使うとどのくらい実装量が減り、工数が削減されるのかをご紹介します。\r\nJtestは有償ツールのため、導入して元が取れるのか、仮想プロジェクトを例にシミュレーションしてみます。",
+    "speakers": [
+      {
+        "id": 32,
+        "name": "天久 慎介",
+        "affiliation": "テクマトリックス",
+        "profile": "テクマトリックスという会社でJavaや.NETのテストツールを扱っています。現在はJavaの単体テストツールJtestを中心に評価・導入支援などを担当。得意な料理はスパイスカレー。",
+        "image": "images/speakers/32.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 19,
+      "time": "17:15 - 18:00",
+      "place": "sola city Hall (WEST)"
+    },
+    "title": "Spring Social でソーシャルログインを実装する",
+    "abstract": "最近ソーシャルログインを提供するサービスは増えてきています。Spring Social は各SNS 専用のライブラリが用意されていて、これらを使ってソーシャルログインを実装することができます。\r\n\r\nこのセッションでは、このソーシャルログイン機能を提供するWebアプリケーションを実装する方法を紹介します。",
+    "speakers": [
+      {
+        "id": 18,
+        "name": "田中 竜介",
+        "affiliation": "楽天",
+        "profile": "楽天ペイ（オンライン決済）のアプリケーションエンジニアとして開発業務に携わっています。パブリッククラウドやコンテナオーケストラレーション、CI/CD などを良く触っています。",
+        "image": "images/speakers/18.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 20,
+      "time": "17:15 - 18:00",
+      "place": "sola city Hall (EAST)"
+    },
+    "title": "Efficient Web Apps with Spring Boot 2",
+    "abstract": "How can we improve the efficiency of an existing web application? We could completely rewrite it, leverage more concurrency and even reactive features. But is it really worth it if we don't even measure and track the relevant metrics? In this talk, Stéphane will work on an existing Spring Boot MVC application to make it more efficient. He'll replace RestTemplate with WebClient and Reactor operators to improve efficiency, without the concurrency pitfalls. He'll use out-of-the-box metrics, add new ones to measure, and keep an eye on capacity gains with dashboards.",
+    "speakers": [
+      {
+        "id": 4,
+        "name": "Stéphane Nicoll",
+        "affiliation": "Pivotal",
+        "profile": "Stéphane has a thing for code quality and robustness. He's been spreading the word for more than ten years while developing large scale Java enterprise applications in the geospatial, financial, or logistics sectors. An Apache Maven PMC member since 2006, he joined the core Spring Framework development team early 2014, being one of the main contributors to both Spring Framework and Spring Boot since. During his free time, he loves traveling around the world.",
+        "image": "images/speakers/4.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 21,
+      "time": "17:15 - 18:00",
+      "place": "Room B"
+    },
+    "title": "Springアプリケーションのテスト道具 使いどころ、使わないどころ",
+    "abstract": "Springアプリケーションのテストにはたくさんの道具の選択肢があります。何を使えばいいか、いつ使うのが良いか、使い方はあっているか、使うべきでないところで使っていないか、、悩みは尽きません。\r\n本セッションではJUnitやSpringの機能、モック、Selenium、Dockerなどを使ったテストや、それらを使った際のありがちな問題、使うべきでない場面などをお話しします。",
+    "speakers": [
+      {
+        "id": 10,
+        "name": "いろふ",
+        "profile": "大阪在住のふつうのプログラマです。 Javaエンジニア養成読本でJava入門とかWEB+DB PRESSでJavaの新定石とか書きました。",
+        "image": "images/speakers/10.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 22,
+      "time": "17:15 - 18:00",
+      "place": "Room C"
+    },
+    "title": "受託開発におけるハイアジリティへのとりくみ",
+    "abstract": "ITサービスが企業のビジネスの中心となり久しい昨今、ビジネスを成功に導くため早期の意思決定はますます重要性が高まっています。それは受託開発でも変わりません\r\n\r\n* 開発に入る前の仮説検証プロセス\r\n* ミニマムなスコープ管理によるプロジェクト運営\r\n* Spring Boot と Spring Test\r\n* 仕様の見える化とテストファーストによる品質保証\r\n* 自動テストと向き合った新卒の半年間\r\n\r\nなど、SIerであるBTCにおけるハイアジリティを目指す取り組みの事例をご紹介いたします。",
+    "speakers": [
+      {
+        "id": 17,
+        "name": "寺島 秀樹",
+        "affiliation": "ビッグツリーコンサルティング",
+        "profile": "独立系システム開発会社、フリーランス、サービス系スタートアップ企業を経て2016年にBTCに入社。エンタープライズ系システム開発での経験が長く、アジャイルコーチとして開発プロジェクトのアジャイル化に携わる。\r\n\r\nJava、Groovy、特にSpringでの設計・実装を得意とし、近年はスクラムやテスト駆動開発などアジャイルプラクティスの導入・運用の支援やCI/CDなどの開発環境整備を得意とする。",
+        "image": "images/speakers/17.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 23,
+      "time": "18:15 - 19:00",
+      "place": "sola city Hall (EAST)"
+    },
+    "title": "Spring with React for Enterprise Application",
+    "abstract": "Enterprise な アプリケーションにおいてもデザイン性、使い勝手に対する要求は高まってきています。\r\nその要求を Spring と React を使って実現する方法をお話します。\r\n・EventStorming を用いたモデリング\r\n・Backend と Frontend を並行して開発する by Spring and React\r\n・Contract による変化に強い開発チーム",
+    "speakers": [
+      {
+        "id": 21,
+        "name": "山﨑 大",
+        "affiliation": "タグバンガーズ",
+        "profile": "タグバンガーズ入社5年目。DevチームにてWebアプリケーションの開発、マネジメントを担当。Java、Springはもちろん、技術のことならなんでも好き。ただのわさもん。",
+        "image": "images/speakers/21.png"
+      },
+      {
+        "id": 22,
+        "name": "設樂 大悟",
+        "affiliation": "タグバンガーズ",
+        "profile": "タグバンガーズ入社1年目。DevチームにてWebアプリケーションのフロントエンド開発を担当。",
+        "image": "images/speakers/22.png"
+      }
+    ],
+    "slides": "タグバンガーズ",
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 24,
+      "time": "18:15 - 19:00",
+      "place": "Room B"
+    },
+    "title": "Spring初心者必見、フレームワーク別の便利なテスト機能紹介",
+    "abstract": "Springが提供する機能（フレームワーク）で良く使用される Spring Framework、Spring MVC、Spring Securityと Springとシームレスに連携できるO/R Mappingツールである MyBatisに対するユニットテストに関して ・自動テストのメリットについて ・どのようなテストが出来るか をデモを交えて紹介させて頂きます。\r\n\r\n■：テストはJUnit5を使用\r\n\r\n■：Spring Frameworkのテスト\r\n〇：@Mockを使用して、まだ作成されていない実装クラスをスタブとして利用するテストを紹介します。\r\n\r\n・whenメソッドの使い方\r\n・verifyメソッドの使い方\r\n\r\n■：MyBatisのテスト\r\n〇：mybatis-spring-boot-starter-testを使用して\r\nMyBatisのMapperインターフェースを利用したデータアクセス機能のCRUD処理のテストを紹介します。\r\n\r\n・@MybatisTestアノテーションの説明\r\n・@AutoConfigureTestDatabaseアノテーションの説明\r\n\r\n■：Spring MVCのテスト\r\n〇：MockMvcを利用した、リクエストハンドラメソッドの呼び出し結果を取得し、評価するテストを紹介します。\r\n\r\n・メソッドチェーンの説明\r\n・HTTPレスポンスステータスの評価方法の説明\r\n・（View）遷移先の評価方法の説明\r\n・Modelの評価方法の説明\r\n\r\n■：Spring Securityのテスト\r\n〇：spring-security-testを使用してフォーム認証のテスト及びログアウトのテストを紹介します。",
+    "meta": [
+      "初心者"
+    ],
+    "speakers": [
+      {
+        "id": 5,
+        "name": "樹下 雅章",
+        "affiliation": "フルネス",
+        "profile": "JavaやPythonのIT講師をしています。相手に興味を引かせるように講義する至難の業を追求し、日々精進中です。",
+        "image": "images/speakers/5.png"
+      }
+    ]
+  },
+  {
+    "timetable": {
+      "id": 25,
+      "time": "18:15 - 19:00",
+      "place": "Room C"
+    },
+    "title": "大規模基幹システムにSpring Cloudを使いたい！",
+    "abstract": "Spring Cloudをエンタープライズの世界でも使ってみたい！大規模基幹システムにマイクロサービスアーキテクチャを導入したい！そんな熱い想いを抱くみなさまに、ウルシステムズが実案件で培ってきたSpring Cloud導入のノウハウをご紹介します。エンタープライズに求められる認証や運用監視、ポータビリティ、開発統制などの本格活用にお役に立てるセッションです。",
+    "speakers": [
+      {
+        "id": 29,
+        "name": "黒川 徳介",
+        "affiliation": "ウルシステムズ",
+        "profile": "政令指定都市や小売業の大規模基幹システム刷新に、アーキテクト/コンサルタントとして歴任。フレームワーク開発やマイクロサービス、CI/CDの導入を得意としている。技術者が輝ける世界を作るべく、日々奔走中。",
+        "image": "images/speakers/29.png"
+      }
+    ],
+    "slides": "ウルシステムズ",
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 100,
+      "time": "9:45 - 10:00",
+      "place": "sola city Hall (WEST)"
+    },
+    "slides": "ご挨拶",
+    "meta": [],
+    "speakers": []
   },
   {
     "timetable": {
