@@ -36,13 +36,6 @@ export default ({ data }) => {
     marginTop: -headerHeight,
   }
 
-  const scrollToSection = () => {
-    sectionRef.current.scrollIntoView({
-      behavior: 'smooth',
-      inline: 'start',
-    })
-  }
-
   const scrolled = () => {
     const scrollTop = sectionRef.current.getBoundingClientRect().top
     return scrollTop <= 0
@@ -62,7 +55,7 @@ export default ({ data }) => {
       scrolled={scrolled}
     >
       <SEO title="Home" />
-      <Banner scrollToSection={() => scrollToSection()} />
+      <Banner />
       <SectionWrap ref={sectionRef}>
         <div style={helper}>
           <div id="session" style={anchor}>

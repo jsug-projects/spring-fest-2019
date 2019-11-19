@@ -58,10 +58,10 @@ const Menu = ({ open, setIsOpen, pdf }) => {
                 <Link to="/#session">
                   <NavItem>Sessions</NavItem>
                 </Link>
-                <Link to="/#booth" onClick={setIsOpen(false)}>
+                <Link to="/#booth" onClick={() => setIsOpen(false)}>
                   <NavItem>Booths</NavItem>
                 </Link>
-                <Link to="/#sponsor" onClick={setIsOpen(false)}>
+                <Link to="/#sponsor" onClick={() => setIsOpen(false)}>
                   <NavItem>Sponsors</NavItem>
                 </Link>
               </NavItem>

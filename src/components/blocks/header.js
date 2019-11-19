@@ -127,6 +127,7 @@ const IconHolder = styled.div`
   display: none;
   z-index: 100;
   cursor: pointer;
+  padding: ${props => props.theme.spacing(0.5, 0)};
 
   @media only screen and (max-width: ${props => props.theme.media.computer}) {
     display: block;
@@ -228,22 +229,8 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
             </TitleHolder>
           </Link>
         )}
-        <IconHolder>
-          {isOpen ? (
-            <Icon
-              name={'times'}
-              fitted
-              circular
-              onClick={() => setIsOpen(false)}
-            />
-          ) : (
-            <Icon
-              name={'bars'}
-              fitted
-              circular
-              onClick={() => setIsOpen(true)}
-            />
-          )}
+        <IconHolder onClick={() => setIsOpen(!isOpen)}>
+          <Icon name={isOpen ? 'times' : 'bars'} />
         </IconHolder>
       </MobileHeader>
     </Container>

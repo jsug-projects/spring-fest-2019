@@ -362,10 +362,18 @@
       "time": "15:00 - 15:45",
       "place": "Room B"
     },
-    "abstract": "Spring単体テストの効率化",
-    "slides": "テクマトリックス",
-    "meta": [],
-    "speakers": []
+    "title": "Springフレームワークの単体テストをどのくらい楽にできるか、シミュレーションしてみる",
+    "abstract": "Springフレームワークの単体テストって、使い方が難しく、実装する量も多くなりがちで大変ですよね。そんな悩みを解決するためにJtestには単体テストを支援する機能が搭載されています。Jtestを使うとどのくらい実装量が減り、工数が削減されるのかをご紹介します。\r\nJtestは有償ツールのため、導入して元が取れるのか、仮想プロジェクトを例にシミュレーションしてみます。",
+    "speakers": [
+      {
+        "id": 32,
+        "name": "天久 慎介",
+        "affiliation": "テクマトリックス",
+        "profile": "テクマトリックスという会社でJavaや.NETのテストツールを扱っています。現在はJavaの単体テストツールJtestを中心に評価・導入支援などを担当。得意な料理はスパイスカレー。",
+        "image": "images/speakers/32.png"
+      }
+    ],
+    "meta": []
   },
   {
     "timetable": {
@@ -467,6 +475,8 @@
       "time": "17:15 - 18:00",
       "place": "sola city Hall (WEST)"
     },
+    "title": "実践 Spring Boot Actuator + Micrometer",
+    "abstract": "Spring Boot ActuatorはSpring Bootアプリケーションの運用のためのエンドポイントを追加するサブモジュールです。\r\n本セッションでは、Spring Boot Actuatorの概要、Micrometerとの連携をお話しします。\r\n開発に使うだけではもったいない、Actuatorの活用方法をお伝えできればと思います。",
     "meta": [
       "初心者"
     ],
@@ -474,10 +484,10 @@
       {
         "id": 8,
         "name": "進藤",
+        "profile": "TBD",
         "image": "images/speakers/8.png"
       }
-    ],
-    "slides": "進藤さん"
+    ]
   },
   {
     "timetable": {
@@ -575,13 +585,13 @@
       },
       {
         "id": 30,
-        "name": "柴田洋平",
+        "name": "柴田 洋平",
         "profile": "⽇本Springユーザー会スタッフ。SIerからユーザーのシステム部門に転職するも、異動でシステムからも離れたエンジニア。 業務では開発はしてませんが、Java、Spring、DDDを勉強中。",
         "image": "images/speakers/30.png"
       },
       {
         "id": 31,
-        "name": "田村英雅",
+        "name": "田村 英雅",
         "profile": "合同会社GuildHub 代表社員。⽇本Springユーザー会スタッフ。⼤学で機械⼯学科を専攻。2001 年から多くのシステム開発プロジェクトに従事。現在では主にJava(特にSpring Frameworkを得意とする)を使⽤したシステムのアーキテクトとして活動している。英語を⽤いた業務経験が豊富。",
         "image": "images/speakers/31.png"
       }
