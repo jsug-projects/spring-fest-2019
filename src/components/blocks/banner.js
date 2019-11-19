@@ -40,7 +40,7 @@ const Logo = styled.img`
   }
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    width: 5rem;
+    width: 4rem;
     margin-bottom: ${props => props.theme.spacing(1)};
   }
 `
@@ -117,7 +117,7 @@ const DescriptionText = styled.p`
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     width: 85%;
     margin: 1rem auto;
-    font-size: ${props => props.theme.typography.size.sm};
+    font-size: ${props => props.theme.typography.size.xs};
   }
 `
 
@@ -130,6 +130,7 @@ const ActionButton = styled.a`
   transition: all 0.1s ease-in;
   border-radius: 50px;
   box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: ${props => props.theme.spacing(2)};
 
   &:hover {
     transform: scale(1.05);
