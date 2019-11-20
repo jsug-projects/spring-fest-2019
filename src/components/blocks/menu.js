@@ -40,7 +40,6 @@ const NavItem = styled.div`
 
 const Pdf = styled.a`
   text-decoration: none;
-  pointer-events: none;
 `
 
 const Shares = styled.div`
@@ -66,7 +65,7 @@ const Menu = ({ open, setIsOpen, pdf }) => {
                 </Link>
               </NavItem>
               <Pdf href={pdf} target="_blank">
-                <NavItem style={{ opacity: 0.5 }}>Timetable</NavItem>
+                <NavItem>Timetable</NavItem>
               </Pdf>
               <Link to="/access">
                 <NavItem>Access</NavItem>

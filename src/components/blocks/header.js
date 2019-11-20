@@ -74,12 +74,9 @@ const Pdf = styled.a`
   font-family: ${props => props.theme.typography.types.display};
   font-weight: 700;
 
-  // &:hover {
-  //   color: ${props => props.theme.colors.neutral['25']};
-  // }
-  
-  opacity: 0.5;
-  pointer-events: none;
+  &:hover {
+    color: ${props => props.theme.colors.neutral['25']};
+  }
 `
 
 const Link = styled(GatsbyLink)`
@@ -138,9 +135,7 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
   const { pdf, springLogoImage } = useStaticQuery(
     graphql`
       query {
-        pdf: file(
-          relativePath: { eq: "timetable/spring-fest-2019-timetable.pdf" }
-        ) {
+        pdf: file(relativePath: { eq: "timetable/timetable.pdf" }) {
           publicURL
         }
         springLogoImage: file(relativePath: { eq: "images/spring-logo.svg" }) {
