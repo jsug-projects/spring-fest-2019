@@ -93,7 +93,6 @@ const ContentsHolder = styled.div`
 
 const TitleHolder = styled.div`
   display: inline-block;
-  flex: 1;
 `
 
 const Title = styled.h3`

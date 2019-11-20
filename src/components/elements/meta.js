@@ -9,6 +9,7 @@ const Container = styled.span`
   border-radius: 3px;
   align-items: baseline;
   margin-right: ${props => props.theme.spacing(1)};
+  white-space: nowrap;
 `
 
 const Title = styled.span`
