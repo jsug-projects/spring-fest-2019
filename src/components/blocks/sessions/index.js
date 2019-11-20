@@ -11,7 +11,8 @@ const Container = styled.div`
 `
 
 export default ({ items, time }) => {
-  const byTime = path(time)
+  const timeId = ['timetable', 'timeId']
+  const byTime = path(timeId)
   const grouped = groupBy(byTime, items)
   const sortedTime = sort((a, b) => a - b, Object.keys(grouped))
   const show = []
@@ -28,7 +29,7 @@ export default ({ items, time }) => {
     (t, idx) =>
       show[idx] && (
         <Container key={t}>
-          <Time time={t} />
+          <Time time={time[0][idx].time} />
           {grouped[t].map(s => (
             <Session session={s} key={s.id} />
           ))}

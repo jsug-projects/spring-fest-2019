@@ -18,8 +18,14 @@ const SectionWrap = styled.div`
 `
 
 export default ({ data }) => {
-  const { site, allBoothJson, allSessionsJson, allCompaniesJson } = data
-  const time = ['timetable', 'time']
+  const {
+    site,
+    allBoothJson,
+    allSessionsJson,
+    allCompaniesJson,
+    allTimeJson,
+  } = data
+  const time = [allTimeJson.nodes]
   const [headerHeight, setHeaderHeight] = useState(0)
   const sectionRef = useRef(null)
   const headerRef = useRef(null)
@@ -102,7 +108,12 @@ export const query = graphql`
         title
       }
     }
-
+    allTimeJson {
+      nodes {
+        id
+        time
+      }
+    }
     allSessionsJson {
       nodes {
         id
@@ -117,6 +128,7 @@ export const query = graphql`
           id
           place
           time
+          timeId
         }
         speakers {
           affiliation

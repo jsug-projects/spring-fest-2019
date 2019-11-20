@@ -1,8 +1,9 @@
 [
   {
     "timetable": {
-      "id": 0,
+      "id": 0.2,
       "time": "10:00 - 10:45",
+      "timeId": 2,
       "place": "sola city Hall"
     },
     "speakers": [
@@ -23,6 +24,7 @@
     "timetable": {
       "id": 1,
       "time": "11:00 - 11:45",
+      "timeId": 3,
       "place": "sola city Hall (EAST)"
     },
     "title": "Spring Boot爆速開発超絶技巧",
@@ -42,6 +44,7 @@
     "timetable": {
       "id": 2,
       "time": "11:00 - 11:45",
+      "timeId": 3,
       "place": "sola city Hall (WEST)"
     },
     "slides": "マイクロソフト",
@@ -52,6 +55,7 @@
     "timetable": {
       "id": 3,
       "time": "11:00 - 11:45",
+      "timeId": 3,
       "place": "Room B"
     },
     "title": "入社１年目のプログラム初心者がSpringを学ぶための手引き",
@@ -72,6 +76,7 @@
     "timetable": {
       "id": 4,
       "time": "11:00 - 11:45",
+      "timeId": 3,
       "place": "Room C"
     },
     "title": "大規模エンタープライズシステム開発におけるSpringアプリケーションのDevOps適用事例",
@@ -97,7 +102,8 @@
   {
     "timetable": {
       "id": 4.1,
-      "time": "Lunch Session (11:55 - 12:40)",
+      "time": "11:55 - 12:40",
+      "timeId": 4,
       "place": "sola city Hall (EAST)"
     },
     "title": "ローコード開発プラットフォームと、ドメイン駆動設計と、Springの関係",
@@ -119,7 +125,8 @@
   {
     "timetable": {
       "id": 4.2,
-      "time": "Lunch Session (11:55 - 12:40)",
+      "time": "11:55 - 12:40",
+      "timeId": 4,
       "place": "sola city Hall (WEST)"
     },
     "title": "帳票開発が苦痛なエンジニア大集合！豪華「人形町今半」の弁当付き！その代わり、少し宣伝を聞いてください！",
@@ -149,6 +156,7 @@
     "timetable": {
       "id": 5,
       "time": "13:00 - 15:45",
+      "timeId": 5,
       "place": "sola city Hall (EAST)"
     },
     "title": "Reactive Spring",
@@ -168,6 +176,7 @@
     "timetable": {
       "id": 6,
       "time": "13:00 - 13:45",
+      "timeId": 6,
       "place": "sola city Hall (WEST)"
     },
     "title": "LINE公式アカウントのチャットシステムにおけるSpringおよびWebFluxの活用事例",
@@ -187,6 +196,7 @@
     "timetable": {
       "id": 7,
       "time": "13:00 - 13:45",
+      "timeId": 6,
       "place": "Room B"
     },
     "title": "春の特選アイテム",
@@ -219,6 +229,7 @@
     "timetable": {
       "id": 8,
       "time": "13:00 - 13:45",
+      "timeId": 6,
       "place": "Room C"
     },
     "title": "徹底解剖Spring MVCアーキテクチャー\r\n-DispatcherServletの中身を覗いてきました-",
@@ -238,6 +249,7 @@
     "timetable": {
       "id": 9,
       "time": "14:00 - 14:45",
+      "timeId": 7,
       "place": "sola city Hall (EAST)"
     },
     "title": "NissanConnectの舞台裏で動くSpring Boot／Spring Cloud 〜Microserviceの実運用の事例〜",
@@ -257,6 +269,7 @@
     "timetable": {
       "id": 10,
       "time": "14:00 - 14:45",
+      "timeId": 7,
       "place": "Room B"
     },
     "title": "実践 Spring Boot Actuator + Micrometer",
@@ -277,6 +290,7 @@
     "timetable": {
       "id": 11,
       "time": "14:00 - 14:45",
+      "timeId": 7,
       "place": "Room C"
     },
     "title": "システム間連携を担うSpring　Integrationのエンタープライズ開発での活用",
@@ -296,6 +310,7 @@
     "timetable": {
       "id": 12,
       "time": "15:00 - 15:45",
+      "timeId": 8,
       "place": "sola city Hall (WEST)"
     },
     "title": "Spring Developer のための コンテナ入門",
@@ -315,6 +330,7 @@
     "timetable": {
       "id": 13,
       "time": "15:00 - 15:45",
+      "timeId": 8,
       "place": "Room B"
     },
     "title": "Enterprise Angular Development (仮)",
@@ -334,6 +350,7 @@
     "timetable": {
       "id": 14,
       "time": "15:00 - 15:45",
+      "timeId": 8,
       "place": "Room C"
     },
     "title": "Spring と GraalVM Native Image - 2019/12",
@@ -352,6 +369,7 @@
     "timetable": {
       "id": 15,
       "time": "16:15 - 17:00",
+      "timeId": 9,
       "place": "sola city Hall (WEST)"
     },
     "title": "Quarkus による超音速な Spring アプリケーション開発",
@@ -371,6 +389,7 @@
     "timetable": {
       "id": 16,
       "time": "16:15 - 17:00",
+      "timeId": 9,
       "place": "sola city Hall (EAST)"
     },
     "title": "Spring 5.2の目玉機能であるRSocket対応とは",
@@ -390,6 +409,7 @@
     "timetable": {
       "id": 17,
       "time": "16:15 - 17:00",
+      "timeId": 9,
       "place": "Room B"
     },
     "title": "JSP/JSF から Spring Web + Thymeleaf への移行",
@@ -410,6 +430,7 @@
     "timetable": {
       "id": 18,
       "time": "16:15 - 17:00",
+      "timeId": 9,
       "place": "Room C"
     },
     "title": "Springフレームワークの単体テストをどのくらい楽にできるか、シミュレーションしてみる",
@@ -429,6 +450,7 @@
     "timetable": {
       "id": 19,
       "time": "17:15 - 18:00",
+      "timeId": 10,
       "place": "sola city Hall (WEST)"
     },
     "title": "Spring Social でソーシャルログインを実装する",
@@ -448,6 +470,7 @@
     "timetable": {
       "id": 20,
       "time": "17:15 - 18:00",
+      "timeId": 10,
       "place": "sola city Hall (EAST)"
     },
     "title": "Efficient Web Apps with Spring Boot 2",
@@ -467,6 +490,7 @@
     "timetable": {
       "id": 21,
       "time": "17:15 - 18:00",
+      "timeId": 10,
       "place": "Room B"
     },
     "title": "Springアプリケーションのテスト道具 使いどころ、使わないどころ",
@@ -485,6 +509,7 @@
     "timetable": {
       "id": 22,
       "time": "17:15 - 18:00",
+      "timeId": 10,
       "place": "Room C"
     },
     "title": "受託開発におけるハイアジリティへのとりくみ",
@@ -504,6 +529,7 @@
     "timetable": {
       "id": 23,
       "time": "18:15 - 19:00",
+      "timeId": 11,
       "place": "sola city Hall (EAST)"
     },
     "title": "Spring with React for Enterprise Application",
@@ -531,6 +557,7 @@
     "timetable": {
       "id": 24,
       "time": "18:15 - 19:00",
+      "timeId": 11,
       "place": "Room B"
     },
     "title": "Spring初心者必見、フレームワーク別の便利なテスト機能紹介",
@@ -552,6 +579,7 @@
     "timetable": {
       "id": 25,
       "time": "18:15 - 19:00",
+      "timeId": 11,
       "place": "Room C"
     },
     "title": "大規模基幹システムにSpring Cloudを使いたい！",
@@ -570,8 +598,9 @@
   },
   {
     "timetable": {
-      "id": 100,
+      "id": 0.1,
       "time": "9:45 - 10:00",
+      "timeId": 1,
       "place": "sola city Hall (WEST)"
     },
     "slides": "ご挨拶",
@@ -580,8 +609,9 @@
   },
   {
     "timetable": {
-      "id": 104,
+      "id": 100,
       "time": "19:15 - 20:45",
+      "timeId": 12,
       "place": "sola city Hall (WEST)"
     },
     "slides": "懇親会",
