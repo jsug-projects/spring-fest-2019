@@ -6,19 +6,11 @@
       "timeId": 2,
       "place": "sola city Hall"
     },
-    "speakers": [
-      {
-        "id": 1,
-        "name": "Josh Long",
-        "affiliation": "Pivotal",
-        "profile": "Josh (<a href=\"https://twitter.com/starbuxman\" target=\"_blank\" style=\"color: #c7fbff;\"><b>@starbuxman</b></a>) is the Spring Developer Advocate at Pivotal and a Java Champion. He's host of \"A Bootiful Podcast\" (<a href=\"https://soundcloud.com/a-bootiful-podcast\" target=\"_blank\" style=\"color: #c7fbff;\"><b>https://soundcloud.com/a-bootiful-podcast</b></a>), host of the \"Spring Tips Videos\" (<a href=\"http://bit.ly/spring-tips-playlist\" target=\"_blank\" style=\"color: #c7fbff;\"><b>http://bit.ly/spring-tips-playlist</b></a>), co-author of 6+ books (<a href=\"http://joshlong.com/books.html\" target=\"_blank\" style=\"color: #c7fbff;\"><b>http://joshlong.com/books.html</b></a>), and instructor on 8+ Livelessons Training Videos (<a href=\"http://joshlong.com/livelessons.html\" target=\"_blank\" style=\"color: #c7fbff;\"><b>http://joshlong.com/livelessons.html</b></a>).",
-        "image": "images/speakers/1.png"
-      }
-    ],
-    "slides": "基調講演",
+    "title": "Coming Soon",
     "hashtag": "test",
     "enquete": "test",
-    "meta": []
+    "meta": [],
+    "speakers": []
   },
   {
     "timetable": {
@@ -47,9 +39,17 @@
       "timeId": 3,
       "place": "sola city Hall (WEST)"
     },
-    "slides": "マイクロソフト",
-    "meta": [],
-    "speakers": []
+    "title": "Coming Soon",
+    "abstract": "Coming Soon",
+    "speakers": [
+      {
+        "id": 33,
+        "name": "寺田 佳央",
+        "affiliation": "マイクロソフト",
+        "image": "images/speakers/33.png"
+      }
+    ],
+    "meta": []
   },
   {
     "timetable": {
@@ -207,7 +207,7 @@
     "speakers": [
       {
         "id": 24,
-        "name": "長谷川",
+        "name": "長谷川 裕一",
         "profile": "Starlight&Storm LLC代表 / 日本Springユーザ会会長。1986年、イリノイ州警察指紋システムのアセンブリ言語プログラマからスタートして、様々なプロジェクトを経て、アーキテクト/コンサルタントへ。 現在はSpringを中心に、多くの情シスでアーキテクチャ構築、プロセス策定などを手掛ける。",
         "image": "images/speakers/24.png"
       },
@@ -274,17 +274,15 @@
     },
     "title": "実践 Spring Boot Actuator + Micrometer",
     "abstract": "Spring Boot ActuatorはSpring Bootアプリケーションの運用のためのエンドポイントを追加するサブモジュールです。\r\n本セッションでは、Spring Boot Actuatorの概要、Micrometerとの連携をお話しします。\r\n開発に使うだけではもったいない、Actuatorの活用方法をお伝えできればと思います。",
-    "meta": [
-      "初心者"
-    ],
     "speakers": [
       {
         "id": 8,
-        "name": "進藤",
+        "name": "進藤 遼",
         "profile": "Acroquest Technology株式会社所属。Spring Bootを使ったWebアプリ開発がメイン。最近はGoで開発することも多い。",
         "image": "images/speakers/8.png"
       }
-    ]
+    ],
+    "meta": []
   },
   {
     "timetable": {

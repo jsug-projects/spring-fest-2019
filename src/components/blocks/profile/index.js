@@ -128,7 +128,9 @@ const Profile = ({ speaker, isOpen, onClose }) => {
             </MobileSpeakerHolder>
           </PhotoHolder>
           <MobileBioHolder>
-            <Bio>{parse(String(speaker.profile))}</Bio>
+            <Bio>
+              {speaker.profile ? parse(String(speaker.profile)) : 'Coming Soon'}
+            </Bio>
           </MobileBioHolder>
         </MobileHolder>
         <HolderHelper>
@@ -137,7 +139,9 @@ const Profile = ({ speaker, isOpen, onClose }) => {
             <Company>{speaker.affiliation}</Company>
           </NormalHolder>
           <BioHolder>
-            <Bio>{parse(String(speaker.profile))}</Bio>
+            <Bio>
+              {speaker.profile ? parse(String(speaker.profile)) : 'Coming Soon'}
+            </Bio>
           </BioHolder>
         </HolderHelper>
       </Card>

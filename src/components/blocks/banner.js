@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
+import { Icon, Transition } from 'semantic-ui-react'
 
 const Container = styled.div`
   display: flex;

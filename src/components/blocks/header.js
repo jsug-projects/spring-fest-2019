@@ -155,7 +155,6 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
   const [iconColor, setIconColor] = useState(
     dynamic ? neutralColor : primaryColor
   )
-
   useEffect(() => {
     if (dynamic) {
       handleOnScroll()

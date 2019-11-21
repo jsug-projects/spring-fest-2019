@@ -21,7 +21,7 @@ const Title = styled.h3`
 
 const Description = styled.div`
   white-space: pre-line;
-  line-height: 1.7rem;
+  line-height: 1.8rem;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.xs};

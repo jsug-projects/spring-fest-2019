@@ -238,9 +238,11 @@ const SessionItem = ({ session }) => {
                   <Title>{session.title}</Title>
                 </TitleHolder>
               </ContentsHeader>
-              <ContentsBody>
-                <ShowMore children={session.abstract || '未定'} />
-              </ContentsBody>
+              {session.abstract && (
+                <ContentsBody>
+                  <ShowMore children={session.abstract} />
+                </ContentsBody>
+              )}
             </ContentsHolder>
           </Body>
           {(session.hashtag || session.enquete) && (
