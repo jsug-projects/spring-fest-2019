@@ -54,7 +54,7 @@ const Menu = ({ open, setIsOpen, pdf }) => {
           <div>
             <Nav>
               <NavItem>
-                <Link to="/#session">
+                <Link to="/#session" onClick={() => setIsOpen(false)}>
                   <NavItem>Sessions</NavItem>
                 </Link>
                 <Link to="/#booth" onClick={() => setIsOpen(false)}>
