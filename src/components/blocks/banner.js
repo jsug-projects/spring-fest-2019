@@ -144,7 +144,7 @@ const ActionButton = styled.a`
 
 const ButtonText = styled.p`
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: ${props => props.theme.spacing(0.25)};
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
