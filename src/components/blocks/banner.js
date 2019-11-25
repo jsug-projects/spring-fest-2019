@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Icon, Transition } from 'semantic-ui-react'
 
 const Container = styled.div`
   display: flex;
@@ -145,21 +144,11 @@ const ActionButton = styled.a`
 
 const ButtonText = styled.p`
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: ${props => props.theme.spacing(0.25)};
 
   @media only screen and (max-width: ${props => props.theme.media.tablet}) {
     font-size: ${props => props.theme.typography.size.md};
-  }
-`
-
-const ButtonHelper = styled.p`
-  font-family: ${props => props.theme.typography.types.display};
-  font-weight: 500;
-  font-size: ${props => props.theme.typography.size.sm};
-
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    font-size: ${props => props.theme.typography.size.xs};
   }
 `
 
@@ -221,9 +210,11 @@ const Banner = () => {
         <DateText>{event.date}</DateText>
       </Center>
       <DescriptionText>{description}</DescriptionText>
-      <ActionButton>
-        <ButtonText href="#">参加申込</ButtonText>
-        <ButtonHelper>ただいま準備中</ButtonHelper>
+      <ActionButton
+        href="https://jsug.doorkeeper.jp/events/99486"
+        target="_blank"
+      >
+        <ButtonText>参加申込</ButtonText>
       </ActionButton>
     </Container>
   )
