@@ -1,6 +1,17 @@
 [
   {
     "timetable": {
+      "id": 0.1,
+      "time": "9:45 - 10:00",
+      "timeId": 1,
+      "place": "sola city Hall (WEST)"
+    },
+    "slides": "ご挨拶",
+    "meta": [],
+    "speakers": []
+  },
+  {
+    "timetable": {
       "id": 0.2,
       "time": "10:00 - 10:45",
       "timeId": 2,
@@ -19,15 +30,14 @@
       "timeId": 3,
       "place": "sola city Hall (EAST)"
     },
-    "title": "Spring Boot爆速開発超絶技巧",
-    "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring Bootアプリケーションを開発する上で欠かせないキーボードショートカット、\r\nDockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
+    "title": "マイクロソフト",
+    "abstract": "Coming Soon",
     "speakers": [
       {
-        "id": 3,
-        "name": "山本 裕介",
-        "affiliation": "サムライズム",
-        "profile": "トラブルシューティングツールの侍や、Twitter4JといったOSSを開発しているJavaエンジニア。株式会社サムライズムという会社の社長で、海外のプログラマ向けツールの日本国内展開を手がけています。",
-        "image": "images/speakers/3.png"
+        "id": 33,
+        "name": "寺田 佳央",
+        "affiliation": "マイクロソフト",
+        "image": "images/speakers/33.png"
       }
     ],
     "meta": []
@@ -39,14 +49,15 @@
       "timeId": 3,
       "place": "sola city Hall (WEST)"
     },
-    "title": "マイクロソフト",
-    "abstract": "Coming Soon",
+    "title": "Spring Boot爆速開発超絶技巧",
+    "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring Bootアプリケーションを開発する上で欠かせないキーボードショートカット、\r\nDockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
     "speakers": [
       {
-        "id": 33,
-        "name": "寺田 佳央",
-        "affiliation": "マイクロソフト",
-        "image": "images/speakers/33.png"
+        "id": 3,
+        "name": "山本 裕介",
+        "affiliation": "サムライズム",
+        "profile": "トラブルシューティングツールの侍や、Twitter4JといったOSSを開発しているJavaエンジニア。株式会社サムライズムという会社の社長で、海外のプログラマ向けツールの日本国内展開を手がけています。",
+        "image": "images/speakers/3.png"
       }
     ],
     "meta": []
@@ -106,29 +117,6 @@
       "timeId": 4,
       "place": "sola city Hall (EAST)"
     },
-    "title": "ローコード開発プラットフォームと、ドメイン駆動設計と、Springの関係",
-    "abstract": "日本で\"超高速開発”と位置付けられていたツール群が、あらためて\"ローコード開発プラットフォーム”という視点で再編成されつつあります。一方、Spring界隈では、業務系のシステム開発分野へドメイン駆動設計を適用するアプローチが注目されています。ローコード開発プラットフォーム、ドメイン駆動設計、そしてSpringの関係をどう読みといていくのか。Wagbyを題材に説明します。",
-    "meta": [
-      "ランチセッション"
-    ],
-    "speakers": [
-      {
-        "id": 25,
-        "name": "贄 良則",
-        "affiliation": "ジャスミンソフト",
-        "profile": "ジャスミンソフト社長。Wagbyのコンセプトデザイン、アーキテクチャ設計を行う。ローコード開発コミュニティ幹事。",
-        "image": "images/speakers/25.png"
-      }
-    ],
-    "lunch": "yes"
-  },
-  {
-    "timetable": {
-      "id": 4.2,
-      "time": "11:55 - 12:40",
-      "timeId": 4,
-      "place": "sola city Hall (WEST)"
-    },
     "title": "帳票開発が苦痛なエンジニア大集合！豪華「人形町今半」の弁当付き！その代わり、少し宣伝を聞いてください！",
     "abstract": "名刺を1枚頂戴します。お忘れの場合は氏名と所属企業名をメールで送信して頂くことによる確認手続きが発生します。\r\n\r\nパート1(由利):\r\nDocurainはSpringBoot&サーバサイドKotlinベースのFaaSで、マイクロサービスアーキテクチャ、かつEC2インスタンスが百個単位で動く大規模クラスターです。開発・運用で得られたノウハウを少しご紹介します。\r\n\r\nパート2(ござ先輩):\r\n実際の帳票開発シーンにおいてDocurainがどのように活用されているか、実案件例を交えてご紹介します。",
     "meta": [
@@ -154,10 +142,33 @@
   },
   {
     "timetable": {
+      "id": 4.2,
+      "time": "11:55 - 12:40",
+      "timeId": 4,
+      "place": "sola city Hall (WEST)"
+    },
+    "title": "ローコード開発プラットフォームと、ドメイン駆動設計と、Springの関係",
+    "abstract": "日本で\"超高速開発”と位置付けられていたツール群が、あらためて\"ローコード開発プラットフォーム”という視点で再編成されつつあります。一方、Spring界隈では、業務系のシステム開発分野へドメイン駆動設計を適用するアプローチが注目されています。ローコード開発プラットフォーム、ドメイン駆動設計、そしてSpringの関係をどう読みといていくのか。Wagbyを題材に説明します。",
+    "meta": [
+      "ランチセッション"
+    ],
+    "speakers": [
+      {
+        "id": 25,
+        "name": "贄 良則",
+        "affiliation": "ジャスミンソフト",
+        "profile": "ジャスミンソフト社長。Wagbyのコンセプトデザイン、アーキテクチャ設計を行う。ローコード開発コミュニティ幹事。",
+        "image": "images/speakers/25.png"
+      }
+    ],
+    "lunch": "yes"
+  },
+  {
+    "timetable": {
       "id": 5,
       "time": "13:00 - 15:45",
       "timeId": 5,
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "title": "Reactive Spring",
     "abstract": "Microservices and big-data increasingly confront us with the limitations of traditional input/output. In traditional IO, work that is IO-bound dominates threads. This wouldn't be such a big deal if we could add more threads cheaply, but threads are expensive on the JVM, and most other platforms. Even if threads were cheap and infinitely scalable, we'd still be confronted with the faulty nature of networks. Things break, and they often do so in subtle, but non-exceptional ways. Traditional approaches to integration bury the faulty nature of networks behind overly simplifying abstractions. We need something better.\r\nSpring Framework 5 is here ! It introduces the Spring developer to a growing world of support for reactive programming across the Spring portfolio, starting with a new Netty-based web runtime, component model and module called Spring WebFlux, and then continuing to Spring Data Kay, Spring Security, Spring Boot, and Spring Cloud Finchley. Sure, it sounds like a lot, but don't worry! Join me, your guide, Spring developer advocate Josh Long, and we'll explore the wacky, wonderful world of Reactive Spring together.",
@@ -177,7 +188,7 @@
       "id": 6,
       "time": "13:00 - 13:45",
       "timeId": 6,
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "title": "LINE公式アカウントのチャットシステムにおけるSpringおよびWebFluxの活用事例",
     "abstract": "LINEでは、企業･個店向けに公式アカウントというもの提供しています。公式アカウントでは多種多様な機能を提供しているのですが、その中の一つにチャット機能があります。そのチャットシステムにおける、Springの活用事例やアーキテクチャなどをご紹介致します。",
@@ -309,7 +320,7 @@
       "id": 12,
       "time": "15:00 - 15:45",
       "timeId": 8,
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "title": "Spring Developer のための コンテナ入門",
     "abstract": "Microservices や CI/CD Cloud Native といったキーワードで注目度の高まっているコンテナ技術ですが、本セッションではコンテナを使ったことがない、またはほとんど知らない方向けに、コンテナそのものの概要に加え、コンテナオーケストレーターの役割、アプリケーション開発者がコンテナを活用することによるメリットを紹介します。また、実際に Spring アプリケーションをどのように Kubernetes 上にデプロイするかをデモを交えてご紹介します。\r\n\r\nコンテナ技術概要\r\nなぜ Kubernetes が必要になったのか\r\nコンテナオーケストレーターとその役割\r\nKubernetes のアーキテクチャ\r\nSpring アプリケーションを簡単にKubernetes 上にデプロイするデモ\r\nまとめ\r\nKubernetes というワードはよく聞くけど実はよくわかっていないという方はぜひお越しください！",
@@ -368,26 +379,6 @@
       "id": 15,
       "time": "16:15 - 17:00",
       "timeId": 9,
-      "place": "sola city Hall (WEST)"
-    },
-    "title": "Quarkus による超音速な Spring アプリケーション開発",
-    "abstract": "Quarkus はSupersonic. Subatomic. Javaを理念に設計され、Cloud Native, Microservices, ServerlessのJavaアプリケーションを作成するための開発者向けに最適化された凝縮性の高いプラットフォームです。これらはQuarkusが低メモリ消費、高速起動に最適化されていることを意味しています。\r\n本セッションでは、Quarkus の紹介に加え、Springを使用してQuarkusアプリケーションを開発する流れを紹介します。",
-    "speakers": [
-      {
-        "id": 26,
-        "name": "須江 信洋",
-        "affiliation": "レッドハット",
-        "profile": "テクニカルセールス本部\r\nAssociate Principal Solution Architect",
-        "image": "images/speakers/26.png"
-      }
-    ],
-    "meta": []
-  },
-  {
-    "timetable": {
-      "id": 16,
-      "time": "16:15 - 17:00",
-      "timeId": 9,
       "place": "sola city Hall (EAST)"
     },
     "title": "Spring 5.2の目玉機能であるRSocket対応とは",
@@ -399,6 +390,26 @@
         "affiliation": "Pivotal",
         "profile": "エンタープライズ企業のPivotal Platform (Cloud FoundryやKubernetes)の導入やPlatform Team作りの支援。Spring Bootを使ったアプリケーション開発の支援も。",
         "image": "images/speakers/6.png"
+      }
+    ],
+    "meta": []
+  },
+  {
+    "timetable": {
+      "id": 16,
+      "time": "16:15 - 17:00",
+      "timeId": 9,
+      "place": "sola city Hall (WEST)"
+    },
+    "title": "Quarkus による超音速な Spring アプリケーション開発",
+    "abstract": "Quarkus はSupersonic. Subatomic. Javaを理念に設計され、Cloud Native, Microservices, ServerlessのJavaアプリケーションを作成するための開発者向けに最適化された凝縮性の高いプラットフォームです。これらはQuarkusが低メモリ消費、高速起動に最適化されていることを意味しています。\r\n本セッションでは、Quarkus の紹介に加え、Springを使用してQuarkusアプリケーションを開発する流れを紹介します。",
+    "speakers": [
+      {
+        "id": 26,
+        "name": "須江 信洋",
+        "affiliation": "レッドハット",
+        "profile": "テクニカルセールス本部\r\nAssociate Principal Solution Architect",
+        "image": "images/speakers/26.png"
       }
     ],
     "meta": []
@@ -449,7 +460,7 @@
       "id": 19,
       "time": "17:15 - 18:00",
       "timeId": 10,
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "title": "Spring Social でソーシャルログインを実装する",
     "abstract": "最近ソーシャルログインを提供するサービスは増えてきています。Spring Social は各SNS 専用のライブラリが用意されていて、これらを使ってソーシャルログインを実装することができます。\r\n\r\nこのセッションでは、このソーシャルログイン機能を提供するWebアプリケーションを実装する方法を紹介します。",
@@ -469,7 +480,7 @@
       "id": 20,
       "time": "17:15 - 18:00",
       "timeId": 10,
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "title": "Efficient Web Apps with Spring Boot 2",
     "abstract": "How can we improve the efficiency of an existing web application? We could completely rewrite it, leverage more concurrency and even reactive features. But is it really worth it if we don't even measure and track the relevant metrics? In this talk, Stéphane will work on an existing Spring Boot MVC application to make it more efficient. He'll replace RestTemplate with WebClient and Reactor operators to improve efficiency, without the concurrency pitfalls. He'll use out-of-the-box metrics, add new ones to measure, and keep an eye on capacity gains with dashboards.",
@@ -593,17 +604,6 @@
     ],
     "slides": "ウルシステムズ",
     "meta": []
-  },
-  {
-    "timetable": {
-      "id": 0.1,
-      "time": "9:45 - 10:00",
-      "timeId": 1,
-      "place": "sola city Hall (WEST)"
-    },
-    "slides": "ご挨拶",
-    "meta": [],
-    "speakers": []
   },
   {
     "timetable": {
