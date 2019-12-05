@@ -51,13 +51,13 @@
     "id": 5,
     "time": "13:00 - 15:45",
     "timeId": 5,
-    "place": "sola city Hall (EAST)"
+    "place": "sola city Hall (WEST)"
   },
   {
     "id": 6,
     "time": "13:00 - 13:45",
     "timeId": 6,
-    "place": "sola city Hall (WEST)"
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 7,
@@ -93,7 +93,7 @@
     "id": 12,
     "time": "15:00 - 15:45",
     "timeId": 8,
-    "place": "sola city Hall (WEST)"
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 13,
@@ -111,13 +111,13 @@
     "id": 15,
     "time": "16:15 - 17:00",
     "timeId": 9,
-    "place": "sola city Hall (WEST)"
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 16,
     "time": "16:15 - 17:00",
     "timeId": 9,
-    "place": "sola city Hall (EAST)"
+    "place": "sola city Hall (WEST)"
   },
   {
     "id": 17,
@@ -135,13 +135,13 @@
     "id": 19,
     "time": "17:15 - 18:00",
     "timeId": 10,
-    "place": "sola city Hall (WEST)"
+    "place": "sola city Hall (EAST)"
   },
   {
     "id": 20,
     "time": "17:15 - 18:00",
     "timeId": 10,
-    "place": "sola city Hall (EAST)"
+    "place": "sola city Hall (WEST)"
   },
   {
     "id": 21,
