@@ -30,14 +30,15 @@
       "timeId": 3,
       "place": "sola city Hall (EAST)"
     },
-    "title": "マイクロソフト",
-    "abstract": "Coming Soon",
+    "title": "Spring Boot アプリの運用が楽になる？ Pivotal と Microsoft が共同開発した専用 PaaS「Azure Spring Cloud」のご紹介 !!",
+    "abstract": "Cloud 上で Spring Boot のアプリケーションを公開する際、実行環境として IaaS、PaaS, Container, Kubernetes など様々な選択肢があります。\r\nマイクロソフトと Pivotal は 2019 年 10 月アメリカで開催された SpringOne のイベントで「Azure Spring Cloud」という、Spring Boot のアプリケーションに特化した PaaS の環境を発表しました（現時点でプレビュー版）。\r\nアプリケーションは Kubernetes 上で動作しますが、Kubernetes を一切意識することなく開発により集中できます。さらに、GitHub Action でワークフローを定義する事でかんたんに CI/CD 環境を構築することもできます。\r\n小規模から中規模レベルのマイクロサービスを構築する際、運用をとても楽にする Azure Spring Cloud をデモを交えながらご紹介します。また当日はスペシャル・ゲストもご紹介します。",
     "speakers": [
       {
-        "id": 33,
+        "id": 34,
         "name": "寺田 佳央",
         "affiliation": "マイクロソフト",
-        "image": "images/speakers/33.png"
+        "profile": "2015年7月より日本マイクロソフト株式会社に在籍し、現在はマイクロソフト・コーポレーションに所属し担当は Java !! Azure における Java の利用促進・啓蒙活動を実施中。 2016 年 7 月、日本人で 2 人目となる Java Champion に就任。 2018年7月より、マイクロソフト・コーポレーションで日本人初のクラウド・アドボケイトとして活動を開始。2019年6月より、オイシックス・ラ・大地株式会社の技術顧問も務める。 JJUG 幹事の一員でもある。\r\n2013年 日経コンピュータ：我らプロフェッショナル 世界を元気にする 100 人に選ばれた",
+        "image": "images/speakers/34.png"
       }
     ],
     "meta": []
