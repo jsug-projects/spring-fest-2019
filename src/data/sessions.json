@@ -17,11 +17,26 @@
       "timeId": 2,
       "place": "sola city Hall"
     },
-    "title": "基調講演",
+    "title": "基調講演：From Spring Boot 2.2 to Spring Boot 2.3",
+    "speakers": [
+      {
+        "id": 4,
+        "name": "Stéphane Nicoll",
+        "affiliation": "Pivotal",
+        "profile": "Stéphane has a thing for code quality and robustness. He's been spreading the word for more than ten years while developing large scale Java enterprise applications in the geospatial, financial, or logistics sectors. An Apache Maven PMC member since 2006, he joined the core Spring Framework development team early 2014, being one of the main contributors to both Spring Framework and Spring Boot since. During his free time, he loves traveling around the world.",
+        "image": "images/speakers/4.png"
+      },
+      {
+        "id": 6,
+        "name": "槙 俊明",
+        "affiliation": "Pivotal",
+        "profile": "エンタープライズ企業のPivotal Platform (Cloud FoundryやKubernetes)の導入やPlatform Team作りの支援。Spring Bootを使ったアプリケーション開発の支援も。",
+        "image": "images/speakers/6.png"
+      }
+    ],
     "hashtag": "test",
     "enquete": "test",
-    "meta": [],
-    "speakers": []
+    "meta": []
   },
   {
     "timetable": {
