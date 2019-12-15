@@ -62,8 +62,8 @@
       "profile": "",
       "image": "images/companies/google-cloud.png"
     },
-    "title": "",
-    "description": "ストレスレスな Spring Boot を使った Web アプリケーション開発環境。Jib, Skaffold, Google Kubernetes Engine, Docker, Cloud Code などの紹介。"
+    "title": "ストレスレスな Spring Boot を使った Web アプリケーション開発環境の紹介",
+    "description": "Google Kubernetes Engine（GKE）は、コンテナ化されたアプリケーションをデプロイするための、本番環境に対応したマネージド型環境です。最新のテクノロジーを利用して、デベロッパーの生産性、リソースの効率性、自動運用、オープンソースの柔軟性の向上を図り、製品化までの時間を短縮します。\r\n2015 年にリリースされた Kubernetes Engine は、12 年以上にわたって Gmail や YouTube などのサービスをコンテナ内で実行してきた Google の豊富な経験に基づいて構築されています。Kubernetes Engine を使用すると、独自の Kubernetes クラスタをインストールして管理、操作する必要がなくなり、Kubernetes の設定から稼働までを短時間で完了できます。\r\nこちらのブースでは、Google Kubernetes Engine（GKE）, Docker, Cloud Code, Jib, Skaffold などを紹介します。"
   },
   {
     "sponsor": {
