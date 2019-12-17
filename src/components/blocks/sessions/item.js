@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { Link } from 'gatsby'
 
 import { Meta } from '../../elements'
 import { Profile, ShowMore } from '../index'
+import { Icon } from 'semantic-ui-react'
 
 const Container = styled.div`
   padding: ${props => props.theme.spacing(1.5, 0)};
@@ -21,6 +21,7 @@ const Header = styled.div`
   background: ${props => props.theme.colors.primaryGradient};
   border-radius: ${props =>
     `${props.theme.shape.radius}px ${props.theme.shape.radius}px 0 0`};
+  display: flex;
 `
 
 const Hall = styled.h3`
@@ -30,6 +31,7 @@ const Hall = styled.h3`
   display: inline;
   color: ${props => props.theme.colors.white};
   padding: ${props => props.theme.spacing(0, 1)};
+  margin-bottom: 0;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: 1.1rem;
@@ -92,7 +94,7 @@ const ContentsHolder = styled.div`
 `
 
 const TitleHolder = styled.div`
-  display: inline-block;
+  display: flex;
 `
 
 const Title = styled.h3`
@@ -160,9 +162,8 @@ const Footer = styled.div`
 `
 
 const Enquete = styled.div`
-  display: flex;
   padding-left: ${props => props.theme.spacing(2)};
-
+  padding-top: 4px;
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.xs};
     padding-left: ${props => props.theme.spacing(1)};
@@ -182,10 +183,14 @@ const LinkText = styled.div`
   margin: 0;
 `
 
-const noStyle = {
-  textDecoration: 'none',
-  boxShadow: 'none',
-}
+const EnqueteLink = styled.a`
+  textdecoration: 'none';
+  boxshadow: 'none';
+  white-space: nowrap;
+  &:hover {
+    opacity: 0.5;
+  }
+`
 
 const SessionItem = ({ session }) => {
   const [speakerModal, setSpeakerModal] = useState(null)
@@ -236,6 +241,13 @@ const SessionItem = ({ session }) => {
                 )}
                 <TitleHolder>
                   <Title>{session.title}</Title>
+                  {session.enquete && (
+                    <Enquete>
+                      <EnqueteLink href={session.enquete} target="_blank">
+                        <Icon name={'commenting'} /> アンケート
+                      </EnqueteLink>
+                    </Enquete>
+                  )}
                 </TitleHolder>
               </ContentsHeader>
               {session.abstract && (
@@ -245,19 +257,12 @@ const SessionItem = ({ session }) => {
               )}
             </ContentsHolder>
           </Body>
-          {(session.hashtag || session.enquete) && (
+          {session.hashtag && (
             <Footer>
               {session.hashtag && (
                 <Hashtag>
                   <FontAwesomeIcon size="1x" icon={faTwitter} />
                 </Hashtag>
-              )}
-              {session.enquete && (
-                <Enquete>
-                  <Link to={`#${session.enquete}`} style={noStyle}>
-                    <LinkText>アンケート</LinkText>
-                  </Link>
-                </Enquete>
               )}
             </Footer>
           )}
