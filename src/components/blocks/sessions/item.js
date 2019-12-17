@@ -163,7 +163,6 @@ const Footer = styled.div`
 
 const Enquete = styled.div`
   padding-left: ${props => props.theme.spacing(2)};
-  padding-top: 4px;
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.xs};
     padding-left: ${props => props.theme.spacing(1)};
@@ -171,8 +170,8 @@ const Enquete = styled.div`
 `
 
 const Hashtag = styled.div`
+  padding-left: ${props => props.theme.spacing(2)};
   display: flex;
-
   &:hover {
     cursor: pointer;
   }
@@ -184,6 +183,14 @@ const LinkText = styled.div`
 `
 
 const EnqueteLink = styled.a`
+  textdecoration: 'none';
+  boxshadow: 'none';
+  white-space: nowrap;
+  &:hover {
+    opacity: 0.5;
+  }
+`
+const HashtagLink = styled.a`
   textdecoration: 'none';
   boxshadow: 'none';
   white-space: nowrap;
@@ -241,6 +248,16 @@ const SessionItem = ({ session }) => {
                 )}
                 <TitleHolder>
                   <Title>{session.title}</Title>
+                  {session.hashtag && (
+                    <Hashtag>
+                      <HashtagLink
+                        href={`https://twitter.com/intent/tweet?hashtags=jsug,sf_${session.hashtag}`}
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon size="1x" icon={faTwitter} /> Tweet
+                      </HashtagLink>
+                    </Hashtag>
+                  )}
                   {session.enquete && (
                     <Enquete>
                       <EnqueteLink href={session.enquete} target="_blank">
@@ -257,15 +274,6 @@ const SessionItem = ({ session }) => {
               )}
             </ContentsHolder>
           </Body>
-          {session.hashtag && (
-            <Footer>
-              {session.hashtag && (
-                <Hashtag>
-                  <FontAwesomeIcon size="1x" icon={faTwitter} />
-                </Hashtag>
-              )}
-            </Footer>
-          )}
         </Card>
       </Container>
     )
