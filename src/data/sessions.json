@@ -4,7 +4,7 @@
       "id": 0.1,
       "time": "9:45 - 10:00",
       "timeId": 1,
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "slides": "ご挨拶",
     "meta": [],
@@ -43,7 +43,7 @@
       "id": 1,
       "time": "11:00 - 11:45",
       "timeId": 3,
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "title": "Spring Boot アプリの運用が楽になる？ Pivotal と Microsoft が共同開発した専用 PaaS「Azure Spring Cloud」のご紹介 !!",
     "abstract": "Cloud 上で Spring Boot のアプリケーションを公開する際、実行環境として IaaS、PaaS, Container, Kubernetes など様々な選択肢があります。\r\nマイクロソフトと Pivotal は 2019 年 10 月アメリカで開催された SpringOne のイベントで「Azure Spring Cloud」という、Spring Boot のアプリケーションに特化した PaaS の環境を発表しました（現時点でプレビュー版）。\r\nアプリケーションは Kubernetes 上で動作しますが、Kubernetes を一切意識することなく開発により集中できます。さらに、GitHub Action でワークフローを定義する事でかんたんに CI/CD 環境を構築することもできます。\r\n小規模から中規模レベルのマイクロサービスを構築する際、運用をとても楽にする Azure Spring Cloud をデモを交えながらご紹介します。また当日はスペシャル・ゲストもご紹介します。",
@@ -63,7 +63,7 @@
       "id": 2,
       "time": "11:00 - 11:45",
       "timeId": 3,
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "title": "Spring Boot爆速開発超絶技巧",
     "abstract": "IntelliJ IDEAを使って開発する際、マウスやトラックパッドを使っていませんか？\r\nこのセッションでは「なんとなく使っていても気づきにくい」、Spring Bootアプリケーションを開発する上で欠かせないキーボードショートカット、\r\nDockerやデータベース連携、HTTPクライアント機能など、最新バージョンの魅力を余すことなくお伝えいたします。",
@@ -395,7 +395,7 @@
       "id": 15,
       "time": "16:15 - 17:00",
       "timeId": 9,
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "title": "RSocket徹底入門 ~Spring 5.2の目玉機能であるRSocket対応とは~",
     "abstract": "RSocket（<a href=\"https://rsocket.io\" style=\"color: #0E7373;\"><b>https://rsocket.io</b></a>）はTCP, WebSocket、UDP上でReactive Streamsのセマンティクスを持つ双方向通信可能な新しいバイナリプロトコルです。\r\nHTTPの代わりに利用可能です。\r\nRSocket自体は言語非依存ですが、Spring 5.2からお馴染みのプログラミングスタイルでRSocketサーバー/クライアントを実装できるようになりました。\r\n本セッションではRSocketとは何か、何が変わる・うれしいのか、SpringのRSocket対応とはどのようなものかを説明します。\r\nSpringが追加する新機能が好きな方、新しい技術を手っ取り早く知りたい方は必見です。",
@@ -415,7 +415,7 @@
       "id": 16,
       "time": "16:15 - 17:00",
       "timeId": 9,
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "title": "Quarkus による超音速な Spring アプリケーション開発",
     "abstract": "Quarkus はSupersonic. Subatomic. Javaを理念に設計され、Cloud Native, Microservices, ServerlessのJavaアプリケーションを作成するための開発者向けに最適化された凝縮性の高いプラットフォームです。これらはQuarkusが低メモリ消費、高速起動に最適化されていることを意味しています。\r\n本セッションでは、Quarkus の紹介に加え、Springを使用してQuarkusアプリケーションを開発する流れを紹介します。",
@@ -537,7 +537,7 @@
       "timeId": 10,
       "place": "Room C"
     },
-    "title": "受託開発におけるハイアジリティへのとりくみ",
+    "title": "受託開発でテストファーストしたらXXXを早期発見できてハイアジリティになったはなし",
     "abstract": "ITサービスが企業のビジネスの中心となり久しい昨今、ビジネスを成功に導くため早期の意思決定はますます重要性が高まっています。それは受託開発でも変わりません\r\n* 開発に入る前の仮説検証プロセス\r\n* ミニマムなスコープ管理によるプロジェクト運営\r\n* Spring Boot と Spring Test\r\n* 仕様の見える化とテストファーストによる品質保証\r\n* 自動テストと向き合った新卒の半年間\r\nなど、SIerであるBTCにおけるハイアジリティを目指す取り組みの事例をご紹介いたします。",
     "speakers": [
       {
@@ -555,7 +555,7 @@
       "id": 23,
       "time": "18:15 - 19:00",
       "timeId": 11,
-      "place": "sola city Hall (EAST)"
+      "place": "sola city Hall (WEST)"
     },
     "title": "Spring with React for Enterprise Application",
     "abstract": "Enterprise な アプリケーションにおいてもデザイン性、使い勝手に対する要求は高まってきています。\r\nその要求を Spring と React を使って実現する方法をお話します。\r\n・EventStorming を用いたモデリング\r\n・Backend と Frontend を並行して開発する by Spring and React\r\n・Contract による変化に強い開発チーム",
@@ -627,7 +627,7 @@
       "id": 100,
       "time": "19:15 - 20:45",
       "timeId": 12,
-      "place": "sola city Hall (WEST)"
+      "place": "sola city Hall (EAST)"
     },
     "slides": "懇親会",
     "meta": [],
