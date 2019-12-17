@@ -17,9 +17,9 @@ const colors = {
   primary: buildColorPalette('#0E7373'),
   primaryGradient: 'linear-gradient(90deg, #0e7373, #0e6973)',
   red: buildColorPalette('#FF5630'),
-  yellow: buildColorPalette('#FFAB00'),
+  yellow: buildColorPalette('#F8C43A'),
   green: buildColorPalette('#36B37E'),
-  blue: buildColorPalette('#0065FF'),
+  blue: buildColorPalette('#17BEBB'),
   purple: buildColorPalette('#6554C0'),
   neutral: buildColorPalette('#5E6C84'),
   white: '#fff',
@@ -33,6 +33,7 @@ const media = {
    @tabletBreakpoint            : 768px;
    @computerBreakpoint          : 992px;
   */
+  computer: '1200px',
   tablet: '991px',
   mobile: '767px',
 }

@@ -38,6 +38,7 @@
     "name": "リクルートテクノロジーズ",
     "url": "https://recruit-tech.co.jp/",
     "slug": "r-tech",
+    "sponsoring": "yes",
     "image": "images/companies/r-tech.png"
   },
   {
@@ -66,6 +67,7 @@
     "url": "http://www.t-i-o.co.jp/",
     "slug": "tio",
     "profile": "株式会社ティ・アイ・オー＜TIO＞は、刻々と進化しているIT技術を駆使し、各産業分野における基幹業務、金融および製造流通分野における業務アプリケーションに構築からソフトウェア・画面デザイン・メンテナンスにいたる工程をトータル的にサポートしていく企業です。",
+    "sponsoring": "yes",
     "image": "images/companies/tio.png"
   },
   {
@@ -87,6 +89,7 @@
     "name": "豆蔵",
     "url": "https://www.mamezou.com/",
     "slug": "mamezou",
+    "sponsoring": "yes",
     "image": "images/companies/mamezou.png"
   },
   {
@@ -108,6 +111,7 @@
     "name": "ビズリーチ",
     "url": "https://www.bizreach.co.jp/",
     "slug": "bizreach",
+    "sponsoring": "yes",
     "image": "images/companies/bizreach.png"
   },
   {

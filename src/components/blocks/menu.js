@@ -21,7 +21,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: ${props => props.theme.spacing(7)};
-  display: ${props => (props.displayMenu ? 'flex' : 'flex')};
+  display: flex;
 `
 
 const Nav = styled.nav`
@@ -40,14 +40,13 @@ const NavItem = styled.div`
 
 const Pdf = styled.a`
   text-decoration: none;
-  pointer-events: none;
 `
 
 const Shares = styled.div`
   display: flex;
 `
 
-const Menu = ({ open, pdf }) => {
+const Menu = ({ open, setIsOpen, pdf }) => {
   return (
     <Transition visible={open} animation="fade up" duration={300} directional>
       <Block>
@@ -55,13 +54,19 @@ const Menu = ({ open, pdf }) => {
           <div>
             <Nav>
               <NavItem>
-                <Link to="/#index">
-                  <NavItem>Session</NavItem>
+                <Link to="/#session" onClick={() => setIsOpen(false)}>
+                  <NavItem>Sessions</NavItem>
+                </Link>
+                <Link to="/#booth" onClick={() => setIsOpen(false)}>
+                  <NavItem>Booths</NavItem>
+                </Link>
+                <Link to="/#sponsor" onClick={() => setIsOpen(false)}>
+                  <NavItem>Sponsors</NavItem>
                 </Link>
               </NavItem>
-              {/*<Pdf href={pdf} target="_blank">*/}
-              {/*  <NavItem style={{ opacity: 0.5 }}>Timetable</NavItem>*/}
-              {/*</Pdf>*/}
+              <Pdf href={pdf} target="_blank">
+                <NavItem>Timetable</NavItem>
+              </Pdf>
               <Link to="/access">
                 <NavItem>Access</NavItem>
               </Link>

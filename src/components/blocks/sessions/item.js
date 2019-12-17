@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { Link } from 'gatsby'
 
 import { Meta } from '../../elements'
 import { Profile, ShowMore } from '../index'
+import { Icon } from 'semantic-ui-react'
 
 const Container = styled.div`
   padding: ${props => props.theme.spacing(1.5, 0)};
@@ -21,6 +21,7 @@ const Header = styled.div`
   background: ${props => props.theme.colors.primaryGradient};
   border-radius: ${props =>
     `${props.theme.shape.radius}px ${props.theme.shape.radius}px 0 0`};
+  display: flex;
 `
 
 const Hall = styled.h3`
@@ -30,6 +31,7 @@ const Hall = styled.h3`
   display: inline;
   color: ${props => props.theme.colors.white};
   padding: ${props => props.theme.spacing(0, 1)};
+  margin-bottom: 0;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: 1.1rem;
@@ -67,8 +69,8 @@ const Photo = styled.img`
   object-fit: contain;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    max-height: 5rem;
-    max-width: 5rem;
+    max-height: ${props => (props.speakerNumber < 3 ? '5rem' : '4.5rem')};
+    max-width: ${props => (props.speakerNumber < 3 ? '5rem' : '4.5rem')};
   }
 `
 
@@ -92,7 +94,7 @@ const ContentsHolder = styled.div`
 `
 
 const TitleHolder = styled.div`
-  margin;  ${props => props.theme.spacing(1, 0)};
+  display: flex;
 `
 
 const Title = styled.h3`
@@ -102,23 +104,31 @@ const Title = styled.h3`
   white-space: pre-line;
   padding: ${props => props.theme.spacing(0.5, 0)};
   margin-bottom: 0;
+  margin-top: 0;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.md};
+    line-height: 1.1rem;
     font-weight: 700;
   }
 `
 
 const MetaHolder = styled.div`
-  display: none;
+  display: inline-block;
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    display: block;
+    margin-bottom: ${props => props.theme.spacing(0.5)};
   }
 `
 
 const ContentsHeader = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: ${props => props.theme.spacing(1)};
+
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
-    flex-direction: column;
-    width: 100%;
+    display: block;
+    margin-bottom: ${props => props.theme.spacing(0)};
   }
 `
 
@@ -152,9 +162,7 @@ const Footer = styled.div`
 `
 
 const Enquete = styled.div`
-  display: flex;
   padding-left: ${props => props.theme.spacing(2)};
-
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.xs};
     padding-left: ${props => props.theme.spacing(1)};
@@ -162,8 +170,8 @@ const Enquete = styled.div`
 `
 
 const Hashtag = styled.div`
+  padding-left: ${props => props.theme.spacing(2)};
   display: flex;
-
   &:hover {
     cursor: pointer;
   }
@@ -174,10 +182,22 @@ const LinkText = styled.div`
   margin: 0;
 `
 
-const noStyle = {
-  textDecoration: 'none',
-  boxShadow: 'none',
-}
+const EnqueteLink = styled.a`
+  textdecoration: 'none';
+  boxshadow: 'none';
+  white-space: nowrap;
+  &:hover {
+    opacity: 0.5;
+  }
+`
+const HashtagLink = styled.a`
+  textdecoration: 'none';
+  boxshadow: 'none';
+  white-space: nowrap;
+  &:hover {
+    opacity: 0.5;
+  }
+`
 
 const SessionItem = ({ session }) => {
   const [speakerModal, setSpeakerModal] = useState(null)
@@ -194,8 +214,7 @@ const SessionItem = ({ session }) => {
       <Container>
         <Card>
           <Header>
-            {/*<Hall>{session.timetable.place}</Hall>*/}
-            <Hall>Hall TBD</Hall>
+            <Hall>{session.timetable.place}</Hall>
           </Header>
           <Body>
             <Speaker>
@@ -210,7 +229,10 @@ const SessionItem = ({ session }) => {
                     isOpen={speakerModal === speaker.id}
                     onClose={closeModal}
                   />
-                  <Photo src={speaker.image.childImageSharp.resize.src} />
+                  <Photo
+                    src={speaker.image.childImageSharp.resize.src}
+                    speakerNumber={session.speakers.length}
+                  />
                   <SpeakerName>{speaker.name}</SpeakerName>
                 </SpeakerHolder>
               ))}
@@ -220,35 +242,38 @@ const SessionItem = ({ session }) => {
                 {session.meta.length > 0 && (
                   <MetaHolder>
                     {session.meta.map(m => (
-                      <Meta key={m} meta={m} />
+                      <Meta key={m} meta={m} lunch={session.lunch} />
                     ))}
                   </MetaHolder>
                 )}
                 <TitleHolder>
                   <Title>{session.title}</Title>
+                  {session.hashtag && (
+                    <Hashtag>
+                      <HashtagLink
+                        href={`https://twitter.com/intent/tweet?hashtags=jsug,sf_${session.hashtag}`}
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon size="1x" icon={faTwitter} /> Tweet
+                      </HashtagLink>
+                    </Hashtag>
+                  )}
+                  {session.enquete && (
+                    <Enquete>
+                      <EnqueteLink href={session.enquete} target="_blank">
+                        <Icon name={'commenting'} /> アンケート
+                      </EnqueteLink>
+                    </Enquete>
+                  )}
                 </TitleHolder>
               </ContentsHeader>
-              <ContentsBody>
-                <ShowMore children={session.abstract || '未定'} />
-              </ContentsBody>
+              {session.abstract && (
+                <ContentsBody>
+                  <ShowMore children={session.abstract} />
+                </ContentsBody>
+              )}
             </ContentsHolder>
           </Body>
-          {(session.hashtag || session.enquete) && (
-            <Footer>
-              {session.hashtag && (
-                <Hashtag>
-                  <FontAwesomeIcon size="1x" icon={faTwitter} />
-                </Hashtag>
-              )}
-              {session.enquete && (
-                <Enquete>
-                  <Link to={`#${session.enquete}`} style={noStyle}>
-                    <LinkText>アンケート</LinkText>
-                  </Link>
-                </Enquete>
-              )}
-            </Footer>
-          )}
         </Card>
       </Container>
     )

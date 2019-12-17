@@ -3,7 +3,6 @@ const chalk = require('chalk')
 const fs = require('fs')
 
 const {
-  findById,
   normalizeSessions,
   normalizeBooth,
   normalizeCompanies,
@@ -50,6 +49,7 @@ const result = convert({
         F: 'slides',
         G: 'hashtag',
         H: 'enquete',
+        I: 'lunch',
       },
     },
     {
@@ -65,7 +65,15 @@ const result = convert({
       columnToKey: {
         A: 'id',
         B: 'time',
-        C: 'place',
+        C: 'timeId',
+        D: 'place',
+      },
+    },
+    {
+      name: 'time',
+      columnToKey: {
+        A: 'id',
+        B: 'time',
       },
     },
     {
@@ -80,9 +88,10 @@ const result = convert({
   ],
 })
 
-const { companies, sessions, booth, timetable, speakers } = result
+const { companies, sessions, booth, timetable, time, speakers } = result
 
 saveToFile('companies', normalizeCompanies(companies))
 saveToFile('booth', normalizeBooth(booth, companies))
 saveToFile('timetable', timetable)
+saveToFile('time', time)
 saveToFile('sessions', normalizeSessions(sessions, timetable, speakers))

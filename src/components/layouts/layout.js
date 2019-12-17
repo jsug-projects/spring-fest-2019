@@ -6,7 +6,14 @@ import { ThemeProvider } from 'styled-components'
 import { Header, Footer } from '../blocks'
 import { theme, GlobalStyles } from '../foundations'
 
-const Layout = ({ children, siteTitle, headerColor, dynamic, headerRef }) => {
+const Layout = ({
+  children,
+  siteTitle,
+  headerColor,
+  dynamic,
+  headerRef,
+  scrolled,
+}) => {
   return (
     <ThemeProvider theme={theme}>
       <>
@@ -30,6 +37,7 @@ const Layout = ({ children, siteTitle, headerColor, dynamic, headerRef }) => {
         <GlobalStyles />
         <Header
           headerRef={headerRef}
+          scrolled={scrolled}
           siteTitle={siteTitle}
           headerColor={headerColor}
           dynamic={dynamic}

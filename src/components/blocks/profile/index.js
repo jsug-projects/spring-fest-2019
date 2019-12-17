@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import { Modal } from 'semantic-ui-react'
+import parse from 'html-react-parser'
 
 const Card = styled.div`
   padding: ${props => props.theme.spacing(2)};
@@ -38,7 +39,9 @@ const MobileSpeakerHolder = styled.div`
 `
 
 const MobileHolder = styled.div`
-  flex: 1;
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    width: 100%;
+  }
 `
 
 const NormalHolder = styled.div`
@@ -71,7 +74,7 @@ const BioHolder = styled.div`
   background: ${props => props.theme.colors.primaryGradient};
   padding: ${props => props.theme.spacing(1, 2)};
   border-radius: ${props => props.theme.shape.radius}px;
-  display: block;
+  display: flex;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     margin: 0;
@@ -88,19 +91,27 @@ const MobileBioHolder = styled.div`
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     margin: 0;
-    display: block;
+    display: flex;
   }
 `
 
 const HolderHelper = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    display: none;
+  }
 `
 
 const Bio = styled.p`
   color: ${props => props.theme.colors.white};
+  text-decoration: none;
+  white-space: pre-line;
+  line-height: 1.7rem;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.md};
+    line-height: 1.4rem;
   }
 `
 
@@ -108,27 +119,29 @@ const Profile = ({ speaker, isOpen, onClose }) => {
   return (
     <Modal open={isOpen} onClose={onClose}>
       <Card key={speaker.id}>
-        <div>
-          <MobileHolder>
-            <PhotoHolder>
-              <Photo src={speaker.image.childImageSharp.resize.src} />
-              <MobileSpeakerHolder>
-                <Name>{speaker.name}</Name>
-                <Company>{speaker.affiliation}</Company>
-              </MobileSpeakerHolder>
-            </PhotoHolder>
-            <MobileBioHolder>
-              <Bio>{speaker.profile || '未定'}</Bio>
-            </MobileBioHolder>
-          </MobileHolder>
-        </div>
+        <MobileHolder>
+          <PhotoHolder>
+            <Photo src={speaker.image.childImageSharp.resize.src} />
+            <MobileSpeakerHolder>
+              <Name>{speaker.name}</Name>
+              <Company>{speaker.affiliation}</Company>
+            </MobileSpeakerHolder>
+          </PhotoHolder>
+          <MobileBioHolder>
+            <Bio>
+              {speaker.profile ? parse(String(speaker.profile)) : 'Coming Soon'}
+            </Bio>
+          </MobileBioHolder>
+        </MobileHolder>
         <HolderHelper>
           <NormalHolder>
             <Name>{speaker.name}</Name>
-            <Company>{speaker.affiliation || '未定'}</Company>
+            <Company>{speaker.affiliation}</Company>
           </NormalHolder>
           <BioHolder>
-            <Bio>{speaker.profile || '未定'}</Bio>
+            <Bio>
+              {speaker.profile ? parse(String(speaker.profile)) : 'Coming Soon'}
+            </Bio>
           </BioHolder>
         </HolderHelper>
       </Card>

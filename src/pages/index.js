@@ -14,34 +14,37 @@ import {
 } from '../components/blocks'
 
 const SectionWrap = styled.div`
-  padding-top: ${props => props.pseudoMargin}px;
   margin: 0 auto;
 `
 
 export default ({ data }) => {
-  const { site, allBoothJson, allSessionsJson, allCompaniesJson } = data
-  const [pseudoMargin, setPseudoMargin] = useState(0)
-  const time = ['timetable', 'time']
+  const {
+    site,
+    allBoothJson,
+    allSessionsJson,
+    allCompaniesJson,
+    allTimeJson,
+  } = data
+  const time = [allTimeJson.nodes]
+  const [headerHeight, setHeaderHeight] = useState(0)
   const sectionRef = useRef(null)
   const headerRef = useRef(null)
 
-  const scrollToSection = () => {
-    sectionRef.current.scrollIntoView({
-      behavior: 'smooth',
-      inline: 'start',
-    })
+  useEffect(() => {
+    setHeaderHeight(headerRef.current.getBoundingClientRect().height)
+  })
+
+  const anchor = {
+    paddingTop: headerHeight,
   }
 
-  useEffect(() => {
-    updateMargin()
-    window.addEventListener('resize', updateMargin, true)
-    return () => {
-      window.removeEventListener('resize', updateMargin, true)
-    }
-  }, [])
+  const helper = {
+    marginTop: -headerHeight,
+  }
 
-  const updateMargin = () => {
-    setPseudoMargin(headerRef.current.getBoundingClientRect().height)
+  const scrolled = () => {
+    const scrollTop = sectionRef.current.getBoundingClientRect().top
+    return scrollTop <= 0
   }
 
   const sponsor = []
@@ -55,32 +58,44 @@ export default ({ data }) => {
       siteTitle={site.siteMetadata.title}
       dynamic
       headerRef={headerRef}
+      scrolled={scrolled}
     >
       <SEO title="Home" />
-      <Banner
-        scrollToSection={() => scrollToSection()}
-        pseudoMargin={pseudoMargin}
-      />
-      <SectionWrap ref={sectionRef} pseudoMargin={pseudoMargin}>
-        <Section
-          title="sessions"
-          fontColor={props => props.theme.colors.primary['300']}
-        >
-          <Sessions items={allSessionsJson.nodes} time={time} />
-        </Section>
-        <Section
-          title="booth"
-          backgroundColor={props => props.theme.colors.primaryGradient}
-          fontColor={props => props.theme.colors.white}
-        >
-          <Booths items={allBoothJson.nodes} />
-        </Section>
-        <Section
-          title="sponsors"
-          fontColor={props => props.theme.colors.primary['300']}
-        >
-          <Sponsors items={sponsor} />
-        </Section>
+      <Banner />
+      <SectionWrap ref={sectionRef}>
+        <div style={helper}>
+          <div id="session" style={anchor}>
+            <Section
+              title="sessions"
+              backgroundColor={props => props.theme.colors.white}
+              fontColor={props => props.theme.colors.primary['300']}
+            >
+              <Sessions items={allSessionsJson.nodes} time={time} />
+            </Section>
+          </div>
+        </div>
+        <div style={helper}>
+          <div id="booth" style={anchor}>
+            <Section
+              title="booths"
+              backgroundColor={props => props.theme.colors.primaryGradient}
+              fontColor={props => props.theme.colors.white}
+            >
+              <Booths items={allBoothJson.nodes} />
+            </Section>
+          </div>
+        </div>
+        <div style={helper}>
+          <div id="sponsor" style={anchor}>
+            <Section
+              title="sponsors"
+              backgroundColor={props => props.theme.colors.white}
+              fontColor={props => props.theme.colors.primary['300']}
+            >
+              <Sponsors items={sponsor} />
+            </Section>
+          </div>
+        </div>
       </SectionWrap>
     </BaseLayout>
   )
@@ -93,7 +108,12 @@ export const query = graphql`
         title
       }
     }
-
+    allTimeJson {
+      nodes {
+        id
+        time
+      }
+    }
     allSessionsJson {
       nodes {
         id
@@ -102,11 +122,13 @@ export const query = graphql`
         abstract
         meta
         enquete
+        lunch
         hashtag
         timetable {
           id
           place
           time
+          timeId
         }
         speakers {
           affiliation
@@ -115,7 +137,7 @@ export const query = graphql`
           profile
           image {
             childImageSharp {
-              resize(width: 144) {
+              resize(width: 300) {
                 src
               }
             }
