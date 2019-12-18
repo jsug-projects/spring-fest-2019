@@ -95,6 +95,16 @@ const ContentsHolder = styled.div`
 
 const TitleHolder = styled.div`
   display: flex;
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    flex-direction: column;
+  }
+`
+const Links = styled.div`
+  display: flex;
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    flex-direction: row;
+    margin-bottom: .5rem;
+  }
 `
 
 const Title = styled.h3`
@@ -175,6 +185,10 @@ const Hashtag = styled.div`
   &:hover {
     cursor: pointer;
   }
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    padding-left: 0;
+    padding-right: ${props => props.theme.spacing(2)};
+  }
 `
 
 const LinkText = styled.div`
@@ -248,23 +262,25 @@ const SessionItem = ({ session }) => {
                 )}
                 <TitleHolder>
                   <Title>{session.title}</Title>
-                  {session.hashtag && (
-                    <Hashtag>
-                      <HashtagLink
-                        href={`https://twitter.com/intent/tweet?hashtags=jsug,sf_${session.hashtag}`}
-                        target="_blank"
-                      >
-                        <FontAwesomeIcon size="1x" icon={faTwitter} /> Tweet
-                      </HashtagLink>
-                    </Hashtag>
-                  )}
-                  {session.enquete && (
-                    <Enquete>
-                      <EnqueteLink href={session.enquete} target="_blank">
-                        <Icon name={'commenting'} /> アンケート
-                      </EnqueteLink>
-                    </Enquete>
-                  )}
+                  <Links>
+                    {session.hashtag && (
+                      <Hashtag>
+                        <HashtagLink
+                          href={`https://twitter.com/intent/tweet?hashtags=jsug,sf_${session.hashtag}`}
+                          target="_blank"
+                        >
+                          <FontAwesomeIcon size="1x" icon={faTwitter} /> Tweet
+                        </HashtagLink>
+                      </Hashtag>
+                    )}
+                    {session.enquete && (
+                      <Enquete>
+                        <EnqueteLink href={session.enquete} target="_blank">
+                          <Icon name={'commenting'} /> アンケート
+                        </EnqueteLink>
+                      </Enquete>
+                    )}
+                  </Links>
                 </TitleHolder>
               </ContentsHeader>
               {session.abstract && (
