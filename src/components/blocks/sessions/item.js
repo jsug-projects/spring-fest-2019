@@ -103,7 +103,7 @@ const Links = styled.div`
   display: flex;
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     flex-direction: row;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 `
 
