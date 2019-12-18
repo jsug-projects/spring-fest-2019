@@ -321,14 +321,15 @@
       "timeId": 7,
       "place": "Room B"
     },
-    "title": "実践 Spring Boot Actuator + Micrometer",
-    "abstract": "Spring Boot ActuatorはSpring Bootアプリケーションの運用のためのエンドポイントを追加するサブモジュールです。\r\n本セッションでは、Spring Boot Actuatorの概要、Micrometerとの連携をお話しします。\r\n開発に使うだけではもったいない、Actuatorの活用方法をお伝えできればと思います。",
+    "title": "無茶振りMicrometerの話（✕実践 Spring Boot Actuator + Micrometer）",
+    "abstract": "「実践 Spring Boot Actuator + Micrometer」は諸事情により、「無茶振りMicrometerの話」に変更になりました。",
     "speakers": [
       {
-        "id": 8,
-        "name": "進藤 遼",
-        "profile": "Acroquest Technology株式会社所属。Spring Bootを使ったWebアプリ開発がメイン。最近はGoで開発することも多い。",
-        "image": "images/speakers/8.png"
+        "id": 35,
+        "name": "Tommy Ludwig",
+        "affiliation": "Pivotal",
+        "profile": "@micrometerio project lead. \r\n@zipkinproject committer.",
+        "image": "images/speakers/35.png"
       }
     ],
     "hashtag": "5B",
