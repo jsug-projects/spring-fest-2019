@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import parse from 'html-react-parser'
 
 const Container = styled.div`
   border-radius: ${props => props.theme.shape.radius * 2}px;
@@ -18,11 +19,13 @@ const Title = styled.h3`
   }
 `
 
-const Description = styled.p`
+const Description = styled.div`
   white-space: pre-line;
+  line-height: 1.8rem;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.xs};
+    line-height: 1.4rem;
   }
 `
 
@@ -82,9 +85,11 @@ const SponsorProfile = styled.p`
   white-space: pre-line;
   font-size: ${props => props.theme.typography.size.sm};
   margin-top: ${props => props.theme.spacing(0.5)};
+  line-height: 1.4rem;
 
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     ${props => props.theme.typography.size.xs};
+    line-height: 1.3rem;
   }
 `
 
@@ -92,10 +97,10 @@ export default ({ booth, position }) => {
   const { title, description, sponsor } = booth
   return (
     <Container position={position}>
-      {title && (
+      {(description || title) && (
         <ContentsHolder>
           <Title>{title}</Title>
-          <Description>{description}</Description>
+          <Description>{parse(description)}</Description>
         </ContentsHolder>
       )}
       <Sponsor>
@@ -106,7 +111,7 @@ export default ({ booth, position }) => {
           />
         </IconHolder>
         <SponsorDetail>
-          <SponsorName>{sponsor.name || '未定'}</SponsorName>
+          <SponsorName>{sponsor.name}</SponsorName>
           {sponsor.profile && (
             <SponsorProfile>{sponsor.profile}</SponsorProfile>
           )}

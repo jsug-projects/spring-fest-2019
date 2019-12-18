@@ -19,7 +19,10 @@ export default () => {
             }
           }
         }
-        allFile(filter: { relativeDirectory: { eq: "images/hall" } }) {
+        allFile(
+          sort: { order: ASC, fields: name }
+          filter: { relativeDirectory: { eq: "images/hall" } }
+        ) {
           edges {
             node {
               childImageSharp {

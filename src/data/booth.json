@@ -18,8 +18,8 @@
       "profile": "株式会社ティ・アイ・オー＜TIO＞は、刻々と進化しているIT技術を駆使し、各産業分野における基幹業務、金融および製造流通分野における業務アプリケーションに構築からソフトウェア・画面デザイン・メンテナンスにいたる工程をトータル的にサポートしていく企業です。",
       "image": "images/companies/tio.png"
     },
-    "title": "",
-    "description": ""
+    "title": "For Your Happiness, Pleasure and Satisfaction",
+    "description": "ティ・アイ・オーはIT技術を駆使し、常に「ユーザー目線」で提案をしている会社です。各産業分野における基幹業務、製造流通および金融分野における業務アプリケーションの『コンサルティング』から『画面デザイン』『システム設計』『システム構築』『運用・保守のサポート』まで、トータルサポート致します。Springを導入した物流システムの開発や、現場で使えるシステム運用・保守の『見える化』など各実績をご紹介致しますので、ご興味をお持ちの方、システムに関してお困りの方は、是非ブースにお立ち寄り下さい！"
   },
   {
     "sponsor": {
@@ -29,8 +29,8 @@
       "profile": "",
       "image": "images/companies/samuraism.png"
     },
-    "title": "",
-    "description": ""
+    "title": "デベロッパの強力な味方！",
+    "description": "サムライズムはIntelliJ IDEAで有名なJetBrainsやGitHubなど、開発に必要不可欠なツール群を取り扱っております。\r\n導入済みの方も、これから導入を検討されている方も、是非ブースにお立ち寄り頂き、最新情報を入手してください！"
   },
   {
     "sponsor": {
@@ -41,7 +41,7 @@
       "image": "images/companies/nri.png"
     },
     "title": "",
-    "description": ""
+    "description": "<div style=\"display: flex; align-items:center; flex-wrap: wrap;\"><img src=\"/images/extras/logo_aslead.png\" height=\"30px\" style=\"margin-bottom: 0px; margin-right: 1rem;\"><a href=\"https://aslead.nri.co.jp\" target=\"_blank\"><b style=\"color: #0E7373; opacity: 0.9;\">https://aslead.nri.co.jp</b></a></div>\r\n　　DX時代のシステム開発およびオフィス業務の生産性向上のための製品・ソリューションの提供、技術サポートおよび導入支援・システム運用を提供する、asleadをご紹介します。\r\n\r\n\r\n<div style=\"display: flex; align-items:center; flex-wrap: wrap;\"><img src=\"/images/extras/logo_OpenStandia.png\" height=\"30px\" style=\"margin-bottom: 0px; margin-right: 1rem; \"><a href=\"https://openstandia.jp\" target=\"_blank\"><b style=\"color: #0E7373; opacity: 0.9;\">https://openstandia.jp</b></a></div>\r\n　　オープンソースソフトウェア（OSS）を使用したシステムの構築や課題発生時の解決にあたり、OSSに関する技術サポート、導入支援、コンサルティングなどを提供するサービスです。Springをはじめ、様々なOSSのサポートを提供していますので、OSSでお困りの方は是非ブースまでお越しください。"
   },
   {
     "sponsor": {
@@ -51,8 +51,8 @@
       "profile": "",
       "image": "images/companies/casareal.png"
     },
-    "title": "",
-    "description": ""
+    "title": "創る、学べる、カサレアル 　＼Springコーステキスト持ってきました！／",
+    "description": "カサレアルは研修を通じて、効率的な最新技術導入の支援を行っております。開発部門を持っていることから、現場ですぐに使える技術を身につけていただくことをモットーに、様々なプログラマの研修コースをご用意しております。\r\nブースではSpring研修をはじめとする研修サービスや、クラウドネイティブ開発の支援サービスについてご紹介いたします。実際にSpring研修で使用しているテキストもご覧いただけますので、ぜひお立ち寄り下さい！"
   },
   {
     "sponsor": {
@@ -62,8 +62,8 @@
       "profile": "",
       "image": "images/companies/google-cloud.png"
     },
-    "title": "",
-    "description": ""
+    "title": "ストレスレスな Spring Boot を使った Web アプリケーション開発環境の紹介",
+    "description": "Google Kubernetes Engine（GKE）は、コンテナ化されたアプリケーションをデプロイするための、本番環境に対応したマネージド型環境です。最新のテクノロジーを利用して、デベロッパーの生産性、リソースの効率性、自動運用、オープンソースの柔軟性の向上を図り、製品化までの時間を短縮します。\r\n2015 年にリリースされた Kubernetes Engine は、12 年以上にわたって Gmail や YouTube などのサービスをコンテナ内で実行してきた Google の豊富な経験に基づいて構築されています。Kubernetes Engine を使用すると、独自の Kubernetes クラスタをインストールして管理、操作する必要がなくなり、Kubernetes の設定から稼働までを短時間で完了できます。\r\nこちらのブースでは、Google Kubernetes Engine（GKE）, Docker, Cloud Code, Jib, Skaffold などを紹介します。"
   },
   {
     "sponsor": {
@@ -84,8 +84,8 @@
       "profile": "",
       "image": "images/companies/nissan.png"
     },
-    "title": "",
-    "description": ""
+    "title": "日産コネクティドカーサービスの開発者募集！",
+    "description": "我々は日産が提供するコネクティドカーサービス「Nissan Connect」「Nissan Connect EV」を開発する部隊であり、サーバサイドをSpring Bootで開発しています。\r\n\r\n当ブースでは、上記アプリのご紹介や、開発プロセス等についてご紹介致します。\r\n\r\nIoTシステムの開発にご興味のある方・自動車好きの方・ソフトウェア内部に留まらない現実世界の「モノ」に繋がる開発に興味がある方は、是非ブースまでお越しください。我々は多くの仲間を求めています！"
   },
   {
     "sponsor": {
@@ -95,7 +95,7 @@
       "profile": "",
       "image": "images/companies/bizreach.png"
     },
-    "title": "",
+    "title": "株式会社ビズリーチの取り組みとエンジニア組織",
     "description": ""
   },
   {
@@ -107,7 +107,7 @@
       "image": "images/companies/mamezou.png"
     },
     "title": "",
-    "description": ""
+    "description": "DX 時代を想定したアーキテクチャ、開発プロセスについて、豆蔵の現場のアーキテクトやコンサルタントがご相談に乗ります。ブースにて豆蔵グッズも配布しますので、是非お越し下さい"
   },
   {
     "sponsor": {
@@ -118,18 +118,7 @@
       "image": "images/companies/rakuten.png"
     },
     "title": "",
-    "description": ""
-  },
-  {
-    "sponsor": {
-      "name": "マイクロソフト",
-      "url": "https://www.microsoft.com/ja-jp",
-      "slug": "microsoft",
-      "profile": "",
-      "image": "images/companies/microsoft.png"
-    },
-    "title": "",
-    "description": ""
+    "description": "楽天のエンジニアがパンダノベリティをお配りします！！\r\nJavaやSpringについてエンジニアとお話しましょう！\r\n皆様是非ブースにお立ち寄りください！\r\nお待ちしておりますｍｍ"
   },
   {
     "sponsor": {

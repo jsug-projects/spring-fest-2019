@@ -35,8 +35,9 @@ const Logo = styled.img`
   margin-bottom: 0;
   margin-right: ${props => props.theme.spacing(1.5)};
 
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    max-height: 1.5rem;
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
+    max-height: 1.3rem;
+    margin-right: ${props => props.theme.spacing(1.5)};
   }
 `
 
@@ -45,6 +46,10 @@ const Title = styled.h1`
   font-family: ${props => props.theme.typography.types.display};
   font-weight: 900;
   margin: 0;
+
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
+    font-size: 1.1rem;
+  }
 `
 
 const Nav = styled.nav`
@@ -53,18 +58,10 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: flex-end;
   padding-right: ${props => props.theme.spacing(4)};
-
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    padding-right: ${props => props.theme.spacing(3)};
-  }
 `
 
 const NavItem = styled.div`
   margin: ${props => props.theme.spacing(1, 2)};
-
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    margin: ${props => props.theme.spacing(1)};
-  }
 `
 
 const Shares = styled.div`
@@ -77,12 +74,9 @@ const Pdf = styled.a`
   font-family: ${props => props.theme.typography.types.display};
   font-weight: 700;
 
-  // &:hover {
-  //   color: ${props => props.theme.colors.neutral['25']};
-  // }
-  
-  opacity: 0.5;
-  pointer-events: none;
+  &:hover {
+    color: ${props => props.theme.colors.neutral['25']};
+  }
 `
 
 const Link = styled(GatsbyLink)`
@@ -109,11 +103,7 @@ const NormalHeader = styled.div`
   justify-content: space-between;
   padding: ${props => props.theme.spacing(1, 5)};
 
-  @media only screen and (max-width: ${props => props.theme.media.tablet}) {
-    padding: ${props => props.theme.spacing(1, 3)};
-  }
-
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
     display: none;
   }
 `
@@ -122,7 +112,8 @@ const MobileHeader = styled.div`
   display: none;
   padding: ${props => props.theme.spacing(1.5, 3)};
 
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
+    padding: ${props => props.theme.spacing(1, 3)};
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -133,19 +124,18 @@ const IconHolder = styled.div`
   display: none;
   z-index: 100;
   cursor: pointer;
+  padding: ${props => props.theme.spacing(0.5, 0)};
 
-  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+  @media only screen and (max-width: ${props => props.theme.media.computer}) {
     display: block;
   }
 `
 
-const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
+const Header = ({ siteTitle, dynamic, headerColor, headerRef, scrolled }) => {
   const { pdf, springLogoImage } = useStaticQuery(
     graphql`
       query {
-        pdf: file(
-          relativePath: { eq: "timetable/spring-fest-2019-timetable.pdf" }
-        ) {
+        pdf: file(relativePath: { eq: "timetable/timetable.pdf" }) {
           publicURL
         }
         springLogoImage: file(relativePath: { eq: "images/spring-logo.svg" }) {
@@ -165,14 +155,6 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
   const [iconColor, setIconColor] = useState(
     dynamic ? neutralColor : primaryColor
   )
-
-  const scrolled = () => {
-    const { innerHeight } = window
-    const { scrollTop } = document.body
-    const containerHeight = headerRef.current.getBoundingClientRect().height
-    return scrollTop >= innerHeight - containerHeight
-  }
-
   useEffect(() => {
     if (dynamic) {
       handleOnScroll()
@@ -209,13 +191,19 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
         )}
         <Nav>
           <NavItem>
-            <Link to="/#index">SESSIONS</Link>
+            <Link to="/#session">SESSIONS</Link>
           </NavItem>
-          {/*<NavItem>*/}
-          {/*  <Pdf href={pdf.publicURL} target="_blank">*/}
-          {/*    TIMETABLE*/}
-          {/*  </Pdf>*/}
-          {/*</NavItem>*/}
+          <NavItem>
+            <Link to="/#booth">BOOTHS</Link>
+          </NavItem>
+          <NavItem>
+            <Link to="/#sponsor">SPONSORS</Link>
+          </NavItem>
+          <NavItem>
+            <Pdf href={pdf.publicURL} target="_blank">
+              TIMETABLE
+            </Pdf>
+          </NavItem>
           <NavItem>
             <Link to="/access">ACCESS</Link>
           </NavItem>
@@ -226,7 +214,7 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
         </Shares>
       </NormalHeader>
       <MobileHeader>
-        <Menu open={isOpen} pdf={pdf.publicURL} />
+        <Menu open={isOpen} setIsOpen={setIsOpen} pdf={pdf.publicURL} />
         {siteTitle && (
           <Link to="/#index">
             <TitleHolder>
@@ -235,22 +223,8 @@ const Header = ({ siteTitle, dynamic, headerColor, headerRef }) => {
             </TitleHolder>
           </Link>
         )}
-        <IconHolder>
-          {isOpen ? (
-            <Icon
-              name={'times'}
-              fitted
-              circular
-              onClick={() => setIsOpen(false)}
-            />
-          ) : (
-            <Icon
-              name={'bars'}
-              fitted
-              circular
-              onClick={() => setIsOpen(true)}
-            />
-          )}
+        <IconHolder onClick={() => setIsOpen(!isOpen)}>
+          <Icon name={isOpen ? 'times' : 'bars'} />
         </IconHolder>
       </MobileHeader>
     </Container>

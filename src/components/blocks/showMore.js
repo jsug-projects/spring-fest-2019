@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
+import parse from 'html-react-parser'
 
 const Container = styled.div`
   display: flex;
@@ -15,9 +16,11 @@ const TextHolder = styled.div`
 const Text = styled.p`
   line-height: ${props => props.lineHeight}rem;
   word-wrap: break-word;
+  line-height: 1.7rem;
+
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
     font-size: ${props => props.theme.typography.size.xs};
-    line-height: 1.2rem;
+    line-height: 1.4rem;
   }
 `
 
@@ -51,7 +54,7 @@ const ShowMore = ({ children }) => {
     <Container>
       <TextHolder boxHeight={boxHeight}>
         <Text ref={texts} lineHeight={lineHeight}>
-          {children}
+          {parse(children)}
         </Text>
       </TextHolder>
       {showButton && (
