@@ -6,6 +6,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { Meta } from '../../elements'
 import { Profile, ShowMore } from '../index'
 import { Icon } from 'semantic-ui-react'
+import parse from 'html-react-parser'
 
 const Container = styled.div`
   padding: ${props => props.theme.spacing(1.5, 0)};
@@ -156,13 +157,18 @@ const ContentsBody = styled.div`
     padding: ${props => props.theme.spacing(1, 2)};
   }
 `
+const Slide = styled.div`
+  width: 425px;
+  @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    flex-direction: column;
+  }
+`
 
 const Footer = styled.div`
   padding-right: ${props => props.theme.spacing(3)};
   padding-bottom: ${props => props.theme.spacing(1)};
   margin-top: ${props => props.theme.spacing(-1)};
-  // display: flex;
-  display: none;
+//  display: flex;
   align-items: center;
   justify-content: flex-end;
 
@@ -286,6 +292,9 @@ const SessionItem = ({ session }) => {
               {session.abstract && (
                 <ContentsBody>
                   <ShowMore children={session.abstract} />
+                  <Slide>
+                    {session.slides && parse(String(session.slides))}
+                  </Slide>
                 </ContentsBody>
               )}
             </ContentsHolder>
