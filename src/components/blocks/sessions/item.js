@@ -160,6 +160,7 @@ const ContentsBody = styled.div`
 const Slide = styled.div`
   width: 425px;
   @media only screen and (max-width: ${props => props.theme.media.mobile}) {
+    width: 100%;
     flex-direction: column;
   }
 `
